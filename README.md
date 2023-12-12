@@ -1,7 +1,8 @@
-# llm-as-clinical-calculator
+# Augmentation of ChatGPT with clinician-informed tools improves performance on medical calculation tasks
+[![DOI](https://zenodo.org/badge/730459595.svg)](https://zenodo.org/doi/10.5281/zenodo.10360442)
+
 Repository for paper on LLM as clinical calculator
 
-[![DOI](https://zenodo.org/badge/730459595.svg)](https://zenodo.org/doi/10.5281/zenodo.10360442)
 
 ```
 ├── LICENSE
