@@ -1,0 +1,51 @@
+﻿Name,short_name,calculator_role,Description
+Creatinine Clearance,CrCl,Descriptive,Estimates creatinine clearance (kidney function).
+CKD-EPI Equations for Glomerular Filtration Rate,CKD-EPI,Descriptive,Estimates GFR.
+CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,CHADS-VASc,Predictive,Stroke risk in afib; better than CHADS₂.
+Mean Arterial Pressure,MAP,Descriptive,Calculates MAP.
+Calcium Correction for Hypoalbuminemia,Ca Correction,Descriptive,Corrects Ca for hypoalbuminemia.
+ASCVD (Atherosclerotic Cardiovascular Disease) 2013 Risk Calculator from AHA/ACC,ASCVD2013,Predictive,10-year heart disease or stroke risk.
+Body Mass Index and Body Surface Area,BMI/BSA,Descriptive,"Categorizes obesity, assists some med dosing."
+Wells' Criteria for Pulmonary Embolism,Wells PE,Speculative,Risk of PE.
+MDRD GFR Equation,MDRD GFR,Descriptive,For CKD patients (not for AKI).
+Corrected QT Interval,QTc,Descriptive,Corrects QT interval.
+Ideal Body Weight and Adjusted Body Weight,IBW,Descriptive,Ideal and adjusted body weight.
+Pregnancy Due Dates Calculator,Due Dates,Descriptive,"From LMP, EGA, or date of conception."
+Revised Cardiac Risk Index for Pre-Operative Risk,RCRI,Predictive,Risk of major cardiac event from surgery.
+NIH Stroke Scale/Score ,NIHSS,Summative,Quantifies stroke severity.
+Child-Pugh Score for Cirrhosis Mortality,CPS,Predictive,Prognosis in cirrhosis; guides treatment.
+HEART Score for Major Cardiac Events,HEART,Predictive,6-week risk of cardiac event.
+Fibrosis-4 Index for Liver Fibrosis,Fibrosis 4,Descriptive,Noninvasive estimate of liver fibrosis.
+Wells' Criteria for DVT,Wells DVT,Speculative,Risk of DVT based on clinical criteria.
+HAS-BLED Score for Major Bleeding Risk,HAS-BLED,Predictive,Bleeding risk with AFib anticoagulation.
+Steroid Conversion Calculator,Steroid Conversion,Therapeutic,Steroid dosing equivalencies.
+Sodium Correction for Hyperglycemia,Na Correction,Descriptive,Calculates Na in hyperglycemia.
+Maintenance Fluids Calculations,mIVF,Therapeutic,Fluid maintenance.
+Centor Score for Strep Pharyngitis,Centor,Speculative,Strep throat diagnosis and treatment.
+Patient Health Questionnaire-9,PHQ9,Speculative,Degree of depression severity.
+MELD-Na,MELD-Na,Predictive,Liver transplant planning + Na.
+Morphine Milligram Equivalents Calculator,MME,Therapeutic,Calculates MME.
+PERC Rule for Pulmonary Embolism,PERC,Speculative,Clinically rules out PE (&lt;2%).
+STOP-BANG Score for Obstructive Sleep Apnea,STOP-BANG,Speculative,Obstructive sleep apnea diagnosis.
+Glasgow Coma Score,GCS,Summative,Objective level of consciousness.
+CURB-65 Score for Pneumonia Severity,CURB-65,Predictive,Mortality in CAP: inpatient vs outpatient.
+Sequential Organ Failure Assessment Score,SOFA,Predictive,ICU mortality from lab data.
+Framingham Risk Score for Hard Coronary Heart Disease,Framingham,Predictive,Heart attack risk.
+Fractional Excretion of Sodium,FENa,Descriptive,"Pre-renal, intrinsic, or post-renal kidney failure."
+General Anxiety Disorder-7,GAD7,Speculative,Severity of anxiety.
+LDL Calculated,LDL,Descriptive,"From Total Chol, HDL and Trigs."
+Caprini Score for Venous Thromboembolism,Caprini,Predictive,Stratifies risk of VTE in surgical patients.
+ Atherosclerotic Cardiovascular Disease Risk Algorithm,ASCVD,Predictive,10-year heart disease or stroke risk and statin recommendations.
+CIWA-Ar for Alcohol Withdrawal,CIWA,Summative,Objectifies alcohol withdrawal severity.
+Anion Gap,AG,Descriptive,Evaluates states of metabolic acidosis.
+Free Water Deficit in Hypernatremia,Free Water,Descriptive,Free water deficit by estimated total body water.
+"SIRS, Sepsis, and Septic Shock Criteria",SIRS,Summative,Defines severity of sepsis and septic shock.
+PECARN Pediatric Head Injury/Trauma Algorithm,PECARN,Therapeutic,Clears peds head injury without imaging.
+Arterial Blood Gas Analyzer,ABG,Descriptive,Interprets ABG.
+Serum Osmolality/Osmolarity,Osms,Descriptive,Screens for toxic alcohols and more.
+Gupta Perioperative Risk for Myocardial Infarction or Cardiac Arrest,Gupta,Predictive,Periop cardiac risk.
+GRACE ACS Risk and Mortality Calculator,GRACE,Predictive,Mortality in ACS admissions.
+Homeostatic Model Assessment for Insulin Resistance,HMAIR,Descriptive,Approximates insulin resistance.
+Charlson Comorbidity Index,CCI,Predictive,10-year survival.
+ARISCAT Score for Postoperative Pulmonary Complications,ARISCAT,Predictive,Post-op pulmonary complications.
+PSI/PORT Score: Pneumonia Severity Index,PSI/PORT,Predictive,Mortality in CAP: more complex than CURB-65.
