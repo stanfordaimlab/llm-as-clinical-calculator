@@ -1,6 +1,8 @@
 # llm-as-clinical-calculator
 Repository for paper on LLM as clinical calculator
 
+[![DOI](https://zenodo.org/badge/730459595.svg)](https://zenodo.org/doi/10.5281/zenodo.10360442)
+
 ```
 ├── LICENSE
 ├── README.md
