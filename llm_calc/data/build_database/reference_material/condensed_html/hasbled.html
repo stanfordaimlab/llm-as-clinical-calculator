@@ -1,0 +1,192 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>HAS-BLED Score for Major Bleeding Risk</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Hypertension </p> <p> <i> Uncontrolled, >160 mmHg systolic </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Renal disease </p> <p> <i> Dialysis, transplant, Cr >2.26 mg/dL or >200 µmol/L </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Liver disease </p> <p> <i> Cirrhosis or bilirubin >2x normal with AST/ALT/AP >3x normal </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Stroke history </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Prior major bleeding or predisposition to bleeding </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Labile INR </p> <p> <i> Unstable/high INRs, time in therapeutic range <60% </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Age >65 </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Medication usage predisposing to bleeding </p> <p> <i> Aspirin, clopidogrel, NSAIDs </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+<tr> <td> <p> Alcohol use </p> <p> <i> ≥8 drinks/week </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (1) </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>Addition of the selected points:</p>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top">
+<p><strong>Variable</strong></p>
+</td>
+<td valign="top">
+<p><strong>Points</strong></p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Hypertension</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Renal disease (dialysis, transplant, Cr &gt;2.26 mg/dL or 200 &micro;mol/L)</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Liver disease (cirrhosis or bilirubin &gt;2x normal with AST/ALT/AP &gt;3x normal)</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Stroke history</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Prior major bleeding or predisposition to bleeding</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Labile INR (unstable/high INRs, time in therapeutic range &lt;60%)</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Elderly (age &gt;65)</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Medication usage predisposing to bleeding (aspirin, clopidogrel, NSAIDs)</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<p>Alcohol usage (&ge;8 drinks/week)</p>
+</td>
+<td valign="top">
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Note:&nbsp;HAS-BLED is an acronym for&nbsp;Hypertension,&nbsp;Abnormal liver/renal function,&nbsp;Stroke history,&nbsp;Bleeding predisposition,&nbsp;Labile INR,&nbsp;Elderly,&nbsp;Drug/alcohol usage.</p>
+<h2>FACTS & FIGURES</h2>
+<div class="table-responsive">
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>HAS-BLED Score</strong></p>
+</td>
+<td><strong>Risk group</strong></td>
+<td><b>Risk&nbsp;of major bleeding**</b></td>
+<td><b>Bleeds per 100 patient-years***</b></td>
+<td><strong>Recommendation</strong></td>
+</tr>
+<tr>
+<td>
+<p>0</p>
+</td>
+<td rowspan="2">Relatively low</td>
+<td>0.9%</td>
+<td>1.13</td>
+<td rowspan="2">Anticoagulation should be considered</td>
+</tr>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>3.4%</td>
+<td>1.02</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>Moderate</td>
+<td>4.1%</td>
+<td>1.88</td>
+<td>Anticoagulation can be considered</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td rowspan="3">High</td>
+<td>5.8%</td>
+<td>3.72</td>
+<td rowspan="4">Alternatives to anticoagulation should be considered</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>8.9%</td>
+<td>8.70</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>9.1%</td>
+<td>12.50</td>
+</tr>
+<tr>
+<td>
+<p>&gt;5*</p>
+</td>
+<td>Very high&nbsp;</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>*Scores greater than 5 were too rare to determine risk, but are likely over 10%.</p>
+<p>**Risk figures&nbsp;from <a href="https://www.ncbi.nlm.nih.gov/pubmed/21111555" target="_blank" rel="noopener">Lip 2011</a>.</p>
+<p>***Risk figures from&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pubmed/20299623" target="_blank" rel="noopener">Pisters&nbsp;2010</a>.</p>
+</div>
+<h2>EVIDENCE APPRAISAL</h2>
+
+</html>
+</body>

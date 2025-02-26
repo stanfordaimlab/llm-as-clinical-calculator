@@ -1,0 +1,82 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>PSI/PORT Score: Pneumonia Severity Index for CAP</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> <p>Age</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Sex</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Female (-10) </li><li> Male (0) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Nursing home resident</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Neoplastic disease</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (30) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Liver disease history</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (20) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>CHF history</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Cerebrovascular disease history</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Renal disease history</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Altered mental status</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (20) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Respiratory rate &ge;30 breaths/min</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (20) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Systolic blood pressure &lt;90 mmHg</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (20) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Temperature &lt;35&deg;C (95&deg;F) or &gt;39.9&deg;C (103.8&deg;F)</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (15) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Pulse &ge;125 beats/min</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>pH &lt;7.35</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (30) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p><abbr title="Blood urea nitrogen concentration">BUN</abbr> &ge;30 mg/dL or &ge;11 mmol/L</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (20) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Sodium &lt;130 mmol/L</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (20) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Glucose &ge;250 mg/dL or &ge;14 mmol/L</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Hematocrit &lt;30%</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Partial pressure of oxygen &lt;60 mmHg or &lt;8 kPa</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Pleural effusion on x-ray</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (10) </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>Addition of selected points, as above.</p>
+<h2>FACTS & FIGURES</h2>
+<p><strong>Score interpretation:</strong></p>
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+<tbody>
+<tr>
+<th>Risk Class</th>
+<th>Risk</th>
+<th>Point Value</th>
+</tr>
+<tr>
+<td>I</td>
+<td>Low</td>
+<td>None from Comorbidities, PE findings, or Lab findings</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Low</td>
+<td>&le;70 points</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Low</td>
+<td>71-90</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Moderate</td>
+<td>91-130</td>
+</tr>
+<tr>
+<td>V</td>
+<td>High</td>
+<td>&gt;130 total points</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>EVIDENCE APPRAISAL</h2>
+<p>The original study created a five-tier risk stratification based on 14199 inpatients with community acquired pneumonia. This was then validated on 38039 inpatients and additionally another 2287 inpatients and outpatients. Points are assigned based on age, co-morbid disease, abnormal physical findings, and abnormal laboratory results.</p>
+<p>In comparison to the PSI score, <calculator id="324">CURB-65</calculator> offers equal sensitivity of mortality prediction due to community acquired pneumonia. Notably, CURB-65 (74.6%) has a higher specificity than PSI (52.2%). However, CURB-65 had a lower sensitivity than PSI in predicting ICU admission.</p>
+</html>
+</body>

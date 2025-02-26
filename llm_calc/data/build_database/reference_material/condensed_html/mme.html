@@ -1,0 +1,290 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Morphine Milligram Equivalents (MME) Calculator</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> <p>Drug</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Codeine </li><li> FentaNYL buccal or sublingual tablets </li><li> FentaNYL patch (Duragesic) </li><li> HYDROcodone (Vicodin, Norco, Lortab) </li><li> HYDROmorphone (Dilaudid) </li><li> Methadone </li><li> Morphine </li><li> OxyCODONE (OxyCONTIN, Roxicodone) </li><li> OxyMORphone </li><li> Tapentadol </li><li> TraMADol (Ultram) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage, mcg/hr</p> </p> <p> <i> Assumes 1 patch every 3 days </i> </p> </td> <td> <b> Options: </b> <ul> <li> 12.5 </li><li> 25 </li><li> 37.5 </li><li> 50 </li><li> 62.5 </li><li> 75 </li><li> 87.5 </li><li> 100 </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Doses per day</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Add another drug</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Drug</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Codeine </li><li> FentaNYL buccal or sublingual tablets </li><li> FentaNYL patch (Duragesic) </li><li> HYDROcodone (Vicodin, Norco, Lortab) </li><li> HYDROmorphone (Dilaudid) </li><li> Methadone </li><li> Morphine </li><li> OxyCODONE (OxyCONTIN, Roxicodone) </li><li> OxyMORphone </li><li> Tapentadol </li><li> TraMADol (Ultram) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage, mcg/hr</p> </p> <p> <i> Assumes 1 patch every 3 days </i> </p> </td> <td> <b> Options: </b> <ul> <li> 12.5 </li><li> 25 </li><li> 37.5 </li><li> 50 </li><li> 62.5 </li><li> 75 </li><li> 87.5 </li><li> 100 </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Doses per day</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Add another drug</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Drug</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Codeine </li><li> FentaNYL buccal or sublingual tablets </li><li> FentaNYL patch (Duragesic) </li><li> HYDROcodone (Vicodin, Norco, Lortab) </li><li> HYDROmorphone (Dilaudid) </li><li> Methadone </li><li> Morphine </li><li> OxyCODONE (OxyCONTIN, Roxicodone) </li><li> OxyMORphone </li><li> Tapentadol </li><li> TraMADol (Ultram) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Dosage, mcg/hr</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> 12.5 </li><li> 25 </li><li> 37.5 </li><li> 50 </li><li> 62.5 </li><li> 75 </li><li> 87.5 </li><li> 100 </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Doses per day</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p dir="ltr">MME/day = Dosage<sup>1</sup> x&nbsp;Doses per day x MME conversion factor</p>
+<div dir="ltr">
+<table><colgroup><col width="*"><col width="199"><col width="103"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>Opioid</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Common dosages</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>MME conversion factor<sup>2</sup></strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Codeine</p>
+</td>
+<td>
+<p dir="ltr">15mg, 30mg, 60mg, 2.4 mg/mL, 6 mg/mL</p>
+</td>
+<td>
+<p dir="ltr">0.15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">FentaNYL buccal or&nbsp;sublingual&nbsp;tablets</p>
+</td>
+<td>
+<p dir="ltr">100 mcg, 200 mcg, 300 mcg, 400 mcg, 600 mcg, 800 mcg</p>
+</td>
+<td>
+<p dir="ltr">0.13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">FentaNYL patch (Duragesic)</p>
+</td>
+<td>
+<p dir="ltr">12.5 mcg, 25 mcg, 37.5 mcg, 50 mcg, 62.5 mcg, 75 mcg, 87.5 mcg, 100 mcg</p>
+</td>
+<td>
+<p dir="ltr">2.4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">HYDROcodone (Vicodin, Norco, Lortab)</p>
+</td>
+<td>
+<p dir="ltr">2.5 mg, 5 mg, 7.5 mg, 10 mg, 1 mg/mL, 0.5 mg/mL, 0.667 mg/mL</p>
+</td>
+<td>
+<p dir="ltr">1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">HYDROmorphone (Dilaudid)</p>
+</td>
+<td>
+<p dir="ltr">2 mg, 4 mg, 8 mg, 12 mg, 16 mg, 32 mg, 1 mg/mL</p>
+</td>
+<td>
+<p dir="ltr">5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Methadone<sup>3</sup></p>
+</td>
+<td>
+<p dir="ltr">5 mg, 10 mg, 40 mg</p>
+</td>
+<td>4.7</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Morphine</p>
+</td>
+<td>
+<p dir="ltr">10 mg, 15 mg, 20 mg, 40 mg, 45 mg, 50 mg, 60 mg, 70 mg, 75 mg, 80 mg, 90 mg, 100 mg, 120 mg, 130 mg, 150 mg, 200 mg, 2 mg/mL, 20 mg/mL</p>
+</td>
+<td>
+<p dir="ltr">1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">OxyCODONE (OxyCONTIN, Roxicodone)</p>
+</td>
+<td>
+<p dir="ltr">5 mg, 7.5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 60 mg, 80 mg, 1 mg/mL, 20 mg/mL</p>
+</td>
+<td>
+<p dir="ltr">1.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">OxyMORphone</p>
+</td>
+<td>
+<p dir="ltr">5 mg, 7.5 mg, 10 mg, 15 mg, 20 mg, 30 mg, 40 mg, 1 mg/mL</p>
+</td>
+<td>
+<p dir="ltr">3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Tapentadol<sup>3</sup>, mg</p>
+</td>
+<td></td>
+<td>
+<p dir="ltr">0.4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">TraMADol (Ultram), mg</p>
+</td>
+<td></td>
+<td>
+<p dir="ltr">0.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Buprenorphine<sup>4</sup></p>
+</td>
+<td></td>
+<td>
+<p dir="ltr">10</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr"><sup>1</sup>Dosage in mcg/hr for fentaNYL patch, in mcg for fentaNYL buccal or sublingual tablets, and in mg for all other opioids.</p>
+<p dir="ltr"><sup>2</sup>These dose conversions are estimated and cannot account for individual differences in genetics and pharmacokinetics.</p>
+<p dir="ltr"><sup>3</sup>Conversion of methadone and tapentadol is particularly complex.</p>
+<p dir="ltr"><sup>4</sup>Buprenorphine&nbsp;is listed but, as a partial opioid agonist,&nbsp;is not expected to be associated with overdose risk in the same dose-dependent manner as doses for full agonist opioids and&nbsp;is therefore omitted from the calculator.</p>
+<p dir="ltr"></p>
+<h2>FACTS & FIGURES</h2>
+<p dir="ltr">Interpretation:</p>
+<div dir="ltr">
+<table><colgroup><col width="77"><col width="114"><col width="167"><col width="95"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>MME range</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Comparative risk*</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Recommendation</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Annual overdose rate</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">1&nbsp;to &lt;20 MME/day</p>
+</td>
+<td>
+<p dir="ltr">Reference</p>
+</td>
+<td>
+<p dir="ltr">Acceptable therapeutic range for acute pain and opioid-na&iuml;ve patients</p>
+</td>
+<td>
+<p dir="ltr">0.2%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">20 to &lt;50 MME/day</p>
+</td>
+<td>
+<p dir="ltr">2x higher risk of overdose</p>
+</td>
+<td>
+<p>There is no completely safe opioid dose; use caution when prescribing opioids at any dose and always prescribe the lowest effective dose</p>
+</td>
+<td>
+<p dir="ltr">Data not available</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">50 to &lt;100 MME/day</p>
+</td>
+<td>
+<p dir="ltr">3.7x higher risk of overdose</p>
+</td>
+<td>
+<p dir="ltr">Strongly consider non-opioid analgesics and decreasing daily opioid dose</p>
+</td>
+<td>
+<p dir="ltr">0.7%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&ge;100 MME/day</p>
+</td>
+<td>
+<p dir="ltr">8.9x higher risk of overdose</p>
+</td>
+<td>
+<p dir="ltr">Consult pain specialist to reassess pain regimen and decrease dosage and/or wean off opioids</p>
+</td>
+<td>
+<p dir="ltr">1.8%</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>*Compared&nbsp;to&nbsp;&lt;20 MME/day.</p>
+<p>From <a href="https://europepmc.org/articles/pmc3000551" target="_blank" rel="noopener">Dunn et al 2010</a>.</p>
+</div>
+<h2>EVIDENCE APPRAISAL</h2>
+<p dir="ltr">The <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6101a3.htm" target="_blank" rel="noopener">CDC review</a> of opioid prescribing and overdose found that:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">80% of patients on prescription opioids were prescribed low doses (&lt;100 mg MEDD) by a single provider&mdash;these patients account for 20% of all prescription opioid overdoses.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">10% were prescribed high doses (&ge;100 mg MEDD) by a single prescriber&mdash;these patients account for 40% of all prescription opioid overdoses.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">10% sought care from multiple doctors and were prescribed high daily doses&mdash;these patients account for an additional 40% of all prescription opioid overdoses.</p>
+</li>
+</ul>
+<p dir="ltr">Additionally,</p>
+<p dir="ltr"><span id="docs-internal-guid-72ada9a0-7fff-2052-6fa0-9c435d4b2eeb"></span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Patients receiving &gt;100mg daily MMEs are nine times more likely to overdose, and 12% of those overdoses result in death.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Patients receiving &ge;50 mg daily MME are twice as likely to overdose in comparison to patients taking &lt;20 mg daily MME.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Research experts, federal agencies (CDC, Bureau of Justice Assistance, Substance Abuse and Mental Health Services Administration), and states' prescription drug monitoring programs (PDMPs) use the amount of daily MME prescribed to better gauge abuse potential, overdose potential of opioids, and tapering and/or weaning off opioids.</p>
+</li>
+</ul>
+</html>
+</body>

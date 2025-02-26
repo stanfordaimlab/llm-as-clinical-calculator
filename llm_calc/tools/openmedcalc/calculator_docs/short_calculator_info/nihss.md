@@ -1,0 +1,1 @@
+# NIH Stroke Scale/Score (NIHSS)

@@ -1,0 +1,1 @@
+HAS-BLED Score for Major Bleeding Risk

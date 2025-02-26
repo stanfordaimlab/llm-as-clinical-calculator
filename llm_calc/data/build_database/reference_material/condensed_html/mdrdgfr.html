@@ -1,0 +1,36 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>MDRD GFR Equation</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Sex </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Female </li><li> Male </li> </ul> </td> </tr> 
+<tr> <td> <p> Age </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Creatinine </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Black race </p> <p> <i> Race may/may not provide better estimates of GFR; optional </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p dir="ltr">GFR = 175 &times; Serum Cr<sup>-1.154</sup>&times; age<sup>-0.203</sup> &times; 1.212 (if patient is black*) &times; 0.742 (if female)</p>
+<p dir="ltr">Use serum Cr in mg/dL for this formula.</p>
+<p dir="ltr">From <a href="https://pubmed.ncbi.nlm.nih.gov/16908915/" target="_blank" rel="noopener" data-stringify-link="https://pubmed.ncbi.nlm.nih.gov/16908915/" data-sk="tooltip_parent">Levey 2006</a>.</p>
+<p><span id="docs-internal-guid-b5935790-7fff-0870-f853-90677e5ed110">Note: the original MDRD study equation used a constant of 186, which the authors later revised to 175 to accommodate for standardization of creatinine assays over IDMS. The evidence doesn't seem to strongly suggest that the revised version is demonstrably better than the original (furthermore, the same authors of MDRD also developed the newer <a href="https://www.mdcalc.com/ckd-epi-equations-glomerular-filtration-rate-gfr" target="_blank" rel="noopener">CKD-EPI equations</a>, which are more accurate at a broader range of estimated GFR than the MDRD equations). </span></p>
+<p>*Race may/may not provide better estimates of GFR; optional.&nbsp;<a href="https://www.mdcalc.com/race" target="_blank" rel="noopener" data-stringify-link="https://www.mdcalc.com/race" data-sk="tooltip_parent">See here</a>&nbsp;for more on our approach to addressing race and bias on MDCalc.</p>
+<h2>FACTS & FIGURES</h2>
+<div class="authorimage"><img style="max-width: 100%;" src="https://cdn-web-img.mdcalc.com/content/creatinine-clearance-table.png" class="alignnone size-full wp-image-1839" alt="creatinine clearance table"></div>
+<p>From: <a href="https://kdigo.org/wp-content/uploads/2017/02/KDIGO_2012_CKD_GL.pdf" target="_blank" rel="noopener">KDIGO 2012 Clinical Practice Guideline.</a></p>
+<h2>EVIDENCE APPRAISAL</h2>
+<p dir="ltr">Derived and validated in patients from the Modification of Diet in Renal Disease (MDRD) cohort by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2763564/" target="_blank" rel="noopener">Levey et al in 1999</a>. The derivation cohort included 1070 patients and the validation cohort 558 patients. The equation has since been validated more extensively in a variety of populations, though it remains useful primarily for patients with impaired kidney function (eGFR &lt; 60 ml/min/1.73m). The equation has not been validated in patients greater than 70 years old, though it is still applied in these patients. Additional modifications exist for use in certain populations, <a href="https://pubmed.ncbi.nlm.nih.gov/18037093/" target="_blank" rel="noopener">including East Asian populations</a>.</p>
+<p><span id="docs-internal-guid-faf22306-7fff-fe96-54c5-d9b3c5eb44a1"></span></p>
+<p dir="ltr">Debate has arisen regarding the use of the adjustment coefficient for black patients. The extent to which self-reported race may be considered a variable in physiologic calculations is currently being scrutinized, and several large health systems have now removed the race coefficient from eGFR calculations.</p>
+</html>
+</body>

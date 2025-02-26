@@ -1,0 +1,159 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Arterial Blood Gas (ABG) Analyzer</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> <p>pH</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>PₐCO₂</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>HCO₃-</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Sodium</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Chloride</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Albumin</p> </p> <p> <i> NOTE: Normal albumin levels are typically 4 g/dL in US units and 40 g/L in SI units. </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>If respiratory process present, chronicity</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Acute </li><li> Chronic </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>This tool, developed by <a href="https://profiles.stanford.edu/jonc101" target="_blank" rel="noopener">Jonathan Chen, MD</a> first determines the primary process by looking at the pH and the PCO2. It then calculates compensations to determine chronicity, compensatory, and co-existing acid-base disturbances.</p>
+<h2>FACTS & FIGURES</h2>
+<h3>Metabolic Acidosis (Anion Gap)</h3>
+<p>MUDPILES</p>
+<ul>
+<li>Methanol</li>
+<li>Uremia</li>
+<li>Diabetic Ketoacidosis (check serum ketones)</li>
+<li>Propylene Glycol (in BZD drips) or Paraldehydes</li>
+<li>Isoniazid</li>
+<li>Lactic Acidosis (check serum lactate)</li>
+<li>Ethylene Glycol (anti-freeze)</li>
+<li>Salycylates</li>
+</ul>
+<p>GOLDMARK</p>
+<ul>
+<li>Glycols (ethylene or propylene)</li>
+<li>Oxoporin (reflects fatty liver damage from glutathione consumption, e.g. acetaminophen toxicity)</li>
+<li>L-Lactate</li>
+<li>D-Lactate (bacterial form)</li>
+<li>Methanol</li>
+<li>Aspirin (salycylate)</li>
+<li>Renal Failure (BUN uremia)</li>
+<li>Ketoacidosis</li>
+</ul>
+<h3>Metabolic Acidosis (Non-Anion Gap)</h3>
+<p>GI Loss</p>
+<ul>
+<li>Diarrhea / Laxatives</li>
+<li>Fistula, (pancreatic, biliary)</li>
+<li>Uretero-intestinal diversion (ileal conduit)</li>
+</ul>
+<p>Renal Loss</p>
+<ul>
+<li>Renal Tubular Acidosis (Type 1 Distal or Type 2 Proximal)</li>
+<li>Renal Failure</li>
+<li>Hyper-kalemia</li>
+</ul>
+<p>Exogenous Acid</p>
+<ul>
+<li>HCl</li>
+<li>Amino Acids</li>
+</ul>
+<p>FUSED CARS</p>
+<ul>
+<li>Fistula (pancreatic, biliary)</li>
+<li>Uretero-gastric conduit</li>
+<li>Saline admin (dilutional acidosis)</li>
+<li>Endocrine (hyper-PTH)</li>
+<li>Diarrhea</li>
+<li>Carbonic anhydrase inhibitor (acetazolamide)</li>
+<li>Ammonium chloride</li>
+<li>Renal tubular acidosis</li>
+<li>Spironolactone</li>
+</ul>
+<h3>Metabolic Alkalosis</h3>
+<p>Alkaline Input</p>
+<ul>
+<li>Bicarbonate Infusion</li>
+<li>Hemodialysis</li>
+<li>Calcium Carbonate</li>
+<li>Parenteral Nutrition</li>
+</ul>
+<p>Proton Loss</p>
+<ul>
+<li>GI Loss (vomiting, NG suction)</li>
+<li>Renal loss</li>
+<li>Diuretics</li>
+<li>Mineralocorticoids</li>
+</ul>
+<h3>Respiratory Acidosis</h3>
+<p>Airway Obstruction</p>
+<ul>
+<li>Foreign body, aspiration</li>
+<li>OSA (obstructive sleep apnea)</li>
+<li>Laryngo- or broncho-spasm</li>
+</ul>
+<p>Neuromuscular</p>
+<ul>
+<li>Myasthenia gravis</li>
+<li>Hypokalemic periodic paralysis</li>
+<li>Guillain-Barre</li>
+<li>Botulism, Tetanus</li>
+<li>Hypo-kalemia, hypo-phosphatemia</li>
+<li>Cervical spine injury</li>
+<li>Morbid obesity</li>
+<li>Polio, MS, ALS</li>
+</ul>
+<p>Central</p>
+<ul>
+<li>Drugs (opiates, sedatives)</li>
+<li>Oxygen treatment in acute hypercapnia</li>
+<li>Brain trauma or stroke</li>
+</ul>
+<p>Pulmonary</p>
+<ul>
+<li>Pulmonary edema</li>
+<li>Asthma</li>
+<li>Pneumonia</li>
+<li>ARDS</li>
+<li>COPD</li>
+<li>Pulmonary Fibrosis</li>
+</ul>
+<p>Mechanical Ventilation</p>
+<h3>Respiratory Alkalosis</h3>
+<p>Hypoxia</p>
+<ul>
+<li>High altitude</li>
+<li>CHF</li>
+<li>Pulmonary Embolism</li>
+</ul>
+<p>Lung Disease</p>
+<ul>
+<li>Pulmonary fibrosis</li>
+<li>Pulmonary edema</li>
+<li>Pneumonia</li>
+</ul>
+<p>Drugs</p>
+<ul>
+<li>Progesterone</li>
+<li>Nicotine</li>
+</ul>
+<p>Stimulation of Respiratory Drive</p>
+<ul>
+<li>Psychogenic</li>
+<li>Neurologic (pontine tumor)</li>
+<li>Sepsis</li>
+<li>Pregnancy</li>
+<li>Mechanical ventilation</li>
+</ul>
+<h2>EVIDENCE APPRAISAL</h2>
+
+</html>
+</body>

@@ -1,0 +1,111 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>PECARN Pediatric Head Injury/Trauma Algorithm</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> <p>Age</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> <2 Years </li><li> ≥2 Years </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>GCS &le;14, palpable skull fracture or signs of AMS</p> </p> <p> <i> AMS: Agitation, somnolence, repetitive questioning, or slow response to verbal communication </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>GCS &le;14 or signs of basilar skull fracture or signs of AMS</p> </p> <p> <i> AMS: Agitation, somnolence, repetitive questioning, or slow response to verbal communication </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Occipital, parietal or temporal scalp hematoma; history of LOC &ge;5 sec; not acting normally per parent or severe mechanism of injury?</p> </p> <p> <i> Severe mechanism: MVC with patient ejection, death of another passenger, rollover; pedestrian or bicyclist w/o helmet struck by motorized vehicle; fall from >0.9m or 3ft; head struck by high-impact object </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>History of LOC or history of vomiting or severe headache or severe mechanism of injury</p> </p> <p> <i> Motor vehicle crash with patient ejection, death of another passenger, or rollover; pedestrian or bicyclist without helmet struck by a motorized vehicle; falls of more than 1.5m/5ft; head struck by a high-impact object </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>Prediction tree using a series of dichotomous Yes/No questions.</p>
+<p><span>Use A if &lt;2 years old and B if &ge;2 years old.</span></p>
+<p><img style="max-width: 100%;" src="https://cdn-web-img.mdcalc.com/pecarn-algorithm.png" alt=""></p>
+<p>Figure from <a href="https://www.ncbi.nlm.nih.gov/pubmed/19758692" target="_blank" rel="noopener">Kuppermann 2009</a>.&nbsp;</p>
+<h2>FACTS & FIGURES</h2>
+<p>Definition of <b>clinically-important traumatic brain injury (ciTBI) </b>(any of the following satisfy definition):</p>
+<ul>
+<li>Death from traumatic brain injury (TBI)</li>
+<li>Neurosurgical intervention for traumatic brain injury
+<ul>
+<li>Intracranial pressure monitoring</li>
+<li>Elevation of depressed skull fracture</li>
+<li>Ventriculostomy</li>
+<li>Hematoma evacuation</li>
+<li>Lobectomy</li>
+<li>Tissue debridement</li>
+<li>Dura repair</li>
+<li>Other</li>
+</ul>
+</li>
+<li>Intubation of more than 24 hours for TBI</li>
+<li>Hospital admission of 2 nights or more for the TBI in association with TBI on CT
+<ul>
+<li>Hospital admission for TBI defined by admission for persistent neurological symptoms or signs such as persistent alteration in mental status, recurrent emesis due to head injury, persistent severe headache or ongoing seizure management</li>
+</ul>
+</li>
+</ul>
+<p>Definition of <b>traumatic brain injury on CT</b> (any of the following satisfy definition):</p>
+<ul>
+<li>Intracranial hemorrhage or contusion</li>
+<li>Cerebral edema</li>
+<li>Traumatic infarction</li>
+<li>Diffuse axonal injury</li>
+<li>Shearing injury</li>
+<li>Sigmoid sinus thrombosis</li>
+<li>Midline shift of intracranial contents or signs of brain herniation</li>
+<li>Diastasis of the skull</li>
+<li>Pneumocephalus</li>
+<li>Skull fracture depressed by at least the width of the table of the skull</li>
+</ul>
+<h2>EVIDENCE APPRAISAL</h2>
+<ul>
+<li>The original PECARN trial included 42,412 children &lt;18 years old presenting to 1 of 25 North American PECARN-affiliated emergency departments with 33,785 in derivation cohort (8,502 &lt;2 years old) and 8,627 in the validation cohort (2,216 &lt;2 years old).</li>
+<li>CT scans were performed at the physician&rsquo;s discretion in 35.3% while medical records, telephone surveys, and county morgue records were used to assess for cases of missed ciTBI in those discharged without imaging.
+<ul>
+<li>Potential for CT reduction quoted above is likely underestimated given that CT utilization in this study (35.3%) was significantly lower than the estimated average in North American EDs (50%).</li>
+</ul>
+</li>
+<li>TBI, as defined in the &ldquo;More Info&rdquo; header occurred in 5.2% of patients.</li>
+<li>9% of patients were admitted to the hospital.</li>
+<li>ciTBI occurred in <b>0.9% </b>of the cohort, neurosurgery was performed in <b>0.1% </b>of the overall cohort, and zero patients died.</li>
+<li>In patients &lt;2 years of age that were negative for any PECARN risk factor, the aid was <b>100%</b> sensitive (95% CI 86.3-100) with NPV of <b>100%</b> (95% CI 99.7-1000) for ruling out ciTBI in the validation cohort.</li>
+<li>In patient &gt;2 years of age that were negative for any PECARN risk factor, the aid was&nbsp;<b>96.8%</b> sensitive (95% CI 89.0-99.6) with NPV of <b>99.95% </b>(95% CI 99.8-99.99) for ruling out ciTBI in the validation cohort External validation studies have demonstrated sensitivity of 100% for ciTBI and any injury requiring neurosurgery.
+<ul>
+<li>The algorithm has reasonable specificity (53%-60%) considering its extremely high sensitivity.
+<ul>
+<li>60 (15.9%) of 376 patients with ciTBI underwent neurosurgery, 8 (2.1%) with ciTBI were intubated &gt;24 Hours, and 0 patients died.</li>
+<li>As a result of the infrequency of ciTBI, the lower bounds of the confidence intervals of sensitivity started at 86 and 89%, respectively, for the &lt;2 and &gt;2 years of age cohorts.</li>
+<li>The NPV confidence intervals were very tightly approximating 100%.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>PECARN has now been externally validated in 2 separate studies.
+<ul>
+<li>One trial of 2439 children in 2 North American and Italian centers found PECARN to be <b>100%</b> sensitive for ruling out ciTBI in both age cohorts.</li>
+<li>The rates of ciTBI at 0.8% (19/2439) and those requiring neurosurgery 0.08% (2/2439) were similar to the PECARN trial.</li>
+<li>A second trial at a single US emergency department of 1009 patients under 18 years of age prospectively compared PECARN to two other pediatric head CT decision aids (CHALICE and CATCH) as well as to physician estimate and physician practice.</li>
+<li>2% (21/1009) had ciTBI and neurosurgery was needed in 0.4% (4/1009) of this sample.</li>
+<li>Again PECARN was found to be <b>100%</b> sensitive for identifying ciTBI.</li>
+<li>PECARN outperformed both the CHALICE and CATCH decision aids (91% and 84% sensitive for ciTBI, respectively).</li>
+</ul>
+</li>
+<li>Although the goal was to Rule-Out those with very low risk of ciTBI, the prediction rule also performed well to Rule-Out TBI on Head CT.</li>
+<li>In those &lt;2 years old, sensitivity and NPV were 100% for TBI on CT with narrow confidence intervals.</li>
+<li>In those &gt;2 years old, sensitivity was 98.4% and NPV 94% for TBI on CT with relatively narrow confidence intervals.</li>
+<li>2 recent PECARN subgroup analyses attempted to further risk-stratify patients with single predictors (e.g., Isolated scalp hematoma in patients &lt;2years old).
+<ul>
+<li>ciTBI was too uncommon to apply age, hematoma size, or hematoma location predictors.</li>
+<li>There were several non-statistically significant trends for higher rates or TBI on Head CT that may affect imaging tendencies (e.g., &lt;3 months of age, Non-frontal hematoma + Large size).</li>
+</ul>
+</li>
+<li>Another sub-analysis of those with isolated vomiting (i.g., no other PECARN predictors) reiterated the parent study results.</li>
+<li>In the &gt;2 year old cohort, there was a low rate of TBI on Head CT (3.2%, 26/806) and an even lower rate of ciTBI (0.7%, 10/1,501) so observation rather than emergent imaging is indicated in the majority of these patients.</li>
+<li>Number of vomiting episodes and timing of episodes was not helpful in predicting ciTBI or TBI on Head CT, as there was a non-statistically significant counterintuitive trend towards less ciTBI/TBI on CT with more episodes.</li>
+</ul>
+</html>
+</body>

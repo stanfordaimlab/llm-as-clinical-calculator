@@ -1,0 +1,735 @@
+openapi: 3.1.0
+info:
+  title: OpenMedCalc API
+  summary: The open source medical calculator
+  description: OpenMedCalc API helps you calculate medical scores and indices.
+  termsOfService: http://openmedcalc.org/about
+  contact:
+    name: OpenMedCalc
+    url: http://openmedcalc.org/contact
+    email: info@openmedcalc.org
+  version: 0.1.0
+servers:
+  - url: https://api.openmedcalc.org/
+    description: primary SSL endpoint
+paths:
+  /:
+    get:
+      summary: Welcome
+      operationId: welcome__get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+  /meld:
+    post:
+      summary: Calculate Original MELD Score
+      description: >-
+        Calculate the traditional MELD score for an individual. This is the
+        original, pre-2016, model for end-stage liver disease. Note this version
+        has been suppplanted by the MELD-Na score and the meld 3.0 score. See
+        https://openmedcalc.org/meld for references.
+      operationId: calculate_meld_meld_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalcRequestMeld'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalcResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /meld-na:
+    post:
+      summary: Calculate MELD-Na Score
+      description: >-
+        Calculate the MELD-Na (also known as MELD-Sodium) score for an
+        individual. This is the modified model for end-stage liver disease. See
+        https://openmedcalc.org/meld-na for references.
+      operationId: calculate_meld_na_meld_na_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalcRequestMeldNa'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalcResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /caprini-vte:
+    post:
+      summary: Calculate the Caprini Score for Venous Thromboembolism
+      description: >-
+        The Caprini Risk Assessment Model is a tool used to assess an
+        individual's risk of Venous Thromboembolism (VTE). See
+        https://openmedcalc.org/caprini-vte for more information.
+      operationId: calculate_caprini_caprini_vte_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalcRequestCapriniVte'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalcResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /wells-dvt:
+    post:
+      summary: Calculate Wells Criteria for DVT
+      description: >-
+        Wells' Criteria for deep vein thrombosis (DVT) is a tool to estimate the
+        probability of the presence of DVT. For more information, see
+        https://openmedcalc.org/wells-dvt
+      operationId: calculate_wells_dvt_wells_dvt_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalcRequestWellsDvt'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalcResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /psi-port:
+    post:
+      summary: Calculate the PSI/PORT Score Pneumonia Severity Index for CAP
+      description: >-
+        The PSI/PORT score: Pneumonia severity index estimates the mortality for
+        adult patients and their risk of acquring pneumonia. See
+        https://openmedcalc.org/psi-port for more information.
+      operationId: calculate_psi_port_psi_port_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalcRequestPsiPort'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalcResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+components:
+  schemas:
+    CalcRequestCapriniVte:
+      properties:
+        age:
+          type: integer
+          exclusiveMaximum: 120
+          exclusiveMinimum: 18
+          title: Age
+          description: Age in years
+          default: 55
+        sex:
+          allOf:
+            - $ref: '#/components/schemas/Sex'
+          title: Sex
+          description: Recognized sex of the patient, M or F
+          default: M
+        type_of_surgery:
+          allOf:
+            - $ref: '#/components/schemas/SurgeryType'
+          title: Type of surgery
+          description: >-
+            Minor surgery does not refer to type of surgery but rather length of
+            anesthesia <45 minutes. Major surgery refers to procedures with
+            general or regional anesthesia time exceeding 45 minutes. Majorlower
+            extremity surgery refers to procedures anesthesia time exceeding 45
+            minutes and involving the hip, knee, thigh, or ankle. The only
+            accepted inputs are: 'not scheduled for surgery', 'minor surgery',
+            'major lower extremity surgery', or 'major surgery (not lower
+            extremity)'.
+          default: not scheduled for surgery
+        recent_major_surgery:
+          type: boolean
+          title: Recent major surgery
+          description: >-
+            In last 30 days, has patient had major surgery, defined as
+            anesthesia time >45 minutes?
+          default: false
+          points: 1
+        recent_chf:
+          type: boolean
+          title: Recent congestive heart failure
+          description: In last 30 days, has patient had heart failure?
+          default: false
+          points: 1
+        recent_sepsis:
+          type: boolean
+          title: Recent sepsis
+          description: >-
+            In last 30 days, has patient had sepsis, been hospitalized for an
+            infection, or required IV antibiotics. Do not count pneumonia under
+            this category?
+          default: false
+          points: 1
+        recent_pna:
+          type: boolean
+          title: Recent pneumonia
+          description: >-
+            In last 30 days, has patient had pneumonia or recieved IV
+            antibiotics for a lung infection?
+          default: false
+          points: 1
+        recent_preg:
+          type: boolean
+          title: Recent pregnancy or postpartum
+          description: In last 30 days, has patient been pregnant or postpartum?
+          default: false
+          points: 1
+        recent_cast:
+          type: boolean
+          title: Recent immobilizing plaster cast
+          description: In last 30 days, has patient had an immobilizing plaster cast?
+          default: false
+          points: 2
+        recent_fracture:
+          type: boolean
+          title: Recent hip, pelvis, or leg fracture
+          description: In last 30 days, has patient had a hip, pelvis, or leg fracture?
+          default: false
+          points: 5
+        recent_stroke:
+          type: boolean
+          title: Recent stroke
+          description: In last 30 days, has patient had stroke?
+          default: false
+          points: 5
+        recent_trauma:
+          type: boolean
+          title: Recent multiple trauma
+          description: In last 30 days, has patient had multiple trauma?
+          default: false
+          points: 5
+        recent_spinal_cord_injury:
+          type: boolean
+          title: Recent acute spinal cord injury causing paralysis
+          description: >-
+            In last 30 days, has patient had a acute spinal cord injury causing
+            paralysis?
+          default: false
+          points: 5
+        varicose_veins:
+          type: boolean
+          title: Varicose veins
+          description: Does the patient have varicose veins?
+          default: false
+          points: 1
+        current_swollen_legs:
+          type: boolean
+          title: Current swollen legs
+          description: Does the patient have a current swollen legs?
+          default: false
+          points: 1
+        current_central_venous_access:
+          type: boolean
+          title: Current central venous access
+          description: Does the patient have a current central venous access?
+          default: false
+          points: 2
+        history_of_dvt_pe:
+          type: boolean
+          title: History of DVT/PE
+          description: Does the patient have a history of DVT/PE?
+          default: false
+          points: 3
+        family_history_of_thrombosis:
+          type: boolean
+          title: Family history of thrombosis
+          description: Does the patient have a family history of thrombosis?
+          default: false
+          points: 3
+        positive_factor_v_leiden:
+          type: boolean
+          title: Positive Factor V Leiden
+          description: Does the patient have a positive Factor V Leiden?
+          default: false
+          points: 3
+        positive_prothrombin_20210a:
+          type: boolean
+          title: Positive prothrombin 20210A
+          description: Does the patient have a positive prothrombin 20210A?
+          default: false
+          points: 3
+        elevated_serum_homocysteine:
+          type: boolean
+          title: Elevated serum homocysteine
+          description: Does the patient have a elevated serum homocysteine?
+          default: false
+          points: 3
+        positive_lupus_anticoagulant:
+          type: boolean
+          title: Positive lupus anticoagulant
+          description: Does the patient have a positive lupus anticoagulant?
+          default: false
+          points: 3
+        elevated_anticardiolipin_antibody:
+          type: boolean
+          title: Elevated anticardiolipin antibody
+          description: Does the patient have a elevated anticardiolipin antibody?
+          default: false
+          points: 3
+        heparin_induced_thrombocytopenia:
+          type: boolean
+          title: Heparin-induced thrombocytopenia
+          description: Does the patient have heparin-induced thrombocytopenia?
+          default: false
+          points: 3
+        other_congenital_or_acquired_thrombophilia:
+          type: boolean
+          title: Other congenital or acquired thrombophilia
+          description: >-
+            Does the patient have any other congenital or acquired
+            thrombophilia?
+          default: false
+          points: 3
+        mobility:
+          allOf:
+            - $ref: '#/components/schemas/Mobility'
+          title: Mobility
+          description: >-
+            There are three categories of mobility: 'normal/ambulatory',
+            'bedrest or only walking in room', or 'confined to bed >72 hours'.
+          default: normal/ambulatory
+        history_of_inflammatory_bowel_disease:
+          type: boolean
+          title: History of inflammatory bowel disease
+          description: Does the patient have a history of inflammatory bowel disease?
+          default: false
+          points: 1
+        bmi:
+          type: integer
+          title: BMI
+          description: Body mass index (BMI) of patient in kg/m2?
+          default: 22
+        acute_mi:
+          type: boolean
+          title: Acute MI
+          description: Does the patient have an acute MI?
+          default: false
+          points: 1
+        copd:
+          type: boolean
+          title: COPD
+          description: Does the patient have COPD?
+          default: false
+          points: 1
+        present_or_previous_malignancy:
+          type: boolean
+          title: Present or previous malignancy
+          description: Does the patient have a present or previous malignancy?
+          default: false
+          points: 1
+        other_risk_factors:
+          type: boolean
+          title: Other risk factors
+          description: Does the patient have any other risk factors for VTE?
+          default: false
+          points: 1
+      type: object
+      title: CalcRequestCapriniVte
+    CalcRequestMeld:
+      properties:
+        is_on_dialysis:
+          type: boolean
+          title: Is the patient on dialysis?
+          description: >-
+            Dialysis at least twice in the past seven days or 24-hours of
+            continuous hemodialysis within the prior 7 days.
+          default: false
+        creatinine:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: Serum creatinine
+          description: >-
+            This is the patient's serum creatinine in mg/dL and should be
+            between 0 and 10
+          default: 1
+        bilirubin:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: Serum bilirubin
+          description: >-
+            This is the patient's total bilirubin value in mg/dL and should be
+            between 0 and 10
+          default: 1
+        inr:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: International Normalized Ratio
+          description: This is the patient's INR value and should be between 0 and 10
+          default: 1
+      type: object
+      title: CalcRequestMeld
+    CalcRequestMeldNa:
+      properties:
+        is_on_dialysis:
+          type: boolean
+          title: Is the patient on dialysis?
+          description: >-
+            Dialysis at least twice in the past seven days or 24-hours of
+            continuous hemodialysis within the prior 7 days.
+          default: false
+        creatinine:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: Serum creatinine
+          description: >-
+            This is the patient's serum creatinine in mg/dL and should be
+            between 0 and 10
+          default: 1
+        bilirubin:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: Serum bilirubin
+          description: >-
+            This is the patient's total bilirubin value in mg/dL and should be
+            between 0 and 10
+          default: 1
+        inr:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: International Normalized Ratio
+          description: This is the patient's INR value and should be between 0 and 10
+          default: 1
+        sodium:
+          type: number
+          exclusiveMaximum: 160
+          exclusiveMinimum: 110
+          title: Serum sodium
+          description: >-
+            Also known as 'Na.' This is the patient's serum sodium in mg/dL and
+            should be in a range between 110 and 160
+          default: 137
+      type: object
+      title: CalcRequestMeldNa
+    CalcRequestPsiPort:
+      properties:
+        age:
+          type: integer
+          exclusiveMaximum: 120
+          exclusiveMinimum: 18
+          title: Age
+          description: Age in years
+          default: 55
+        sex:
+          allOf:
+            - $ref: '#/components/schemas/Sex'
+          title: Sex
+          description: Recognized sex of the patient, M or F
+          default: M
+        nursing_home_resident:
+          type: boolean
+          title: Nursing home resident
+          description: Is the patient a nursing home resident?
+          default: false
+        neoplastic_disease:
+          type: boolean
+          title: Neoplastic disease
+          description: Does the patient have neoplastic disease?
+          default: false
+        liver_disease:
+          type: boolean
+          title: Liver disease
+          description: Does the patient have liver disease?
+          default: false
+        congestive_heart_failure:
+          type: boolean
+          title: Congestive heart failure
+          description: Does the patient have congestive heart failure?
+          default: false
+        cerebrovascular_disease:
+          type: boolean
+          title: Cerebrovascular disease
+          description: Does the patient have cerebrovascular disease?
+          default: false
+        renal_disease:
+          type: boolean
+          title: Renal disease
+          description: Does the patient have renal disease?
+          default: false
+        altered_mental_status:
+          type: boolean
+          title: Altered mental status
+          description: Does the patient have altered mental status?
+          default: false
+        respiratory_rate:
+          type: integer
+          exclusiveMaximum: 100
+          exclusiveMinimum: 0
+          title: Respiratory rate
+          description: Respiratory rate in breaths per minute
+          default: 20
+        systolic_bp:
+          type: integer
+          exclusiveMaximum: 300
+          exclusiveMinimum: 0
+          title: Systolic blood pressure
+          description: Systolic blood pressure in mmHg
+          default: 90
+        temperature:
+          type: number
+          exclusiveMaximum: 50
+          exclusiveMinimum: 0
+          title: Temperature
+          description: Temperature in degrees Celsius
+          default: 37.8
+        pulse:
+          type: integer
+          exclusiveMaximum: 300
+          exclusiveMinimum: 0
+          title: Pulse
+          description: Pulse in beats per minute
+          default: 125
+        ph:
+          type: number
+          exclusiveMaximum: 10
+          exclusiveMinimum: 0
+          title: pH
+          description: pH
+          default: 7.35
+        bun:
+          type: integer
+          exclusiveMaximum: 100
+          exclusiveMinimum: 0
+          title: BUN
+          description: Blood urea nitrogen in mg/dL
+          default: 1
+        sodium_mmol_L:
+          type: integer
+          title: Serum sodium in mmol/L
+          description: >-
+            Also known as 'Na.' This is the patient's serum sodium in mmol/L and
+            should be in a range between 136 and 145 mmol/L
+          default: 136
+        glucose:
+          type: integer
+          exclusiveMaximum: 1000
+          exclusiveMinimum: 0
+          title: Glucose
+          description: Glucose in mg/dL
+          default: 250
+        hematocrit:
+          type: integer
+          exclusiveMaximum: 100
+          exclusiveMinimum: 0
+          title: Hematocrit
+          description: Hematocrit in %
+          default: 30
+        pao2:
+          type: integer
+          exclusiveMaximum: 1000
+          exclusiveMinimum: 0
+          title: PaO2
+          description: PaO2 in mmHg
+          default: 60
+        pleural_effusion:
+          type: integer
+          title: Pleural effusion
+          description: Does the patient have a pleural effusion?
+          default: false
+      type: object
+      title: CalcRequestPsiPort
+    CalcRequestWellsDvt:
+      properties:
+        active_cancer:
+          type: boolean
+          title: Active cancer
+          description: >-
+            Does the patient have active cancer (treatment or palliation within
+            6 months)?
+          default: false
+        bedridden_recently:
+          type: boolean
+          title: Bedridden recently
+          description: >-
+            Has the patient been bedridden recently (greater than 3 days) or had
+            major surgery within 12 weeks?
+          default: false
+        calf_swelling:
+          type: boolean
+          title: Calf swelling
+          description: >-
+            Does the patient have calf swelling greater than 3 cm compared to
+            the other leg? (measured 10 cm below tibial tuberosity)
+          default: false
+        collateral_veins:
+          type: boolean
+          title: Collateral veins
+          description: Does the patient have collateral (nonvaricose) superficial veins?
+          default: false
+        entire_leg_swollen:
+          type: boolean
+          title: Entire leg swollen
+          description: Does that patient have an entire leg which is swollen?
+          default: false
+        localized_tenderness:
+          type: boolean
+          title: Localized tenderness
+          description: >-
+            Does the patient have localized tenderness along a deep venous
+            system?
+          default: false
+        pitting_edema:
+          type: boolean
+          title: Pitting edema
+          description: Does the patient have pitting edema, confined to symptomatic leg?
+          default: false
+        paralysis_paresis_or_plaster:
+          type: boolean
+          title: Paralysis, paresis, or plaster immobilization
+          description: >-
+            Does the patient have paralysis, paresis, or recent plaster
+            immobilization of the lower extremity?
+          default: false
+        previous_dvt:
+          type: boolean
+          title: Previously documented DVT
+          description: Does the patient have previously-documented DVT?
+          default: false
+        alternative_diagnosis_as_likely:
+          type: boolean
+          title: Alternative diagnosis to DVT
+          description: >-
+            Does the patient have alternative diagnosis to DVT as likely or more
+            likely?
+          default: false
+      type: object
+      title: CalcRequestWellsDvt
+    CalcResponse:
+      properties:
+        success:
+          type: boolean
+          title: Success
+          description: Describes whether the calculation was successful or not.
+          default: false
+        score:
+          anyOf:
+            - type: integer
+            - type: 'null'
+          title: Score
+        message:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Result message
+          description: Summarizes the results of the calculation
+          default: message
+        additional_info:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Result information
+          description: Summarizes important information about the calculation
+          default: info
+      type: object
+      required:
+        - score
+      title: CalcResponse
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    Mobility:
+      type: string
+      enum:
+        - normal/ambulatory
+        - bedrest or only walking in room
+        - confined to bed >72 hours
+      title: Mobility
+    Sex:
+      type: string
+      enum:
+        - M
+        - F
+      title: Sex
+    SurgeryType:
+      type: string
+      enum:
+        - not scheduled for surgery
+        - minor surgery
+        - major surgery (not lower extremity)
+        - major lower extremity surgery
+      title: SurgeryType
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+              - type: string
+              - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+        - loc
+        - msg
+        - type
+      title: ValidationError

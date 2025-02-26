@@ -1,0 +1,371 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>CKD-EPI Equations for Glomerular Filtration Rate (GFR)</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> <p>Equation</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> 2021 CKD-EPI Creatinine </li><li> 2021 CKD-EPI Creatinine-Cystatin C </li><li> 2009 CKD-EPI Creatinine </li><li> 2012 CKD-EPI Cystatin C </li><li> 2012 CKD-EPI Creatinine–Cystatin C </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Sex</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Female </li><li> Male </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Age</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Serum creatinine</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Serum cystatin C</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Race</p> </p> <p> <i> Race may/may not provide better estimates of GFR; optional </i> </p> </td> <td> <b> Options: </b> <ul> <li> Black </li><li> Non-black </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p><strong>2021&nbsp; CKD-EPI Creatinine&nbsp;</strong>= 142 x (Scr/<em>A</em>)<em><sup>B</sup></em> x 0.9938<sup>age&nbsp;</sup>x (1.012 if female), where <em>A </em>and <em>B </em>are the following:</p>
+<table style="width: 58.932%; height: 380px;">
+<tbody>
+<tr style="height: 54px;">
+<td colspan="2" style="width: 50.1425%; height: 54px;">
+<p><strong>Female</strong></p>
+</td>
+<td colspan="2" style="width: 49.8575%; height: 54px;">
+<p><strong>Male</strong></p>
+</td>
+</tr>
+<tr style="height: 158px;">
+<td style="width: 22.2222%; height: 158px;">
+<p><strong>Scr &le;0.7</strong></p>
+</td>
+<td style="width: 27.9202%; height: 158px;">
+<p><em>A</em> = 0.7</p>
+<p><em>B </em>= -0.241</p>
+</td>
+<td style="width: 23.3618%; height: 158px;">
+<p><strong>Scr &le;0.9</strong></p>
+</td>
+<td style="width: 26.4957%; height: 158px;">
+<p><em>A</em>&nbsp;= 0.9</p>
+<p><em>B</em> = -0.302</p>
+</td>
+</tr>
+<tr style="height: 168px;">
+<td style="width: 22.2222%; height: 168px;">
+<p><strong>Scr &gt;0.7</strong></p>
+</td>
+<td style="width: 27.9202%; height: 168px;">
+<p>A = 0.7</p>
+<p>B = -1.2</p>
+</td>
+<td style="width: 23.3618%; height: 168px;">
+<p><strong>Scr &gt;0.9</strong></p>
+</td>
+<td style="width: 26.4957%; height: 168px;">
+<p><em></em></p>
+<p><em>A</em>&nbsp;= 0.9</p>
+<p><em>B</em>&nbsp;= -1.2</p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2021 CKD-EPI Creatinine-Cystatin C</strong><strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">&nbsp;</strong>= 135 x (Scr/<em>A</em>)<em><sup>B</sup></em> x (Scys/<em>C</em>)<em><sup>D</sup></em> x 0.9961<sup>age</sup> x (0.963 if female), where <em>A</em>, <em>B</em>, <em>C</em>, and <em>D</em> are the following:<strong></strong></p>
+<p>Female:</p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p><strong>Scr &le;0.7</strong></p>
+</td>
+<td>
+<p><strong>Scr &gt;0.7</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &le;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 0.7</p>
+<p><em>B</em> = -0.219</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.323</p>
+</td>
+<td>
+<p><em>A</em> = 0.7</p>
+<p><em>B</em> = -0.544</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.323</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &gt;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 0.7</p>
+<p><em>B</em> = -0.219</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.778</p>
+</td>
+<td>
+<p><em></em></p>
+<p><em>A</em> = 0.7</p>
+<p><em>B</em> = -0.544</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.778</p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Male:</p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p><strong>Scr &le;0.9</strong></p>
+</td>
+<td>
+<p><strong>Scr &gt;0.9</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &le;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 0.9</p>
+<p><em>B</em> = -0.144</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.323</p>
+</td>
+<td>
+<p><em>A</em> = 0.9</p>
+<p><em>B</em> = -0.544</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.323</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &gt;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 0.9</p>
+<p><em>B</em> = -0.144</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.778</p>
+</td>
+<td>
+<p><em></em></p>
+<p><em>A</em> = 0.9</p>
+<p><em>B</em> = -0.544</p>
+<p><em>C</em> = 0.8</p>
+<p><em>D</em> = -0.778</p>
+<p></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2009</strong>&nbsp;<strong>CKD-EPI Creatinine </strong>= <em>A</em> &times; (Scr/<em>B</em>)<sup><em>C</em></sup> &times; 0.993<sup>age</sup> &times; (1.159 if black*), where <em>A,</em> <em>B</em>, and <em>C</em> are the following:</p>
+<table>
+<tbody>
+<tr>
+<td colspan="2">
+<p><strong>Female</strong></p>
+</td>
+<td colspan="2">
+<p><strong>Male</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scr &le;0.7</strong></p>
+</td>
+<td>
+<p><em>A</em> = 144</p>
+<p><em>B</em> = 0.7</p>
+<p><em>C</em> = -0.329</p>
+</td>
+<td>
+<p><strong>Scr &le;0.9</strong></p>
+</td>
+<td>
+<p><em>A</em> = 141</p>
+<p><em>B</em> = 0.9</p>
+<p><em>C</em> = -0.411</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scr &gt;0.7</strong></p>
+</td>
+<td>
+<p><em>A</em> = 144</p>
+<p><em>B</em> = 0.7</p>
+<p><em>C</em> = -1.209</p>
+</td>
+<td>
+<p><strong>Scr &gt;0.9</strong></p>
+</td>
+<td>
+<p><em>A</em> = 141</p>
+<p><em>B</em> = 0.9</p>
+<p><em>C</em> = -1.209</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>2012 CKD-EPI Cystatin C </strong>= 133 &times; (Scys/0.8)<sup><em>A</em></sup> &times; 0.996<sup>age</sup> &times; <em>B,</em> where <em>A </em>and <em>B </em>are the following:</p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p><strong>Female</strong></p>
+</td>
+<td>
+<p><strong>Male</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &le;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = -0.499</p>
+<p><em>B</em> = 0.932</p>
+</td>
+<td>
+<p><em>A</em> = -0.499</p>
+<p><em>B</em> = 1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &gt;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = -1.328</p>
+<p><em>B</em> = 0.932</p>
+</td>
+<td>
+<p><em>A</em> = -1.328</p>
+<p><em>B</em> = 1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong>2012 CKD-EPI Creatinine-Cystatin C</strong>&nbsp;= <em>A</em> &times; (Scr/<em>B)</em><sup><em>C</em></sup> &times; (Scys/0.8)<sup><em>D</em></sup> &times; 0.995<sup>age</sup> &times; (1.08 if black*), where <em>A, B, C, </em>and <em>D</em> are the following:<strong><br></strong></p>
+<p><strong>Female:</strong></p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p><strong>Scr &le;0.7</strong></p>
+</td>
+<td>
+<p><strong>Scr &gt;0.7</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &le;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 130</p>
+<p><em>B</em> = 0.7</p>
+<p><em>C</em> = -0.248</p>
+<p><em>D</em> = -0.375</p>
+</td>
+<td>
+<p><em>A</em> = 130</p>
+<p><em>B</em> = 0.7</p>
+<p><em>C</em> = -0.601</p>
+<p><em>D</em> = -0.375</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &gt;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 130</p>
+<p><em>B</em> = 0.7</p>
+<p><em>C</em> = -0.248</p>
+<p><em>D</em> = -0.711</p>
+</td>
+<td>
+<p><em>A</em> = 130</p>
+<p><em>B</em> = 0.7</p>
+<p><em>C</em> = -0.601</p>
+<p><em>D</em> = -0.711</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Male:</strong></p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p><strong>Scr &le;0.9</strong></p>
+</td>
+<td>
+<p><strong>Scr &gt;0.9</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &le;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 135</p>
+<p><em>B</em> = 0.9</p>
+<p><em>C</em> = -0.207</p>
+<p><em>D</em> = -0.375</p>
+</td>
+<td>
+<p><em>A</em> = 135</p>
+<p><em>B</em> = 0.9</p>
+<p><em>C</em> = -0.601</p>
+<p><em>D</em> = -0.375</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><strong>Scys &gt;0.8</strong></p>
+</td>
+<td>
+<p><em>A</em> = 135</p>
+<p><em>B</em> = 0.9</p>
+<p><em>C</em> = -0.207</p>
+<p><em>D</em> = -0.711</p>
+</td>
+<td>
+<p><em>A</em> = 135</p>
+<p><em>B</em> = 0.9</p>
+<p><em>C</em> = -0.601</p>
+<p><em>D</em> = -0.711</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Scr, serum creatinine, mg/dL. Scys, serum cystatin C, mg/L.</p>
+<p>*Race may/may not provide better estimates of GFR; optional.&nbsp;<a target="_blank" data-stringify-link="https://www.mdcalc.com/race" delay="150" data-sk="tooltip_parent" href="https://www.mdcalc.com/race" rel="noopener noreferrer">See here</a>&nbsp;for more on our approach to addressing race and bias on MDCalc.</p>
+<h2>FACTS & FIGURES</h2>
+<div class="authorimage"><img style="max-width: 100%;" src="https://cdn-web-img.mdcalc.com/content/creatinine-clearance-table.png" class="alignnone size-full wp-image-1839" alt="creatinine clearance table"></div>
+<p>From&nbsp;<a href="https://kdigo.org/wp-content/uploads/2017/02/KDIGO_2012_CKD_GL.pdf" target="_blank" rel="noopener">KDIGO 2012 Clinical Practice Guideline</a>.</p>
+<h2>EVIDENCE APPRAISAL</h2>
+<p>The CKD-EPI (creatinine) was developed by <a href="https://www.ncbi.nlm.nih.gov/pubmed/19414839" target="_blank" rel="noopener">Levey et al in 2009</a>, who measured GFR of 8,254 participants using clearance of iothalamate (the most recent recommended gold standard). Linear regression was used to estimate the logarithm of measured GFR from standardized creatinine levels, sex, race, and age.</p>
+<p>The equation was validated by <a href="https://www.ncbi.nlm.nih.gov/pubmed/22762315" target="_blank" rel="noopener">Inker et al (2012)</a> and found to be more accurate than the <calculator id="76">MDRD Equation</calculator>&nbsp;(percentage of estimated GFR within 30% of measured GFR was 84.1% vs. 80.6%). The sensitivity and specificity of estimated GFR &lt;60 mL/min/1.73 m<sup>2</sup> were 91% and 87%, respectively, using the CKD-EPI equation and 95% and 82%, respectively, using the MDRD Equation.</p>
+<p>Debate has arisen regarding the use of the adjustment coefficient for black patients. Because of this, <a href="https://pubmed.ncbi.nlm.nih.gov/34554658/" target="_blank" rel="noopener">Inker et al (2021)</a> updated the CKD-EPI formulae to redevelop the equation so that the race component was removed from the equation.</p>
+</html>
+</body>
