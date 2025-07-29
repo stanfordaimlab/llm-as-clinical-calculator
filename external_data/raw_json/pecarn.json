@@ -1,0 +1,588 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Head Injury",
+                    "Injury/Trauma"
+                ],
+                "cmeEndDate": "2025-10-03 00:00:00+00+00",
+                "cmeLastReviewed": "2022-10-03 00:00:00+00+00",
+                "cmeReleaseDate": "2022-10-07 00:00:00+00+00",
+                "cmeVersion": "589.1",
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "<ul>\n<li>The original PECARN trial included 42,412 children &lt;18 years old presenting to 1 of 25 North American PECARN-affiliated emergency departments with 33,785 in derivation cohort (8,502 &lt;2 years old) and 8,627 in the validation cohort (2,216 &lt;2 years old).</li>\n<li>CT scans were performed at the physician&rsquo;s discretion in 35.3% while medical records, telephone surveys, and county morgue records were used to assess for cases of missed ciTBI in those discharged without imaging.\n<ul>\n<li>Potential for CT reduction quoted above is likely underestimated given that CT utilization in this study (35.3%) was significantly lower than the estimated average in North American EDs (50%).</li>\n</ul>\n</li>\n<li>TBI, as defined in the &ldquo;More Info&rdquo; header occurred in 5.2% of patients.</li>\n<li>9% of patients were admitted to the hospital.</li>\n<li>ciTBI occurred in <b>0.9% </b>of the cohort, neurosurgery was performed in <b>0.1% </b>of the overall cohort, and zero patients died.</li>\n<li>In patients &lt;2 years of age that were negative for any PECARN risk factor, the aid was <b>100%</b> sensitive (95% CI 86.3-100) with NPV of <b>100%</b> (95% CI 99.7-1000) for ruling out ciTBI in the validation cohort.</li>\n<li>In patient &gt;2 years of age that were negative for any PECARN risk factor, the aid was&nbsp;<b>96.8%</b> sensitive (95% CI 89.0-99.6) with NPV of <b>99.95% </b>(95% CI 99.8-99.99) for ruling out ciTBI in the validation cohort External validation studies have demonstrated sensitivity of 100% for ciTBI and any injury requiring neurosurgery.\n<ul>\n<li>The algorithm has reasonable specificity (53%-60%) considering its extremely high sensitivity.\n<ul>\n<li>60 (15.9%) of 376 patients with ciTBI underwent neurosurgery, 8 (2.1%) with ciTBI were intubated &gt;24 Hours, and 0 patients died.</li>\n<li>As a result of the infrequency of ciTBI, the lower bounds of the confidence intervals of sensitivity started at 86 and 89%, respectively, for the &lt;2 and &gt;2 years of age cohorts.</li>\n<li>The NPV confidence intervals were very tightly approximating 100%.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>PECARN has now been externally validated in 2 separate studies.\n<ul>\n<li>One trial of 2439 children in 2 North American and Italian centers found PECARN to be <b>100%</b> sensitive for ruling out ciTBI in both age cohorts.</li>\n<li>The rates of ciTBI at 0.8% (19/2439) and those requiring neurosurgery 0.08% (2/2439) were similar to the PECARN trial.</li>\n<li>A second trial at a single US emergency department of 1009 patients under 18 years of age prospectively compared PECARN to two other pediatric head CT decision aids (CHALICE and CATCH) as well as to physician estimate and physician practice.</li>\n<li>2% (21/1009) had ciTBI and neurosurgery was needed in 0.4% (4/1009) of this sample.</li>\n<li>Again PECARN was found to be <b>100%</b> sensitive for identifying ciTBI.</li>\n<li>PECARN outperformed both the CHALICE and CATCH decision aids (91% and 84% sensitive for ciTBI, respectively).</li>\n</ul>\n</li>\n<li>Although the goal was to Rule-Out those with very low risk of ciTBI, the prediction rule also performed well to Rule-Out TBI on Head CT.</li>\n<li>In those &lt;2 years old, sensitivity and NPV were 100% for TBI on CT with narrow confidence intervals.</li>\n<li>In those &gt;2 years old, sensitivity was 98.4% and NPV 94% for TBI on CT with relatively narrow confidence intervals.</li>\n<li>2 recent PECARN subgroup analyses attempted to further risk-stratify patients with single predictors (e.g., Isolated scalp hematoma in patients &lt;2years old).\n<ul>\n<li>ciTBI was too uncommon to apply age, hematoma size, or hematoma location predictors.</li>\n<li>There were several non-statistically significant trends for higher rates or TBI on Head CT that may affect imaging tendencies (e.g., &lt;3 months of age, Non-frontal hematoma + Large size).</li>\n</ul>\n</li>\n<li>Another sub-analysis of those with isolated vomiting (i.g., no other PECARN predictors) reiterated the parent study results.</li>\n<li>In the &gt;2 year old cohort, there was a low rate of TBI on Head CT (3.2%, 26/806) and an even lower rate of ciTBI (0.7%, 10/1,501) so observation rather than emergent imaging is indicated in the majority of these patients.</li>\n<li>Number of vomiting episodes and timing of episodes was not helpful in predicting ciTBI or TBI on Head CT, as there was a non-statistically significant counterintuitive trend towards less ciTBI/TBI on CT with more episodes.</li>\n</ul>",
+                        "formula_en": "<p>Prediction tree using a series of dichotomous Yes/No questions.</p>\n<p><span>Use A if &lt;2 years old and B if &ge;2 years old.</span></p>\n<p><img style=\"max-width: 100%;\" src=\"https://cdn-web-img.mdcalc.com/pecarn-algorithm.png\" alt=\"\"></p>\n<p>Figure from <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/19758692\" target=\"_blank\" rel=\"noopener\">Kuppermann 2009</a>.&nbsp;</p>",
+                        "more_info_en": "<p>Definition of <b>clinically-important traumatic brain injury (ciTBI) </b>(any of the following satisfy definition):</p>\n<ul>\n<li>Death from traumatic brain injury (TBI)</li>\n<li>Neurosurgical intervention for traumatic brain injury\n<ul>\n<li>Intracranial pressure monitoring</li>\n<li>Elevation of depressed skull fracture</li>\n<li>Ventriculostomy</li>\n<li>Hematoma evacuation</li>\n<li>Lobectomy</li>\n<li>Tissue debridement</li>\n<li>Dura repair</li>\n<li>Other</li>\n</ul>\n</li>\n<li>Intubation of more than 24 hours for TBI</li>\n<li>Hospital admission of 2 nights or more for the TBI in association with TBI on CT\n<ul>\n<li>Hospital admission for TBI defined by admission for persistent neurological symptoms or signs such as persistent alteration in mental status, recurrent emesis due to head injury, persistent severe headache or ongoing seizure management</li>\n</ul>\n</li>\n</ul>\n<p>Definition of <b>traumatic brain injury on CT</b> (any of the following satisfy definition):</p>\n<ul>\n<li>Intracranial hemorrhage or contusion</li>\n<li>Cerebral edema</li>\n<li>Traumatic infarction</li>\n<li>Diffuse axonal injury</li>\n<li>Shearing injury</li>\n<li>Sigmoid sinus thrombosis</li>\n<li>Midline shift of intracranial contents or signs of brain herniation</li>\n<li>Diastasis of the skull</li>\n<li>Pneumocephalus</li>\n<li>Skull fracture depressed by at least the width of the table of the skull</li>\n</ul>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [],
+                            "Manufacturer Website": [],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/19758692",
+                                    "text": "Kuppermann N, Holmes JF, Dayan PS, Hoyle JD Jr, Atabaki SM, Holubkov R, Nadel FM, Monroe D, Stanley RM, Borgialli DA, Badawy MK, Schunk JE, Quayle KS, Mahajan P, Lichenstein R, Lillis KA, Tunik MG, Jacobs ES, Callahan JM, Gorelick MH, Glass TF, Lee LK, Bachman MC, Cooper A, Powell EC, Gerardi MJ, Melville KA, Muizelaar JP, Wisner DH, Zuspan SJ, Dean JM, Wootton-Gorges SL; Pediatric Emergency Care Applied Research Network (PECARN). Identification of children at very low risk of clinically-important brain injuries after head trauma: a prospective cohort study. Lancet. 2009 Oct 3;374(9696):1160-70. doi: 10.1016/S0140-6736(09)61558-0. Epub 2009 Sep 14. Erratum in: Lancet. 2014 Jan 25;383(9914):308."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/24635987",
+                                    "text": "Easter JS, Bakes K, Dhaliwal J, Miller M, Caruso E, Haukoos JS. Comparison of PECARN, CATCH, and CHALICE rules for children with minor head injury: a prospective cohort study. Ann Emerg Med. 2014 Aug;64(2):145-52, 152.e1-5. doi: 10.1016/j.annemergmed.2014.01.030. Epub 2014 Mar 11."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/11159059",
+                                    "text": "Brenner D, Elliston C, Hall E, Berdon W. Estimated risks of radiation-induced fatal cancer from pediatric CT. AJR Am J Roentgenol. 2001 Feb;176(2):289-96."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/24559605",
+                                    "text": "Dayan PS, Holmes JF, et al. Association of Traumatic Brain Injuries with Vomiting Children with Blunt Head Trauma. Ann Emerg Med. 2014; 63(6): 657-65."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/24635991",
+                                    "text": "Dayan PS, Holmes JF, et al. Risk of Traumatic Brain Injuries in Children Younger than 24 Months with isolated Scalp Hematomas. Ann Emerg Med. 2014; 64(2): 153-62."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4081461/",
+                                    "text": "Hess EP, Wyatt KD, Kharbanda AB, et al. Effectiveness of the head CT choice decision aid in parents of children with minor head trauma: study protocol for a multicenter randomized trial. Trials. 2014;15:253."
+                                }
+                            ],
+                            "Outcomes": [],
+                            "Validation": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/24431418",
+                                    "text": "Schonfeld D, Bressan S, Da Dalt L, Henien MN, Winnett JA, Nigrovic LE. Pediatric Emergency Care Applied Research Network head injury clinical prediction rules are reliable in practice. Arch Dis Child. 2014 May;99(5):427-31. doi: 10.1136/archdischild-2013-305004. Epub 2014 Jan 15."
+                                },
+                                {
+                                    "href": "https://pubmed.ncbi.nlm.nih.gov/38609287/",
+                                    "text": "Holmes JF, Yen K, Ugalde IT, et al. PECARN prediction rules for CT imaging of children presenting to the emergency department with blunt abdominal or minor head trauma: a multicentre prospective validation study. The Lancet Child & Adolescent Health. 2024;8(5):339-347."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": [
+                            "Daniel Runde, MD",
+                            "Joshua Beiner, MD"
+                        ]
+                    },
+                    "creator": [
+                        {
+                            "approved": true,
+                            "name": "Dr. Nathan Kuppermann",
+                            "qa_en": ""
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<ul>\n<li>The PECARN consortium produced the largest study to date aiming to derive and validate clinical prediction rules to identify children with very low risk of Clinically Important TBI (ciTBI) following blunt head trauma who would not require imaging.</li>\n<li>ciTBI (see &ldquo;More Info&rdquo; section for outcome definitions) was chosen as the primary outcome because it is clinically-driven and accounts for the imperfect test characteristics of CT.</li>\n<li>In the less than 2 year old group, the rule was 100% sensitive.</li>\n<li>In the greater than 2 year old group, the rule had 96.8% sensitivity.</li>\n<li>In those under 2 with GCS = 14, AMS, or palpable skull fracture, risk was 4.4% and CT imaging is recommended.\n<ul>\n<li>Risk with any of the remaining predictors was 0.9%, and less than 0.02% with no predictors.</li>\n</ul>\n</li>\n<li>In those over 2 with GCS = 14, AMS, or signs of basilar skull fracture, risk was 4.3% and CT imaging is recommended.\n<ul>\n<li>Risk with any of the remaining 4 predictors was 0.9%, and less than 0.05% with no predictors.</li>\n</ul>\n</li>\n<li>PECARN prediction rule outperformed both the CHALICE and the CATCH clinical decision aids in external validation studies.</li>\n</ul>\n<p><strong>Points to keep in mind:</strong></p>\n<ul>\n<li>Although the largest trial of its kind, the PECARN study had low rates of TBI on Head CT (5.2%) and even lower rates of ciTBI (0.9%) &ndash; this suggests overall TBI in children is rare!</li>\n<li>Head CTs were obtained in approximately 35% of patients, lower than the average estimate of 50%!</li>\n</ul>",
+                        "use_case_en": "<p>The PECARN Pediatric Head Injury Prediction Rule is a well-validated clinical decision aid that allows physicians to safely rule out the presence of clinically important traumatic brain injuries, including those that would require neurosurgical intervention among pediatric head injury patients who meet its criteria without the need for CT imaging.</p>",
+                        "why_use_en": "<ul>\n<li>Unlike in the adult population, CT imaging of the head in pediatric patients is believed to be associated with an increased risk of lethal malignancy over the life of the patient, with the risk decreasing with age. The estimated risk of lethal malignancy from a head CT in a 1 year is 1 in 1000-1500 and decreases to 1 in 5000 in a patient who is 10 years old.</li>\n<li>There are over 600,000 emergency department visits annually in the US for head trauma among patients aged 18 years or younger.</li>\n<li>Applying the PECARN Pediatric Head Injury Prediction Rule would allow providers to determine which pediatric patients they can safely discharge without obtaining a head CT.</li>\n<ul></ul>\n</ul>"
+                    },
+                    "next_steps": {
+                        "advice_en": "<ul>\n<li>In patients with suspected or radiologically-confirmed TBI, first assess ABC&rsquo;s and consider neurosurgical/ICU consultation or local policies in regards to fluid management, seizure prophylaxis, hypertonic saline/mannitol, disposition, etc.</li>\n<li>Observation for 4-6 hours for those who are not imaged to assess for changes in clinical status.</li>\n<li>Reassurance, Education, and Strict Return Precautions for those discharged without imaging.</li>\n<li>Follow-up with primary care provider or neurologist and Return to Play/School anticipatory guidance if concussion is suspected.</li>\n</ul>",
+                        "critical_actions_en": "<ul>\n<li>ciTBI was a rare event (0.9%) and neurosurgical intervention was even more rare (0.1%).</li>\n<li>Over 50% of each age cohort did not meet any predictors, and CT imaging is not indicated for the vast majority of these patients as risk of ciTBI was exceedingly low.</li>\n<li>Risk of ciTBI was &gt;4% with either of the 2 higher-risk predictors in each age cohort, and imaging is recommended.</li>\n<li>For the remaining 4 lower-risk predictors in each cohort the risk of ciTBI is approximately 0.9% per predictor, and CT imaging versus observation is indicated.\n<ul>\n<li>Judgment may be based on clinical experience, single versus multiple findings, signs clinical deterioration during observation period, patient age, and parental preference.</li>\n</ul>\n</li>\n</ul>",
+                        "management_en": "<p><strong>PECARN Algorithm:</strong></p>\n<p>Use A if &lt;2 years old and B if &ge;2 years old.</p>\n<p><img style=\"max-width: 100%;\" src=\"https://cdn-web-img.mdcalc.com/pecarn-algorithm.png\" alt=\"\"></p>\n<div class=\"authorimage\">Figure from <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/19758692\" target=\"_blank\" rel=\"noopener\">Kuppermann 2009</a>.&nbsp;</div>"
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": [],
+                        "partner_contact": [
+                            {
+                                "CalculatorId": 589,
+                                "createdAt": "2019-07-02T20:19:38.121Z",
+                                "description": "Pediatric Emergency Medicine Practice",
+                                "id": 32,
+                                "link": "https://www.ebmedicine.net/topics.php?paction=showTopicSeg&topic_id=579&seg_id=9472#PECARN",
+                                "order": 0,
+                                "society": "EB Medicine",
+                                "text": "Calculated Decisions: PECARN",
+                                "updatedAt": "2019-09-26T21:14:38.657Z"
+                            }
+                        ],
+                        "sdm_tool": [
+                            {
+                                "CalculatorId": 589,
+                                "createdAt": "2019-07-02T20:19:38.123Z",
+                                "description": "Mayo Clinic",
+                                "id": 4,
+                                "link": "https://s3-us-west-2.amazonaws.com/creatorphotos.clacdm.com/diagrams/PECARN%20DA.pdf",
+                                "order": 0,
+                                "text": "Pediatric Head Injury Decision Aid",
+                                "updatedAt": "2019-09-26T21:14:38.681Z"
+                            }
+                        ],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Trauma"
+                ],
+                "dosing": false,
+                "equation_logic": "5e40cec7a3fb7ff5e459b3f5dac756a2",
+                "favorite_id": 589,
+                "full_title_en": "PECARN Pediatric Head Injury/Trauma Algorithm",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "<p>Age</p>",
+                        "md_calc_info_concept": null,
+                        "name": "age",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "<2 Years",
+                                "value": 0
+                            },
+                            {
+                                "label": "\u22652 Years",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "age == 0",
+                        "default": null,
+                        "label_en": "<p>GCS &le;14, palpable skull fracture or signs of AMS</p>",
+                        "md_calc_info_concept": null,
+                        "name": "gcs_palpable_fracture_ams",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "AMS: Agitation, somnolence, repetitive questioning, or slow response to verbal communication",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "age == 1",
+                        "default": null,
+                        "label_en": "<p>GCS &le;14 or signs of basilar skull fracture or signs of AMS</p>",
+                        "md_calc_info_concept": null,
+                        "name": "gcs_basilar_fracture_ams",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "AMS: Agitation, somnolence, repetitive questioning, or slow response to verbal communication",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "age == 0 && gcs_palpable_fracture_ams == 0",
+                        "default": null,
+                        "label_en": "<p>Occipital, parietal or temporal scalp hematoma; history of LOC &ge;5 sec; not acting normally per parent or severe mechanism of injury?</p>",
+                        "md_calc_info_concept": null,
+                        "name": "hematoma_loc_injury",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "Severe mechanism: MVC with patient ejection, death of another passenger, rollover; pedestrian or bicyclist w/o helmet struck by motorized vehicle; fall from >0.9m or 3ft; head struck by high-impact object",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "age == 1 && gcs_basilar_fracture_ams == 0",
+                        "default": null,
+                        "label_en": "<p>History of LOC or history of vomiting or severe headache or severe mechanism of injury</p>",
+                        "md_calc_info_concept": null,
+                        "name": "loc_vomiting_headache_injury",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "Motor vehicle crash with patient ejection, death of another passenger, or rollover; pedestrian or bicyclist without helmet struck by a motorized vehicle; falls of more than 1.5m/5ft; head struck by a high-impact object",
+                        "type": "toggle"
+                    }
+                ],
+                "instructions_en": "<p>Note: This only applies to children with <calculator id=\"64\">GCS</calculator> scores of 14 or greater.</p>",
+                "isVisibleInListView": true,
+                "is_manual": false,
+                "logic_language": "javascript",
+                "md5": "2e22635f46580c3c03f836d8ed3920c9",
+                "medium_description_en": "<p>Predicts need for brain imaging after pediatric head injury.</p>",
+                "publishedAt": "2022-04-21T20:29:44.329Z",
+                "purpose_en": [
+                    "Algorithm",
+                    "Rule Out"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "trauma",
+                    "kuppermann",
+                    "pediatric",
+                    "peds head injury",
+                    "peds trauma"
+                ],
+                "seo": {
+                    "keywords_en": "pecarn, pecarn calc, child head trauma, pediatric head injury calculator, pediatric CT prediction, prognosis head injury, pecarn predict, pecarn rule, rule out head trauma, TBI calc, traumatic brain injury calc, child head imaging, child head imaging rules, clear pediatric head injury, clear peds head injury, CT scan need peds, head CT scan need peds head CT scan rule peds, head CT scan, child head trauma rule, child head trauma calc, head trauma peds calc, head trauma peds score, head truama peds rule, pecarn child rule, pecarn head trauma rule, pecarn r/o, pecarn r/o peds, pecarn r/o pediatrics, pecarn algorithm, pecarn prognosis, pecarn CT, pecarn observation, kuppermann criteria, kuppermann calc, kupperman criteria, kuperman calc, kupermann score, kuppermann head trauma, kuppermann head injury, kuppermann algorithm",
+                    "meta_description_en": "The PECARN Pediatric Head Injury/Trauma Algorithm provides the PECARN algorithm for evaluating pediatric head injury."
+                },
+                "short_description_en": "<p>Clears peds head injury without imaging.</p>",
+                "short_title_en": "PECARN Pediatric Head Injury Rule",
+                "slug": "pecarn-pediatric-head-injury-trauma-algorithm",
+                "specialty_en": [
+                    "Emergency Medicine",
+                    "Family Practice",
+                    "Neurology",
+                    "Pediatrics",
+                    "Primary Care",
+                    "Surgery (General)",
+                    "Surgery (Trauma)"
+                ],
+                "system_en": [
+                    "Musculoskeletal",
+                    "Neurologic"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "aebbb91c-4904-4849-b61e-56a25e58f98d",
+                "search_id": "c-589",
+                "cme_status": "enabled"
+            },
+            "headConfig": {
+                "title": "PECARN Pediatric Head Injury/Trauma Algorithm",
+                "description": "The PECARN Pediatric Head Injury/Trauma Algorithm provides the PECARN algorithm for evaluating pediatric head injury.",
+                "canonicalUrl": "/calc/589/pecarn-pediatric-head-injury-trauma-algorithm",
+                "keywords": "pecarn, pecarn calc, child head trauma, pediatric head injury calculator, pediatric CT prediction, prognosis head injury, pecarn predict, pecarn rule, rule out head trauma, TBI calc, traumatic brain injury calc, child head imaging, child head imaging rules, clear pediatric head injury, clear peds head injury, CT scan need peds, head CT scan need peds head CT scan rule peds, head CT scan, child head trauma rule, child head trauma calc, head trauma peds calc, head trauma peds score, head truama peds rule, pecarn child rule, pecarn head trauma rule, pecarn r/o, pecarn r/o peds, pecarn r/o pediatrics, pecarn algorithm, pecarn prognosis, pecarn CT, pecarn observation, kuppermann criteria, kuppermann calc, kupperman criteria, kuperman calc, kupermann score, kuppermann head trauma, kuppermann head injury, kuppermann algorithm",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Nathan Kuppermann",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-nathan-kuppermann.jpg",
+                    "about_en": "<p>Nathan Kuppermann, MD, MPH, is a professor and chair of the department of emergency medicine at UC Davis Health and School of Medicine in Sacramento, CA. He chaired the first research network in pediatric emergency medicine (the Pediatric Emergency Medicine Collaborative Research Committee of the AAP) and was the founding chair of the Pediatric Emergency Care Applied Research Network (PECARN). Dr. Kuppermann is a leading national investigator for studies focusing on infectious emergencies in children including the laboratory evaluation of young febrile children, the evaluation of children at risk of diabetic ketoacidosis-related cerebral injury, and the laboratory and radiographic evaluation of the pediatric trauma patient. He has been the lead or senior investigator on several research studies developing and validating clinical prediction rules.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Kuppermann+N%5BAuthor%5D"
+                }
+            ],
+            "contributors": [
+                {
+                    "description": "<p>Daniel Runde, MD, is currently the assistant residency director and an assistant professor of emergency medicine at the University of Iowa Hospitals and Clinics. He received his medical degree at the University of Iowa Carver College of Medicine and completed residency in emergency medicine at St. Luke\u2019s-Roosevelt Hospital Center in New York. He recently finished his Medical Education Fellowship at the department of emergency medicine at Harbor-UCLA. Dr. Runde is interested in evidence-based medicine with a focus on patient-important clinical outcomes, CT utilization in the emergency department and education and evaluation in medical education. Currently, he is in the process of obtaining a Masters in Medical Education through the Office of Consultation and Research in Medical Education at the University of Iowa Hospitals and Clinics.</p>",
+                    "img": "daniel-runde.jpg",
+                    "name": "Daniel Runde, MD",
+                    "target": "daniel-runde",
+                    "firstName": "Daniel",
+                    "lastName": "Runde",
+                    "signedCOI": true,
+                    "contributors_page": true,
+                    "status": "Current",
+                    "hasDisclosure": []
+                },
+                {
+                    "description": "<p>Joshua Beiner, MD, is an attending physician and assistant professor of clinical emergency medicine and pediatrics at NYU. A native New Yorker, Dr. Beiner moved to New Orleans to study at Tulane University before traveling to Israel where he received his medical degree from Sackler School of Medicine at Tel Aviv University. He returned to New York to complete residency training in pediatrics at Albert Einstein \u2013 Jacobi Medical Center. His research interests include pediatric sepsis, clinical decision rules, evidence-based medicine, and emergency ultrasound.</p>",
+                    "img": "joshua-beiner.jpeg",
+                    "name": "Joshua Beiner, MD",
+                    "target": "joshua-beiner",
+                    "firstName": "Joshua",
+                    "lastName": "Beiner",
+                    "signedCOI": true,
+                    "contributors_page": true,
+                    "status": "Current",
+                    "hasDisclosure": []
+                }
+            ],
+            "relCalcs": [
+                {
+                    "calcId": 3954,
+                    "short_title_en": "CATCH Rule",
+                    "slug": "catch-canadian-assessment-tomography-childhood-head-injury-rule"
+                },
+                {
+                    "calcId": 3955,
+                    "short_title_en": "Palchak (UC Davis) Rule",
+                    "slug": "palchak-uc-davis-rule-pediatric-head-trauma"
+                },
+                {
+                    "calcId": 3953,
+                    "short_title_en": "CHALICE Rule",
+                    "slug": "chalice-childrens-head-injury-algorithm-prediction-important-clinical-events-rule"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": true,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "589",
+            "pecarn-pediatric-head-injury-trauma-algorithm"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

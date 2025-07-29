@@ -1,0 +1,628 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "<p>We&rsquo;ve updated and combined our MELD scores into one page. Clinicians can choose the formula that best fits their needs: the original MELD score; the current MELD-Na used by UNOS/OPTN, and the 2022 MELD 3.0 score. <a href=\"https://www.mdcalc.com/calc/10437/model-end-stage-liver-disease-meld?utm_source=site&amp;utm_medium=link&amp;utm_campaign=meld_12_and_older\" target=\"_blank\" rel=\"noopener\">Click here to view</a>.</p>",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Abdominal Pain"
+                ],
+                "cmeEndDate": "2025-10-03 00:00:00+00+00",
+                "cmeLastReviewed": "2022-10-03 00:00:00+00+00",
+                "cmeReleaseDate": "2022-10-07 00:00:00+00+00",
+                "cmeVersion": "78.1",
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "<p>MELD was <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/11172350\" target=\"_blank\" rel=\"noopener\">originally developed in 2001</a> by researchers at the Mayo Clinic to estimate survival of 231 patients undergoing elective transjugular intrahepatic portosystemic shunt (TIPS) placement and thus coined the &ldquo;Mayo End Stage Liver Disease (MELD)&rdquo; score.</p>\n<p>In addition to serum bilirubin, creatinine levels and INR, etiology of liver disease was included, but subsequently removed due to difficulty estimating risk in patients with multiple causes of liver disease. The name was also later changed to Model for End-stage Liver Disease.</p>\n<p>In 2002, the United Network for Organ Sharing (UNOS) began using a modified version of the MELD score to prioritize patients on their orthotopic liver transplantation waiting list. MELD was prospectively validated in 2003 by <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/12512033\" target=\"_blank\" rel=\"noopener\">Wiesner et al</a> in 3,437 patients awaiting transplant.</p>\n<p>Further studies demonstrated that MELD can be used to predict short term mortality risk in cirrhosis patients with complications such as variceal bleeding, spontaneous bacterial peritonitis, acute hepatic failure and alcoholic hepatitis. It can also be used in preoperative assessment of cirrhotics undergoing non-transplant surgery and in HCC patients who are not candidates for transplant.</p>\n<p>In 2006, the MELD Exception Study Group and Conference (MESSAGE) created the <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/17123284\" target=\"_blank\" rel=\"noopener\">MELD Exception Guidelines</a> for transplant list patients whose mortality was not accurately predicted by the standard MELD formula.</p>\n<p>In March 2007, <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/17326206\" target=\"_blank\" rel=\"noopener\">Kamath et al</a> reported that, though MELD has the ability to rank cirrhotic patients according to short term mortality, it is not a perfectly universal score, as survival is not accurately predicted in 15-20% of patients, and users must be aware of limitations of its application.</p>",
+                        "formula_en": "<p>Per <a href=\"https://optn.transplant.hrsa.gov/media/1575/policynotice_20151101.pdf\" target=\"_blank\" rel=\"noopener\">OPTN policy, January 2016 (pages 4&ndash;5)</a>:</p>\n<p>Candidates who are at least 12 years old receive an initial MELD(i) score equal to:</p>\n<p><strong>MELD(i) = 0.957 </strong><strong>&times;</strong><strong> ln(Cr) + 0.378 </strong><strong>&times;</strong><strong> ln(bilirubin) + 1.120 </strong><strong>&times;</strong><strong> ln(INR) + 0.643</strong></p>\n<p><span>Then, round to the tenth decimal place and multiply by 10.&nbsp;</span></p>\n<p>If MELD(i) &gt; 11, perform additional MELD calculation as follows:</p>\n<p><strong>MELD = MELD(i) + 1.32 </strong><strong>&times; </strong><strong>(137 &ndash; Na) &ndash; &nbsp;[ 0.033 </strong><strong>&times; </strong><strong>MELD(i) </strong><strong>&times; </strong><strong>(137 &ndash; Na) ]</strong></p>\n<p>Additional rules:</p>\n<ul>\n<li>All values in US units (Cr and bilirubin in mg/dL, Na in mEq/L, and INR unitless).</li>\n<li>If bilirubin, Cr, or INR is &lt;1.0, use 1.0.</li>\n<li>If any of the following is true, use Cr 4.0:\n<ul>\n<li>Cr &gt;4.0.</li>\n<li>&ge;2 dialysis treatments within the prior 7 days.</li>\n<li>24 hours of continuous veno-venous hemodialysis (CVVHD) within the prior 7 days.</li>\n</ul>\n</li>\n<li>If Na &lt;125 mmol/L, use 125. If Na &gt;137 mmol/L, use 137.</li>\n<li>Maximum MELD = 40.</li>\n</ul>",
+                        "more_info_en": "<p><strong>Interpretation:</strong></p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>MELD Score</strong></p>\n</td>\n<td>\n<p><strong>Mortality</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span>&le;9</span></p>\n</td>\n<td>\n<p><span>1.9%</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span>10&ndash;19</span></p>\n</td>\n<td>\n<p><span>6.0%</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span>20&ndash;29</span></p>\n</td>\n<td>\n<p><span>19.6%</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span>30&ndash;39</span></p>\n</td>\n<td>\n<p><span>52.6%</span></p>\n</td>\n</tr>\n<tr>\n<td>\n<p><span>&ge;40</span></p>\n</td>\n<td>\n<p><span>71.3%</span></p>\n</td>\n</tr>\n</tbody>\n</table>\n<p><span>More Info: <a href=\"https://optn.transplant.hrsa.gov/media/1575/policynotice_20151101.pdf\" target=\"_blank\" rel=\"noopener\">OPTN/UNOS Documentation on MELD and PELD</a>&nbsp;</span></p>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [
+                                {
+                                    "href": "",
+                                    "text": ""
+                                }
+                            ],
+                            "Manufacturer Website": [
+                                {
+                                    "href": "",
+                                    "text": ""
+                                }
+                            ],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/11172350",
+                                    "text": "Kamath PS, Wiesner RH, Malinchoc M, Kremers W, Therneau TM, Kosberg CL, D'Amico G, Dickson ER, Kim WR. A model to predict survival in patients with end-stage liver disease. Hepatology. 2001 Feb;33(2):464-70."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/14999695",
+                                    "text": "Kremers WK, van IJperen M, Kim WR, Freeman RB, Harper AM, Kamath PS, Wiesner RH. MELD score as a predictor of pretransplant and posttransplant survival in OPTN/UNOS status 1 patients. Hepatology. 2004 Mar;39(3):764-9."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/17326206",
+                                    "text": "Kamath PS, Kim WR; Advanced Liver Disease Study Group. The model for end-stage liver disease (MELD).Hepatology. 2007 Mar;45(3):797-805."
+                                },
+                                {
+                                    "href": "https://optn.transplant.hrsa.gov/news/meld-serum-sodium-policy-changes/",
+                                    "text": " OPTN 2016 MELD Policy Changes"
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/17123284",
+                                    "text": "Freeman RB Jr, Gish RG, Harper A, Davis GL, Vierling J, Lieblein L, Klintmalm G, Blazek J, Hunter R, Punch J. Model for end-stage liver disease (MELD) exception guidelines: results and recommendations from the MELD Exception Study Group and Conference (MESSAGE) for the approval of patients who need liver transplantation with diseases not considered by the standard MELD formula.Liver Transpl. 2006;12(12 Suppl 3):S128."
+                                }
+                            ],
+                            "Outcomes": [
+                                {
+                                    "href": "",
+                                    "text": ""
+                                }
+                            ],
+                            "Validation": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/12512033",
+                                    "text": "Wiesner R, United Network for Organ Sharing Liver Disease Severity Score Committee, et al. Model for end-stage liver disease (MELD) and allocation of donor livers.Gastroenterology. 2003 Jan;124(1):91-6."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": [
+                            "Pranav Patel, MD"
+                        ]
+                    },
+                    "creator": [
+                        {
+                            "approved": true,
+                            "name": "Dr. Patrick S. Kamath",
+                            "qa_en": "<p><strong>Why did you develop the MELD Score? Was there a particular clinical experience or patient encounter that inspired you to create this tool for clinicians?</strong></p>\n<p><span style=\"font-weight: 400;\">Following a trans-jugular intrahepatic portosystemic shunt (TIPS) procedure for complications of portal hypertension, some patients do well and others fare poorly. My colleague in statistics, Mike Malinchoc, and I studied laboratory variables prior to the procedure and identified INR, serum creatinine, serum bilirubin and etiology of cirrhosis being predictive of survival. We developed a score based on these variables and demonstrated it predicted survival in a wide variety of patients with cirrhosis not undergoing TIPS. The score was originally called the Mayo End-Stage Liver Disease (MELD) model and was shown to be superior to the Child-Turcotte-Pugh score. </span>&nbsp;</p>\n<p><span style=\"font-weight: 400;\">At about the time we published the score, the Institute of Medicine determined that organ allocation for liver transplantation should no longer be based on waiting time but on an objective score that reflected severity of liver disease. The MELD Score fulfilled their criteria and was accepted as the score to prioritize organ allocation for liver transplantation. We changed \"MELD\" to Model for End-Stage Liver Disease assuming that the score would be more readily accepted by the liver transplantation community if it was not identified with a single institution.</span></p>\n<p><strong>What pearls, pitfalls and/or tips do you have for users of the MELD Score? Are there cases when it has been applied, interpreted, or used inappropriately?</strong></p>\n<p><span style=\"font-weight: 400;\">The MELD Score has been validated as predictor of survival in patients with cirrhosis, alcoholic hepatitis, acute liver failure, and in patients with acute hepatitis. In terminally ill patients with cirrhosis, the number of extra-hepatic organ failures is more predictive of mortality than is the MELD Score.</span></p>\n<p><strong>Along those lines, MELD is sometimes applied to patients with </strong><strong><em>any</em></strong><strong> degree of liver dysfunction, not just potential transplant candidates, as a quick, reliable, and easily-understood way of communicating how sick a patient is. Any thoughts on those uses?</strong></p>\n<p><span style=\"font-weight: 400;\">Yes, MELD score is a metric for how sick a patient is. However, patients like to be given a number when we discuss risks. That&rsquo;s where the MELD calculators at Mayo help.</span></p>\n<p><strong>What recommendations do you have for doctors once they have applied the MELD Score? Are there any adjustments or updates you would make to the score given recent changes in medicine?</strong></p>\n<p><span style=\"font-weight: 400;\">Low serum sodium is an independent predictor of mortality in patients with cirrhosis. In 2008, my colleague Ray Kim published the </span><span style=\"font-weight: 400;\"><calculator id=\"1754\">MELD-Na Score</calculator></span><span style=\"font-weight: 400;\"> which includes serum Na; this score improves slightly the predictive accuracy of the MELD score in predicting mortality.</span></p>\n<p><strong>Are there cases where you would recommend using Dr. Kim&rsquo;s MELD-Na Score over the newer MELD Score that incorporates sodium (per the update to OPTN policy 1/2016)? </strong></p>\n<p><span style=\"font-weight: 400;\">Currently, only for liver transplant.</span></p>\n<p><strong>How do you use the MELD Score in your own clinical practice? Can you give an example of a scenario in which you use it?</strong></p>\n<p><span style=\"font-weight: 400;\">I use the MELD score to counsel patients and their families. I go over mortality risk, actual percentages rather than \"high\" or \"low\", that can be expected if they undergo a TIPS procedure or surgery. If they are on the liver transplant waiting list, I can give them some idea when they might receive an organ. If patients have alcoholic hepatitis, I use the MELD score to predict risk of mortality. If the MELD score is &gt;40 and patients with alcoholic hepatitis are not candidates for liver transplantation, I discuss palliative care.</span>&nbsp;</p>\n<p><strong>Any other research you're working on that you're particularly excited about?</strong></p>\n<p><span style=\"font-weight: 400;\">My colleague Vijay Shah leads a research group at Mayo of which I am a part. We are looking at newer treatments for alcoholic hepatitis.</span></p>"
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<ul>\n<li>The MELD Score predicts three-month survival in patients (age 12+) with liver cirrhosis.</li>\n</ul>\n<ul>\n<li>Scores range from 6 to 40, with higher scores correlating with increased severity of liver dysfunction and higher three-month mortality.</li>\n</ul>\n<ul>\n<li>The MELD was updated in January 2016 and now includes serum sodium level.</li>\n<li>It is preferable to using the calculator to calculate the MELD as there are several caveats relating to minimum and maximum values assigned in the MELD.</li>\n<li>Values should be no more than 48 hours old.</li>\n</ul>\n<ul>\n<li>MELD can be used on any patient with end stage liver disease irrespective of cirrhosis etiology.</li>\n<li>Currently, there is no modification in the score for patients on anticoagulation (given their INR may be elevated).</li>\n<li>Several conditions are &ldquo;standard MELD exceptions&rdquo; and receive a different score (see <a href=\"#next-steps\">Next Steps &gt; Critical Actions</a>): &nbsp;hepatocellular carcinoma, hepatopulmonary syndrome, portopulmonary hypertension, familial amyloid polyneuropathy, primary hyperoxaluria, cystic fibrosis, hilar cholangiocarcinoma and hepatic artery thrombosis.</li>\n<li>One of the exclusion criteria for the original data set was absence of acute reversible conditions such as spontaneous bacterial peritonitis or prerenal azotemia secondary to dehydration. Therefore, in principle, the score should only be applied after these reversible conditions have been treated, according to the authors (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/17326206\" target=\"_blank\" rel=\"noopener\">Kamath 2007</a>).</li>\n</ul>",
+                        "use_case_en": "<ul>\n<li>Primarily used to stratify patients &ge;12 years old on liver transplant waiting lists.</li>\n<li>Predicts mortality in the following scenarios: (a) after transjugular intrahepatic portosystemic shunt (TIPS), (b) cirrhotic patients undergoing non-transplantation surgical procedures, (c) acute alcoholic hepatitis, and (d) acute variceal hemorrhage.</li>\n</ul>",
+                        "why_use_en": "<ul>\n<li>In February 2002, MELD was accepted by the United Network for Organ Sharing (UNOS) for prioritization of patients awaiting for liver transplantation in the United States, replacing the <calculator id=\"340\">Child-Pugh Score</calculator>.</li>\n<li>It has been widely studied and validated.</li>\n</ul>"
+                    },
+                    "next_steps": {
+                        "advice_en": "<ul>\n<li>Consider referral to hepatologist or liver transplant center for patients with MELD Score &ge;10.</li>\n<li>MELD Score should be periodically re-assessed, as it changes with changing lab values.</li>\n<li>All cirrhosis patients should be periodically screened for hepatocellular carcinoma with serum alpha-fetoprotein (AFP) and by appropriate imaging to see if they can earn &ldquo;standard MELD exceptions&rdquo;.</li>\n</ul>",
+                        "critical_actions_en": "<p><strong>Standard MELD Exceptions</strong></p>\n<p>The following conditions are automatically assigned a MELD Score of 22 (28 in case of hyperoxaluria), with a 10% increase in score every 3 months from diagnosis.</p>\n<ul>\n<li>Hepatocellular carcinoma (HCC) with one lesion between 2 - 5 cm or two to three lesions &lt;3 cm (Milan criteria), provided no vascular invasion or extrahepatic disease.</li>\n<li>Hepatopulmonary syndrome with PaO<sub>2</sub> &lt;60 mmHg on room air.</li>\n<li>Portopulmonary hypertension, with mean pulmonary artery pressure (mPAP) &gt;25 mmHg at rest but maintained &lt;35 mmHg with treatment.</li>\n<li>Hepatic artery thrombosis 7&ndash;14 days post-liver transplantation.</li>\n<li>Familial amyloid polyneuropathy, as diagnosed by identification of the transthyretin (TTR) gene mutation by DNA analysis or mass spectrometry in a biopsy sample and confirmation of amyloid deposition in an involved organ.</li>\n<li>Primary hyperoxaluria with evidence of alanine glyoxylate aminotransferase deficiency (these patients requires combined liver-kidney transplantation).</li>\n<li>Cystic fibrosis with FEV1 (forced expiratory volume in 1 second) &lt;40%.</li>\n<li>Hilar cholangiocarcinoma.</li>\n</ul>",
+                        "management_en": ""
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": {
+                            "clinical": 4.5,
+                            "evidence": 4.3,
+                            "popularity": 5
+                        },
+                        "partner_contact": [],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Cirrhosis",
+                    "Hepatitis"
+                ],
+                "dosing": false,
+                "equation_logic": "9d39ff3e54dc905af5272a6ae2643c35",
+                "favorite_id": 78,
+                "full_title_en": "MELD Na (UNOS/OPTN)",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "Dialysis at least twice in the past week",
+                        "md_calc_info_concept": null,
+                        "name": "dialysis",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "Or <abbr title='Continuous veno-venous hemodialysis'>CVVHD</abbr> for \u226524 hours in the past week",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Creatinine",
+                        "name": "creatinine",
+                        "optional": false,
+                        "tips_en": "Cr >4.0 mg/dL is automatically assigned a value of 4.0",
+                        "type": "textbox",
+                        "unit": "cr"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Bilirubin",
+                        "name": "bilirubin",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "bili"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "INR",
+                        "name": "inr",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "inr"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Sodium",
+                        "name": "na",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "na"
+                    }
+                ],
+                "instructions_en": "<p>Use in patients &ge;12 years old. Note: As of January 2016, calculation of the MELD has changed. It now includes serum sodium level. See <a href=\"https://optn.transplant.hrsa.gov/media/1575/policynotice_20151101.pdf\" target=\"_blank\" rel=\"noopener\">OPTN's announcement</a>.</p>",
+                "isVisibleInListView": true,
+                "is_manual": false,
+                "logic_language": "javascript",
+                "md5": "f3c19613e490a17c38888cc2fed9d768",
+                "medium_description_en": "<p>Quantifies end-stage liver disease for transplant planning with sodium.</p>",
+                "publishedAt": "2022-04-21T20:29:46.465Z",
+                "purpose_en": [
+                    "Prognosis",
+                    "Treatment"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "cirrhosis",
+                    "esrd",
+                    "hepatitis",
+                    "liver failure",
+                    "esld",
+                    "jaundice",
+                    "transplant",
+                    "OLT",
+                    "MELD Na (UNOS/OPTN)",
+                    "MELD Na",
+                    "MELD score",
+                    "Model For End-Stage Liver Disease",
+                    "Model For End-Stage Liver",
+                    "meld score adult",
+                    "meld model",
+                    "meld calc",
+                    "meld score 12",
+                    "meld 12 and older"
+                ],
+                "seo": {
+                    "keywords_en": "MELD score, Model For End-Stage Liver Disease, Model For End-Stage Liver, Model For End-Stage, Model For End-Stage Liver Disease adult, Model For End-Stage Liver Disease 12 and up, meld score adult, meld model, meld calc, meld score 12, meld liver disease, meld prognosis, meld mortality, ESLD calc, ESLD score, ESLD model, ESLD prognosis, ESLD mortaltiy, ESLD criteria, MELD Na (UNOS/OPTN), meld 12 and older",
+                    "meta_description_en": "The MELD Na Score (UNOS/OPTN) quantifies end-stage liver disease for transplant planning with addition of sodium. "
+                },
+                "short_description_en": "<p>Liver transplant planning + Na.</p>",
+                "short_title_en": "MELD Na (UNOS/OPTN)",
+                "slug": "meld-score-model-end-stage-liver-disease-12-older",
+                "specialty_en": [
+                    "Critical Care",
+                    "Gastroenterology",
+                    "Hepatology",
+                    "Hospitalist Medicine",
+                    "Internal Medicine",
+                    "Nephrology",
+                    "Surgery (General)"
+                ],
+                "system_en": [
+                    "Gastrointestinal"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "764f8b05-bf70-4df7-a56a-1d12705238dd",
+                "search_id": "c-78",
+                "cme_status": "enabled"
+            },
+            "headConfig": {
+                "title": "MELD Na (UNOS/OPTN)",
+                "description": "The MELD Na Score (UNOS/OPTN) quantifies end-stage liver disease for transplant planning with addition of sodium. ",
+                "canonicalUrl": "/calc/78/meld-score-model-end-stage-liver-disease-12-older",
+                "keywords": "MELD score, Model For End-Stage Liver Disease, Model For End-Stage Liver, Model For End-Stage, Model For End-Stage Liver Disease adult, Model For End-Stage Liver Disease 12 and up, meld score adult, meld model, meld calc, meld score 12, meld liver disease, meld prognosis, meld mortality, ESLD calc, ESLD score, ESLD model, ESLD prognosis, ESLD mortaltiy, ESLD criteria, MELD Na (UNOS/OPTN), meld 12 and older",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [
+                {
+                    "name": "Creatinine",
+                    "unit": "cr",
+                    "error_min": "0.01",
+                    "error_max": "40",
+                    "warn_min": "0",
+                    "warn_max": "10",
+                    "conversion": "88.4",
+                    "normal_max_si": "115",
+                    "normal_max_us": "1.3",
+                    "normal_min_si": "62",
+                    "normal_min_us": "0.7",
+                    "units_si": "\u00b5mol/L",
+                    "units_us": "mg/dL",
+                    "error_max_us": "40",
+                    "error_min_us": "0.01",
+                    "error_max_si": 3536,
+                    "error_min_si": 0.8840000000000001,
+                    "warn_max_us": "10",
+                    "warn_min_us": "0",
+                    "warn_max_si": 884,
+                    "warn_min_si": 0
+                },
+                {
+                    "name": "Bilirubin",
+                    "unit": "bili",
+                    "error_min": "1E-8",
+                    "error_max": "50",
+                    "warn_min": "0",
+                    "warn_max": "20",
+                    "conversion": "17.104",
+                    "normal_max_si": "32.49",
+                    "normal_max_us": "1.9",
+                    "normal_min_si": "5.13",
+                    "normal_min_us": "0.3",
+                    "units_si": "\u00b5mol/L",
+                    "units_us": "mg/dL",
+                    "error_max_us": "50",
+                    "error_min_us": "1E-8",
+                    "error_max_si": 855.1999999999999,
+                    "error_min_si": 1.7104e-07,
+                    "warn_max_us": "20",
+                    "warn_min_us": "0",
+                    "warn_max_si": 342.08,
+                    "warn_min_si": 0
+                },
+                {
+                    "name": "Sodium",
+                    "unit": "na",
+                    "error_min": "100",
+                    "error_max": "200",
+                    "warn_min": "0",
+                    "warn_max": "170",
+                    "conversion": "1",
+                    "normal_max_si": "145",
+                    "normal_max_us": "145",
+                    "normal_min_si": "136",
+                    "normal_min_us": "136",
+                    "units_si": "mmol/L",
+                    "units_us": "mEq/L",
+                    "error_max_us": "200",
+                    "error_min_us": "100",
+                    "error_max_si": 200,
+                    "error_min_si": 100,
+                    "warn_max_us": "170",
+                    "warn_min_us": "0",
+                    "warn_max_si": 170,
+                    "warn_min_si": 0
+                },
+                {
+                    "name": "INR",
+                    "unit": "inr",
+                    "error_min": "0.1",
+                    "error_max": "20",
+                    "warn_min": "0.5",
+                    "warn_max": "10",
+                    "conversion": "1",
+                    "normal_max_si": "1.2",
+                    "normal_max_us": "1.2",
+                    "normal_min_si": "0.8",
+                    "normal_min_us": "0.8",
+                    "units_si": " ",
+                    "units_us": " ",
+                    "error_max_us": "20",
+                    "error_min_us": "0.1",
+                    "error_max_si": 20,
+                    "error_min_si": 0.1,
+                    "warn_max_us": "10",
+                    "warn_min_us": "0.5",
+                    "warn_max_si": 10,
+                    "warn_min_si": 0.5
+                }
+            ],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Patrick S. Kamath",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-patrick-s-kamath.jpeg",
+                    "about_en": "<p>Patrick S. Kamath, MD, is a professor of gastroenterology and hepatology at the Mayo Clinic in Rochester, Minnesota. His research interests include acute-on-chronic liver failure, nonalcoholic fatty liver disease, polycystic liver disease, Budd-Chiari syndrome and hereditary hemorrhagic telangiectasia. Dr. Kamath is internationally renowned as a leading researcher in hepatology and has also won numerous awards as an educator.</p>",
+                    "pubmedLink": "https://www.ncbi.nlm.nih.gov/pubmed/?term=Kamath%20PS%5BAuthor%5D"
+                }
+            ],
+            "contributors": [
+                {
+                    "description": "",
+                    "img": "",
+                    "name": "Pranav Patel, MD",
+                    "target": "",
+                    "firstName": "Pranav",
+                    "lastName": "Patel",
+                    "signedCOI": false,
+                    "contributors_page": false,
+                    "status": "",
+                    "hasDisclosure": []
+                }
+            ],
+            "relCalcs": [
+                {
+                    "calcId": 10437,
+                    "short_title_en": "Combined MELD",
+                    "slug": "model-end-stage-liver-disease-meld"
+                },
+                {
+                    "calcId": 10147,
+                    "short_title_en": "UKELD Score",
+                    "slug": "united-kingdom-model-end-stage-liver-disease-ukeld"
+                },
+                {
+                    "calcId": 2693,
+                    "short_title_en": "MELD Score (Original)",
+                    "slug": "meld-score-original-pre-2016-model-end-stage-liver-disease"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": true,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "78",
+            "meld-score-model-end-stage-liver-disease-12-older"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

@@ -1,0 +1,759 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "<p>MDCalc provides tools and content intended for use by healthcare professionals, and is not meant for use by patients. While these may be surveys or questions intended for patients, they are meant to be answered in the context of a clinician&rsquo;s medical care and not on their own to diagnose or treat any disease.</p>",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Depressed"
+                ],
+                "cmeEndDate": "2025-10-03 00:00:00+00+00",
+                "cmeLastReviewed": "2022-10-03 00:00:00+00+00",
+                "cmeReleaseDate": "2022-10-07 00:00:00+00+00",
+                "cmeVersion": "1725.1",
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "<p>The PHQ-9 was initially developed by <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/11556941\" target=\"_blank\" rel=\"noopener\">Kroenke et al (2001)</a>, as a subset of 9 questions from the full PHQ, which had previously been derived and studied in a cohort of 6,000 patients in 8 primary care clinics and 7 obstetrics-gynecology clinics (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/10568646\" target=\"_blank\" rel=\"noopener\">Spitzer 1999</a>). PHQ-9 scores &ge;10 were found to be 88% sensitive and also 88% specific for detecting MDD. Criterion validity was also assessed in a sample of 580 patients.</p>\n<p><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/20644190\" target=\"_blank\" rel=\"noopener\">Arroll et al (2010)</a> validated the PHQ-9 as a screener for MDD in a cohort of 2,642 primary care patients and found slightly higher specificity (91%) and lower sensitivity (74%) at the same cutoff of 10 points.</p>\n<p>The PHQ-9 has also been validated in several additional subpopulations, including in psychiatric patients (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26774513\" target=\"_blank\" rel=\"noopener\">Beard 2016</a>), patients with medical comorbidities such as multiple sclerosis (Ferrando 2007) and Parkinson&rsquo;s disease (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/23761457\" target=\"_blank\" rel=\"noopener\">Chagas 2013</a>), pregnant patients (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/22983357\" target=\"_blank\" rel=\"noopener\">Sidebottom 2012</a>), and in an occupational health setting (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26377480\" target=\"_blank\" rel=\"noopener\">Volker 2016</a>).</p>\n<p>A&nbsp;meta-analysis of 29 studies including 6,725 patients found similar&nbsp;sensitivity (88%, 95%&nbsp;CI&nbsp;83-92%) and&nbsp;specificity (85%, 95% CI&nbsp;82-88%) for a cutoff of &ge;10 as did the previous studies, both overall and for subgroups.&nbsp;Notably, they found that when used in the&nbsp;primary care setting, only approximately&nbsp;50% of patients&nbsp;screening&nbsp;positive on the PHQ-9 in fact had major depression (<a href=\"https://www.bmj.com/content/365/bmj.l1476\" target=\"_blank\" rel=\"noopener\">Levis 2019</a>).</p>",
+                        "formula_en": "<p>Addition of the selected points.</p>",
+                        "more_info_en": "<p>The PHQ-9 is a validated, 9-question tool to assess for the degree of depression present in an individual; the last question is not scored, but is useful functionally to help the clinician assess the impact of the patient's symptoms on his or her life.</p>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [],
+                            "Manufacturer Website": [],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/11556941",
+                                    "text": "Kroenke K, Spitzer RL, Williams JB. The PHQ-9: validity of a brief depression severity measure. J Gen Intern Med. 2001 Sep;16(9):606-13. PubMed PMID: 11556941; PubMed Central PMCID: PMC1495268."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/10568646",
+                                    "text": "Spitzer RL, Kroenke K, Williams JB. Validation and utility of a self-report version of PRIME-MD: the PHQ primary care study. Primary Care Evaluation of Mental Disorders. Patient Health Questionnaire. JAMA. 1999;282(18):1737-44."
+                                }
+                            ],
+                            "Outcomes": [],
+                            "Validation": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/20644190",
+                                    "text": "Arroll B, Goodyear-Smith F, Crengle S, Gunn J, Kerse N, Fishman T, Falloon K, Hatcher S. Validation of PHQ-2 and PHQ-9 to screen for major depression in the primary care population. Ann Fam Med. 2010 Jul-Aug;8(4):348-53. doi: 10.1370/afm.1139. PubMed PMID: 20644190; PubMed Central PMCID: PMC2906530."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/23761457",
+                                    "text": "Chagas MH, Tumas V, Rodrigues GR, et al. Validation and internal consistency of Patient Health Questionnaire-9 for major depression in Parkinson's disease. Age Ageing. 2013;42(5):645-9."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/26377480",
+                                    "text": "Volker D, Zijlstra-Vlasveld MC, Brouwers EP, et al. Validation of the Patient Health Questionnaire-9 for Major Depressive Disorder in the Occupational Health Setting. J Occup Rehabil. 2016;26(2):237-44."
+                                },
+                                {
+                                    "href": "https://meridian.allenpress.com/ijmsc/article/9/3/99/33342/Patient-Health-Questionnaire-9-to-Screen-for",
+                                    "text": "Ferrando SJ, Samton J, Mor N, et al. Patient Health Questionnaire-9 to Screen for Depression in Outpatients With Multiple Sclerosis. International Journal of MS Care: 2007;9(3):99-103."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/26774513",
+                                    "text": "Beard C, Hsu KJ, Rifkin LS, et al. Validation of the PHQ-9 in a psychiatric sample. J Affect Disord. 2016;193:267-73."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/22983357",
+                                    "text": "Sidebottom AC, Harrison PA, Godecker A, Kim H. Validation of the Patient Health Questionnaire (PHQ)-9 for prenatal depression screening. Arch Womens Ment Health. 2012;15(5):367-74."
+                                },
+                                {
+                                    "href": "https://www.bmj.com/content/365/bmj.l1476",
+                                    "text": "Levis B, Benedetti A, Thombs BD. Accuracy of Patient Health Questionnaire-9 (PHQ-9) for screening to detect major depression: individual participant data meta-analysis. BMJ. 2019;365:l1476."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": [
+                            "Ferda Sakman, MD"
+                        ]
+                    },
+                    "creator": [
+                        {
+                            "approved": false,
+                            "name": "Dr. Kurt Kroenke",
+                            "qa_en": ""
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<ul>\n<li>The Patient Health Questionnaire (PHQ)-9 is the major depressive disorder (MDD) module of the full PHQ.</li>\n<li>Used to provisionally diagnose depression and grade severity of symptoms in general medical and mental health settings.</li>\n<li>Scores each of the 9 DSM criteria of MDD as &ldquo;0&rdquo; (not at all) to &ldquo;3&rdquo; (nearly every day), providing a 0-27 severity score.</li>\n<li>The last item (&ldquo;How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?&rdquo;) is not included in score, but is a good indicator of the patient&rsquo;s global impairment and can be used to track treatment response.</li>\n<li>Higher PHQ-9 scores are associated with decreased functional status and increased symptom-related difficulties, sick days, and healthcare utilization.</li>\n<li>May have high false-positive rates in primary care settings specifically (one meta-analysis found that only 50% of patients screening positive actually had major depression) (<a href=\"https://www.bmj.com/content/365/bmj.l1476\" target=\"_blank\" rel=\"noopener\">Levis 2019</a>).</li>\n</ul>",
+                        "use_case_en": "<p>Use as a screening tool:</p>\n<ul>\n<li>To assist the clinician in making the diagnosis of depression.</li>\n<li>To quantify depression symptoms and monitor severity.</li>\n</ul>",
+                        "why_use_en": "<p>Objectively determines severity of initial symptoms, and also monitors symptom changes and treatment effects over time.</p>"
+                    },
+                    "next_steps": {
+                        "advice_en": "<p>Final diagnosis should be made with clinical interview and mental status examination including assessment of patient&rsquo;s level of distress and functional impairment.</p>",
+                        "critical_actions_en": "<ul>\n<li>Perform suicide risk assessment in patients who respond positively to item 9 &ldquo;Thoughts that you would be better off dead or of hurting yourself in some way.&rdquo;</li>\n<li>Rule out bipolar disorder, normal bereavement, and medical disorders causing depression.</li>\n</ul>",
+                        "management_en": "<p><strong>PHQ-9 Management Summary</strong></p>\n<div class=\"table-responsive\">\n<table class=\"table table-bordered table-hover\">\n<tbody>\n<tr>\n<th style=\"width: 15%;\">Score</th>\n<th>Depression severity</th>\n<th>Comments</th>\n</tr>\n<tr>\n<td>0-4</td>\n<td>Minimal or none</td>\n<td style=\"vertical-align: middle;\">Monitor; may not require treatment</td>\n</tr>\n<tr>\n<td>5-9</td>\n<td style=\"vertical-align: middle;\">Mild</td>\n<td rowspan=\"2\" style=\"vertical-align: middle;\">Use clinical judgment (symptom duration, functional impairment) to determine necessity of treatment</td>\n</tr>\n<tr>\n<td>10-14</td>\n<td>Moderate</td>\n</tr>\n<tr>\n<td>15-19</td>\n<td>Moderately severe</td>\n<td style=\"vertical-align: middle;\" rowspan=\"2\">Warrants active treatment with psychotherapy, medications, or combination</td>\n</tr>\n<tr>\n<td>20-27</td>\n<td>Severe</td>\n</tr>\n</tbody>\n</table>\n</div>"
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": [],
+                        "partner_contact": [
+                            {
+                                "CalculatorId": 1725,
+                                "createdAt": "2019-11-04T17:12:40.900Z",
+                                "description": "Emergency Medicine Practice",
+                                "id": 80,
+                                "link": "https://www.ebmedicine.net/topics/psychiatric-behavioral/depression-suicidal",
+                                "order": 0,
+                                "society": "EB Medicine",
+                                "text": "Calculated Decisions: PHQ-9",
+                                "updatedAt": "2019-11-13T02:40:25.329Z"
+                            }
+                        ],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Depression/Suicidality"
+                ],
+                "dosing": false,
+                "equation_logic": "db0b521c74d56da856a9fb700921e0cc",
+                "favorite_id": 1725,
+                "full_title_en": "PHQ-9 (Patient Health Questionnaire-9)",
+                "input_schema": [
+                    {
+                        "inct": null,
+                        "option_fhir_rules": null,
+                        "subheading": "<p><strong>Ask the patient:</strong> how often have they been bothered by the following over the past 2 weeks?</p>",
+                        "subheading_instructions": "",
+                        "type": "subheading"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Little interest or pleasure in doing things?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "interest",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Feeling down, depressed, or hopeless?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "depressed",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Trouble falling or staying asleep, or sleeping too much?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "sleep",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Feeling tired or having little energy?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "tired",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Poor appetite or overeating?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "appetite",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Feeling bad about yourself &mdash; or that you are a failure or have let yourself or your family down?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "failure",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Trouble concentrating on things, such as reading the newspaper or watching television?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "concentration",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Moving or speaking so slowly that other people could have noticed? Or so fidgety or restless that you have been moving a lot more than usual?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "slow",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "<p>Thoughts that you would be better off dead, or thoughts of hurting yourself in some way?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "death",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Several days",
+                                "value": 1
+                            },
+                            {
+                                "label": "More than half the days",
+                                "value": 2
+                            },
+                            {
+                                "label": "Nearly every day",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "(death + slow + concentration + failure + appetite + tired + sleep + depressed + interest) > 0",
+                        "default": null,
+                        "label_en": "<p>Ask the patient: how difficult have these problems made it to do work, take care of things at home, or get along with other people?</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "problems_difficult",
+                        "option_fhir_rules": null,
+                        "optional": true,
+                        "options": [
+                            {
+                                "label": "Not at all",
+                                "value": 0
+                            },
+                            {
+                                "label": "Somewhat difficult",
+                                "value": 1
+                            },
+                            {
+                                "label": "Very difficult",
+                                "value": 2
+                            },
+                            {
+                                "label": "Extremely difficult",
+                                "value": 3
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "Optional, not included in final score but may help assess global impairment",
+                        "type": "radio"
+                    }
+                ],
+                "instructions_en": "",
+                "isVisibleInListView": true,
+                "logic_language": "javascript",
+                "md5": "208ceae4f883a3a56ed1289ad417e840",
+                "medium_description_en": "<p>Objectifies degree of depression severity.</p>",
+                "publishedAt": "2022-04-21T20:28:58.623Z",
+                "purpose_en": [
+                    "Diagnosis"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "depression",
+                    "psych",
+                    "si",
+                    "suicidal",
+                    "phq9",
+                    "phq-9"
+                ],
+                "seo": {
+                    "keywords_en": "Depression screening, depression screen, PHQ depression, PHQ-9 screen, PHQ depression diagnosis, depression questionnaire, PHQ calc, depression calc, depression objectify, depressive symptoms calc, depression symptoms calc, phq symptoms calc, phq sx, depressive sx calc, depression sx calc, phq screen, patient health questionnaire, patient depression questionnaire",
+                    "meta_description_en": "The PHQ-9 (Patient Health Questionnaire-9) objectifies and assesses degree of depression severity via questionnaire."
+                },
+                "short_description_en": "<p>Degree of depression severity.</p>",
+                "short_title_en": "PHQ-9",
+                "slug": "phq9-patient-health-questionnaire9",
+                "specialty_en": [
+                    "Family Practice",
+                    "Internal Medicine",
+                    "Primary Care",
+                    "Psychiatry"
+                ],
+                "system_en": [
+                    "Psychiatric"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "18a10f86-839e-4022-a34e-6f8ac5625eba",
+                "search_id": "c-1725",
+                "cme_status": "enabled"
+            },
+            "headConfig": {
+                "title": "PHQ-9 (Patient Health Questionnaire-9)",
+                "description": "The PHQ-9 (Patient Health Questionnaire-9) objectifies and assesses degree of depression severity via questionnaire.",
+                "canonicalUrl": "/calc/1725/phq9-patient-health-questionnaire9",
+                "keywords": "Depression screening, depression screen, PHQ depression, PHQ-9 screen, PHQ depression diagnosis, depression questionnaire, PHQ calc, depression calc, depression objectify, depressive symptoms calc, depression symptoms calc, phq symptoms calc, phq sx, depressive sx calc, depression sx calc, phq screen, patient health questionnaire, patient depression questionnaire",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Kurt Kroenke",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-kurt-kroenke.jpeg",
+                    "about_en": "<p>Kurt Kroenke, MD, is a professor of medicine at the Indiana University School of Medicine and Director of the Career Development, Education and Research Training (CERT) program for the Indiana Clinical and Translational Sciences Institute (CTSI). He has won numerous grants for his research in pain, depression, and anxiety. He has over 300 peer-reviewed research publications.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Kroenke+K%5BAuthor%5D"
+                }
+            ],
+            "contributors": [
+                {
+                    "description": "<p>Ferda Sakman, MD, obtained her medical degree at the Hacettepe University School of Medicine in Ankara, Turkey and completed her adult psychiatry residency at Tufts Medical Center in Boston, MA. She is currently a research fellow in psychiatry at the Mood and Personality Disorders Program at Mount Sinai Hospital and the James J. Peters VA Medical Center in New York City. Her research interests are focused on understanding the multitude of perspectives on investigating the mind and its functioning \u2013 including neurobiological, psychological/psychodynamic, and contemplative/transpersonal approaches, among others \u2013 and delineating the relationship between these perspectives, especially as it pertains to therapeutics.</p>",
+                    "img": "ferda-sakman.png",
+                    "name": "Ferda Sakman, MD",
+                    "target": "ferda-sakman",
+                    "firstName": "Ferda",
+                    "lastName": "Sakman",
+                    "signedCOI": true,
+                    "contributors_page": false,
+                    "status": "Past",
+                    "hasDisclosure": []
+                }
+            ],
+            "relCalcs": [
+                {
+                    "calcId": 1844,
+                    "short_title_en": "Major Depression Index",
+                    "slug": "major-depression-index-mdi"
+                },
+                {
+                    "calcId": 1845,
+                    "short_title_en": "QIDS",
+                    "slug": "quick-inventory-depressive-symptomatology-qids"
+                },
+                {
+                    "calcId": 10169,
+                    "short_title_en": "Columbia Suicide Severity Rating Scale Screener",
+                    "slug": "columbia-suicide-severity-rating-scale-c-ssrs"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": true,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "1725",
+            "phq9-patient-health-questionnaire9"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

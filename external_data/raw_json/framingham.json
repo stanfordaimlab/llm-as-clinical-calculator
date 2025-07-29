@@ -1,0 +1,620 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Chest Pain",
+                    "Palpitations",
+                    "Shortness of Breath"
+                ],
+                "cmeEndDate": null,
+                "cmeLastReviewed": null,
+                "cmeReleaseDate": null,
+                "cmeVersion": null,
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "",
+                        "formula_en": "<p dir=\"ltr\">Equations as follows (&beta; coefficients listed in table below):</p>\n<p></p>\n<p dir=\"ltr\"><strong>Men:</strong></p>\n<p dir=\"ltr\">L<sub>Men</sub> = &beta; x ln(Age) + &beta; x ln(Total cholesterol) + &beta; x ln(HDL cholesterol) + &beta; x ln(Systolic BP) + &beta; x Treated for blood pressure + &beta; x Smoker + &beta; x ln(Age) x ln(Total cholesterol) + &beta; x ln(Age) x Smoker + &beta; x ln(Age) x ln(Age) - 172.300168</p>\n<p></p>\n<p dir=\"ltr\">P<sub>Men</sub> = 1 - 0.9402^exp(L<sub>Men</sub>)</p>\n<p></p>\n<p dir=\"ltr\"><strong>Women:</strong></p>\n<p dir=\"ltr\">L<sub>Women</sub> = &beta; x ln(Age) + &beta; x ln(Total cholesterol) + &beta; x ln(HDL cholesterol) + &beta; x ln(Systolic BP) + &beta; x Treated for blood pressure + &beta; x Smoker + &beta; x ln(Age) x ln(Total cholesterol) + &beta; x ln(Age) x Smoker - 146.5933061</p>\n<p></p>\n<p dir=\"ltr\">P<sub>Women</sub> = 1 - 0.98767^exp(L<sub>Women</sub>)</p>\n<p></p>\n<div dir=\"ltr\">\n<table><colgroup><col width=\"115\"><col width=\"142\"><col width=\"130\"></colgroup>\n<tbody>\n<tr>\n<td rowspan=\"2\">\n<p dir=\"ltr\"><strong>Variable</strong></p>\n</td>\n<td colspan=\"2\">\n<p dir=\"ltr\"><strong>Coefficient (&beta;)</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\"><strong>Men</strong></p>\n</td>\n<td>\n<p dir=\"ltr\"><strong>Women</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(Age)</p>\n</td>\n<td>\n<p dir=\"ltr\">52.00961</p>\n</td>\n<td>\n<p dir=\"ltr\">31.764001</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(Total cholesterol)</p>\n</td>\n<td>\n<p dir=\"ltr\">20.014077</p>\n</td>\n<td>\n<p dir=\"ltr\">22.465206</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(HDL cholesterol)</p>\n</td>\n<td>\n<p dir=\"ltr\">-0.905964</p>\n</td>\n<td>\n<p dir=\"ltr\">-1.187731</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(Systolic BP)</p>\n</td>\n<td>\n<p dir=\"ltr\">1.305784</p>\n</td>\n<td>\n<p dir=\"ltr\">2.552905</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">Treated for blood pressure*</p>\n</td>\n<td>\n<p dir=\"ltr\">0.241549</p>\n</td>\n<td>\n<p dir=\"ltr\">0.420251</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">Smoker*</p>\n</td>\n<td>\n<p dir=\"ltr\">12.096316</p>\n</td>\n<td>\n<p dir=\"ltr\">13.07543</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(Age) x ln(Total cholesterol)</p>\n</td>\n<td>\n<p dir=\"ltr\">-4.605038</p>\n</td>\n<td>\n<p dir=\"ltr\">-5.060998</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(Age) x Smoker**</p>\n</td>\n<td>\n<p dir=\"ltr\">-2.84367</p>\n</td>\n<td>\n<p dir=\"ltr\">-2.996945</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">ln(Age) x ln(Age)</p>\n</td>\n<td>\n<p dir=\"ltr\">-2.93323</p>\n</td>\n<td>\n<p dir=\"ltr\">-</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p dir=\"ltr\">*Yes = 1, No = 0.</p>\n<p dir=\"ltr\">**Men: if age &gt;70, use ln(70) x Smoker. Women: if age &gt;78, use ln(78) x Smoker.</p>\n<p><span style=\"font-size: 10pt; font-family: Arial; color: #0000ff; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">&nbsp;</span></p>",
+                        "more_info_en": "<p dir=\"ltr\">Interpretation:</p>\n<div dir=\"ltr\">\n<table><colgroup><col width=\"*\"><col width=\"*\"><col width=\"*\"><col width=\"*\"><col width=\"*\"></colgroup>\n<tbody>\n<tr>\n<td rowspan=\"2\">\n<p dir=\"ltr\"><strong>Age, years </strong></p>\n</td>\n<td colspan=\"2\">\n<p dir=\"ltr\"><strong>Average 10 year hard* CHD risk&nbsp;in this patient</strong></p>\n</td>\n<td colspan=\"2\">\n<p dir=\"ltr\"><strong>Low** 10 year CHD risk in the average patient</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\"><strong>Women</strong></p>\n</td>\n<td>\n<p dir=\"ltr\"><strong>Men</strong></p>\n</td>\n<td>\n<p dir=\"ltr\"><strong>Women</strong></p>\n</td>\n<td>\n<p dir=\"ltr\"><strong>Men</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">30-34</p>\n</td>\n<td>\n<p dir=\"ltr\">&lt;1%</p>\n</td>\n<td>\n<p dir=\"ltr\">1%</p>\n</td>\n<td>\n<p dir=\"ltr\">&lt;1%</p>\n</td>\n<td>\n<p dir=\"ltr\">2%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">35-39</p>\n</td>\n<td>\n<p dir=\"ltr\">&lt;1%</p>\n</td>\n<td>\n<p dir=\"ltr\">4%</p>\n</td>\n<td>\n<p dir=\"ltr\">1%</p>\n</td>\n<td>\n<p dir=\"ltr\">3%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">40-44</p>\n</td>\n<td>\n<p dir=\"ltr\">1%</p>\n</td>\n<td>\n<p dir=\"ltr\">4%</p>\n</td>\n<td>\n<p dir=\"ltr\">2%</p>\n</td>\n<td>\n<p dir=\"ltr\">4%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">45-49</p>\n</td>\n<td>\n<p dir=\"ltr\">2%</p>\n</td>\n<td>\n<p dir=\"ltr\">8%</p>\n</td>\n<td>\n<p dir=\"ltr\">3%</p>\n</td>\n<td>\n<p dir=\"ltr\">4%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">50-54</p>\n</td>\n<td>\n<p dir=\"ltr\">3%</p>\n</td>\n<td>\n<p dir=\"ltr\">10%</p>\n</td>\n<td>\n<p dir=\"ltr\">5%</p>\n</td>\n<td>\n<p dir=\"ltr\">6%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">55-59</p>\n</td>\n<td>\n<p dir=\"ltr\">7%</p>\n</td>\n<td>\n<p dir=\"ltr\">13%</p>\n</td>\n<td>\n<p dir=\"ltr\">7%</p>\n</td>\n<td>\n<p dir=\"ltr\">7%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">60-64</p>\n</td>\n<td>\n<p dir=\"ltr\">8%</p>\n</td>\n<td>\n<p dir=\"ltr\">20%</p>\n</td>\n<td>\n<p dir=\"ltr\">8%</p>\n</td>\n<td>\n<p dir=\"ltr\">9%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">65-69</p>\n</td>\n<td>\n<p dir=\"ltr\">8%</p>\n</td>\n<td>\n<p dir=\"ltr\">22%</p>\n</td>\n<td>\n<p dir=\"ltr\">8%</p>\n</td>\n<td>\n<p dir=\"ltr\">11%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">70-74</p>\n</td>\n<td>\n<p dir=\"ltr\">11%</p>\n</td>\n<td>\n<p dir=\"ltr\">25%</p>\n</td>\n<td>\n<p dir=\"ltr\">8%</p>\n</td>\n<td>\n<p dir=\"ltr\">14%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p dir=\"ltr\">74-79</p>\n</td>\n<td>\n<p dir=\"ltr\">Data not available</p>\n</td>\n<td>\n<p dir=\"ltr\">Data not available</p>\n</td>\n<td>\n<p dir=\"ltr\">Data not available</p>\n</td>\n<td>\n<p dir=\"ltr\">Data not available</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p dir=\"ltr\">*Excluding angina pectoris.</p>\n<p dir=\"ltr\">**Low risk was calculated for a person the same age, optimal blood pressure, LDL-C 100-129 mg/dL or cholesterol 160-199 mg/dL, HDL-C 45 mg/dL for men or 55 mg/dL for women, non-smoker, no diabetes.</p>\n<p><span style=\"font-size: 10pt; font-family: Arial; color: #0000ff; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\">&nbsp;</span></p>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [],
+                            "Manufacturer Website": [],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=pubmed&amp;list_uids=9603539&amp;dopt=citation",
+                                    "text": "Wilson PW, et. al. Prediction of Coronary Heart Disease Using Risk Factor Categories. Circulation 1998. 97(18): 1837-1847."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.nejm.org/doi/full/10.1056/NEJM199006073222304",
+                                    "text": "Sytkowski PA, Kannel WB, D'agostino RB. Changes in risk factors and the decline in mortality from cardiovascular disease. The Framingham Heart Study. N Engl J Med. 1990;322(23):1635-41.  "
+                                },
+                                {
+                                    "href": "https://jamanetwork.com/journals/jama/article-abstract/367563 ",
+                                    "text": "Benjamin EJ, Levy D, Vaziri SM, D'Agostino RB, Belanger AJ, Wolf PA. Independent Risk Factors for Atrial Fibrillation in a Population-Based Cohort. The Framingham Heart Study. JAMA. 1994;271(11):840\u2013844. doi:10.1001/jama.1994.03510350050036"
+                                }
+                            ],
+                            "Outcomes": [],
+                            "Validation": [],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": []
+                    },
+                    "creator": [
+                        {
+                            "approved": false,
+                            "name": "Dr. Peter W.F. Wilson",
+                            "qa_en": ""
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<p>The Framingham data, while thorough, come from many years ago with a potentially different US population along with a different diet and level of smoking as well, which may suggest different risk levels today.</p>",
+                        "use_case_en": "<ul>\n<li>Patients aged 30-79 years with no prior history of coronary heart disease.</li>\n<li>Do not use in patients with intermittent claudication or diabetes.</li>\n</ul>",
+                        "why_use_en": ""
+                    },
+                    "next_steps": {
+                        "advice_en": "<p>Patients with high risk scores should be counseled aggressively about social factors contributing to their risk (smoking, exercise, weight, diet, etc) and also managed with blood pressure and lipid evaluation.</p>",
+                        "critical_actions_en": "",
+                        "management_en": ""
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": [],
+                        "partner_contact": [],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Acute Coronary Syndrome",
+                    "Congestive Heart Failure",
+                    "Coronary Artery Disease",
+                    "Dyslipidemia",
+                    "Myocardial Infarction"
+                ],
+                "dosing": false,
+                "equation_logic": "c7b5706c949c3799722beb8081b1174d",
+                "favorite_id": 38,
+                "full_title_en": "Framingham Risk Score for Hard Coronary Heart Disease",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Age",
+                        "name": "age",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "age"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "Sex",
+                        "md_calc_info_concept": null,
+                        "name": "sex",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Female",
+                                "value": 1
+                            },
+                            {
+                                "label": "Male",
+                                "value": 0
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "Smoker",
+                        "md_calc_info_concept": null,
+                        "name": "smoker",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Total cholesterol",
+                        "name": "cholesterol",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "chol_total"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "HDL cholesterol",
+                        "name": "hdl_cholesterol",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "chol_hdl"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Systolic BP",
+                        "name": "systolic_bp",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "sbp"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "Blood pressure being treated with medicines",
+                        "md_calc_info_concept": null,
+                        "name": "blood_pressure",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": false,
+                        "tips_en": "",
+                        "type": "toggle"
+                    }
+                ],
+                "instructions_en": "<p>There are several distinct Framingham risk models. MDCalc uses the 'Hard' coronary Framingham outcomes model, which is intended for use in <strong>non-diabetic</strong> patients age 30-79 years with no prior history of coronary heart disease or intermittent claudication, as it is the most widely applicable to patients without previous cardiac events. See the <a href=\"https://www.framinghamheartstudy.org/fhs-risk-functions/hard-coronary-heart-disease-10-year-risk/\" target=\"_blank\" rel=\"noopener\">official Framingham website</a> for additional Framingham risk models.</p>",
+                "isVisibleInListView": true,
+                "logic_language": "javascript",
+                "md5": "9e19d8b1f663174b22f4ee29a4fa6b7e",
+                "medium_description_en": "<p>Estimates 10-year risk of heart attack.</p>",
+                "publishedAt": "2022-04-21T20:29:19.283Z",
+                "purpose_en": [
+                    "Prognosis"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "framingham risk score",
+                    "ACS",
+                    "cardiac risk",
+                    "CHD",
+                    "CAD",
+                    "framingham",
+                    "coronary heart disease",
+                    "MI",
+                    "myocardial infarction risk"
+                ],
+                "seo": {
+                    "keywords_en": "Framingham Coronary Heart Disease Risk Score, framingham, framingham score, framingham cardiac, framingham coronary, framingham calc, framingham CHD, framingham heart disease, framingham risk, CHD risk, chd risk score, chd risk calc, chd calc, chd score, CAD score, CAD framingham, framingham hld, framingham cholesterol, fram heart, fram cvd, framingham cvd, framingham calc, framingham score, framingham risk, fram risk cvd, fram CAD risk, fram CVD risk, framingham chd calc, 10 year chd risk, 10 year cad risk, 10 year cvd risk, 10 yr chd risk, 10 yr cad risk, 10 yr cvd risk, 10 year risk of MI, long term MI risk, longitudinal MI risk, longitudinal heart attack risk, long term heart attack risk, long term mi, long term heart attack, framingham cholesterol, framingham hld, cad risk factor man, chd risk factor man, cad risk factor male, chd risk factor male, cad risk factor female, chd risk factor female, cad risk factor woman, chd risk factor woman, heart attack risk smoker, heart attack risk smoke, heart attack risk tobacco use",
+                    "meta_description_en": "The Framingham Coronary Heart Disease Risk Score estimates risk of heart attack in 10 years."
+                },
+                "short_description_en": "<p>Heart attack risk.</p>",
+                "short_title_en": "Framingham Risk Score (Hard Coronary Heart Disease)",
+                "slug": "framingham-risk-score-hard-coronary-heart-disease",
+                "specialty_en": [
+                    "Cardiology",
+                    "Critical Care",
+                    "Emergency Medicine",
+                    "Endocrinology",
+                    "Family Practice",
+                    "Geriatrics",
+                    "Hospitalist Medicine",
+                    "Internal Medicine",
+                    "Primary Care"
+                ],
+                "system_en": [
+                    "Cardiac"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "50928dde-f13f-43f7-a3dd-79b24cfdd9d9",
+                "search_id": "c-38",
+                "cme_status": ""
+            },
+            "headConfig": {
+                "title": "Framingham Risk Score for Hard Coronary Heart Disease",
+                "description": "The Framingham Coronary Heart Disease Risk Score estimates risk of heart attack in 10 years.",
+                "canonicalUrl": "/calc/38/framingham-risk-score-hard-coronary-heart-disease",
+                "keywords": "Framingham Coronary Heart Disease Risk Score, framingham, framingham score, framingham cardiac, framingham coronary, framingham calc, framingham CHD, framingham heart disease, framingham risk, CHD risk, chd risk score, chd risk calc, chd calc, chd score, CAD score, CAD framingham, framingham hld, framingham cholesterol, fram heart, fram cvd, framingham cvd, framingham calc, framingham score, framingham risk, fram risk cvd, fram CAD risk, fram CVD risk, framingham chd calc, 10 year chd risk, 10 year cad risk, 10 year cvd risk, 10 yr chd risk, 10 yr cad risk, 10 yr cvd risk, 10 year risk of MI, long term MI risk, longitudinal MI risk, longitudinal heart attack risk, long term heart attack risk, long term mi, long term heart attack, framingham cholesterol, framingham hld, cad risk factor man, chd risk factor man, cad risk factor male, chd risk factor male, cad risk factor female, chd risk factor female, cad risk factor woman, chd risk factor woman, heart attack risk smoker, heart attack risk smoke, heart attack risk tobacco use",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [
+                {
+                    "name": "Systolic BP",
+                    "unit": "sbp",
+                    "error_min": "30",
+                    "error_max": "300",
+                    "warn_min": "40",
+                    "warn_max": "250",
+                    "conversion": "1",
+                    "normal_max_si": "120",
+                    "normal_max_us": "120",
+                    "normal_min_si": "100",
+                    "normal_min_us": "100",
+                    "units_si": "mm Hg",
+                    "units_us": "mm Hg",
+                    "error_max_us": "300",
+                    "error_min_us": "30",
+                    "error_max_si": 300,
+                    "error_min_si": 30,
+                    "warn_max_us": "250",
+                    "warn_min_us": "40",
+                    "warn_max_si": 250,
+                    "warn_min_si": 40
+                },
+                {
+                    "name": "Age",
+                    "unit": "age",
+                    "error_min": "0.001",
+                    "error_max": "120",
+                    "warn_min": "0.1",
+                    "warn_max": "100",
+                    "conversion": "1",
+                    "normal_max_si": "0",
+                    "normal_max_us": "0",
+                    "normal_min_si": "0",
+                    "normal_min_us": "0",
+                    "units_si": "years",
+                    "units_us": "years",
+                    "error_max_us": "120",
+                    "error_min_us": "0.001",
+                    "error_max_si": 120,
+                    "error_min_si": 0.001,
+                    "warn_max_us": "100",
+                    "warn_min_us": "0.1",
+                    "warn_max_si": 100,
+                    "warn_min_si": 0.1
+                },
+                {
+                    "name": "Total Cholesterol",
+                    "unit": "chol_total",
+                    "error_min": "100",
+                    "error_max": "1000",
+                    "warn_min": "150",
+                    "warn_max": "500",
+                    "conversion": "0.02586",
+                    "normal_max_si": "5.2",
+                    "normal_max_us": "200",
+                    "normal_min_si": "3.9",
+                    "normal_min_us": "150",
+                    "units_si": "mmol/L",
+                    "units_us": "mg/dL",
+                    "error_max_us": "1000",
+                    "error_min_us": "100",
+                    "error_max_si": 25.86,
+                    "error_min_si": 2.5860000000000003,
+                    "warn_max_us": "500",
+                    "warn_min_us": "150",
+                    "warn_max_si": 12.93,
+                    "warn_min_si": 3.879
+                },
+                {
+                    "name": "HDL Cholesterol",
+                    "unit": "chol_hdl",
+                    "error_min": "1",
+                    "error_max": "150",
+                    "warn_min": "1",
+                    "warn_max": "95",
+                    "conversion": "0.02586",
+                    "normal_max_si": "1.55",
+                    "normal_max_us": "60",
+                    "normal_min_si": "0",
+                    "normal_min_us": "0",
+                    "units_si": "mmol/L",
+                    "units_us": "mg/dL",
+                    "error_max_us": "150",
+                    "error_min_us": "1",
+                    "error_max_si": 3.879,
+                    "error_min_si": 0.02586,
+                    "warn_max_us": "95",
+                    "warn_min_us": "1",
+                    "warn_max_si": 2.4567,
+                    "warn_min_si": 0.02586
+                }
+            ],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Peter W.F. Wilson",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-peter-wf-wilson.jpeg",
+                    "about_en": "<p>Peter W. F. Wilson, MD, is professor of medicine in the cardiology division of Emory University and a professor of public health at the Rollins School of Public Health. He is currently the director of epidemiology and genomic medicine at the Atlanta VA Medical Center. Dr. Wilson researches metabolic and cardiovascular population issues, focusing on determinants of CAD, including diabetes mellitus, hormonal factors, inflammatory markers, and genetics.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Wilson%20PW%5BAuthor%5D"
+                }
+            ],
+            "contributors": [],
+            "relCalcs": [
+                {
+                    "calcId": 3932,
+                    "short_title_en": "Reynolds Risk Score",
+                    "slug": "reynolds-risk-score-cardiovascular-risk-women"
+                },
+                {
+                    "calcId": 665,
+                    "short_title_en": "TIMI Risk Index",
+                    "slug": "timi-risk-index"
+                },
+                {
+                    "calcId": 111,
+                    "short_title_en": "TIMI Score for UA/NSTEMI",
+                    "slug": "timi-risk-score-ua-nstemi"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": false,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "38",
+            "framingham-risk-score-hard-coronary-heart-disease"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

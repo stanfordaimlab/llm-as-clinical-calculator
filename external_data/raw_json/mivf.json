@@ -1,0 +1,470 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Diarrhea",
+                    "Intoxication/Overdose",
+                    "Vomiting",
+                    "Weakness"
+                ],
+                "cmeEndDate": null,
+                "cmeLastReviewed": null,
+                "cmeReleaseDate": null,
+                "cmeVersion": null,
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "",
+                        "formula_en": "<p>Calculated using the &ldquo;4-2-1&rdquo; Rule:</p>\n<ul>\n<li>For 0-10 kg: 4 mL/kg/hr</li>\n<li>For &gt;10-20 kg: 40 mL + 2 mL/kg/hr for every kg &gt;10 kg</li>\n<li>For &gt;20 kg: 60 mL + 1 mL/kg/hr for every kg &gt;20 kg</li>\n</ul>",
+                        "more_info_en": "",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [
+                                {
+                                    "href": "",
+                                    "text": ""
+                                }
+                            ],
+                            "Manufacturer Website": [
+                                {
+                                    "href": "",
+                                    "text": ""
+                                }
+                            ],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/13431307",
+                                    "text": "Holiday MA, Segar WE. The maintenance need for water in parenteral fluid therapy. Pediatrics 1957."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531000/#!po=7.89474",
+                                    "text": "Arya VK. Basics of fluid and blood transfusion therapy in paediatric surgical patients. Indian Journal of Anaesthesia 2012;56(5):454-462. doi:10.4103/0019-5049.103960."
+                                }
+                            ],
+                            "Outcomes": [
+                                {
+                                    "href": "",
+                                    "text": ""
+                                }
+                            ],
+                            "Validation": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/7425366",
+                                    "text": "Oh TH. Formulas for calculating fluid maintenance requirements. Anesthesiology.1980;53:351."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": []
+                    },
+                    "creator": [
+                        {
+                            "approved": null,
+                            "name": "Dr. Malcolm Holliday",
+                            "qa_en": null
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "",
+                        "use_case_en": "<ul>\n<li>Determining IV fluid rates for patients who are not taking oral fluids (either from vomiting or being NPO).</li>\n<li>Determining IV fluid requirements for patients who are dehydrated or have insensible losses or third spacing.</li>\n</ul>",
+                        "why_use_en": "<p>Weight-based dosing of fluids is important given the fact that a patient's total body water (and blood volume) are based on their weight.</p>"
+                    },
+                    "next_steps": {
+                        "advice_en": "<p>Past, current, and future hydration status should always be considered when prescribing maintenance fluids, as under-dosing will lead to dehydration and renal insufficiency, and over-dosing may lead to fluid overload and edema in some patients.</p>",
+                        "critical_actions_en": "",
+                        "management_en": ""
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": {
+                            "clinical": "",
+                            "evidence": "",
+                            "popularity": ""
+                        },
+                        "partner_contact": [],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Bleeding/Hemorrhage",
+                    "Burns",
+                    "Dehydration",
+                    "GI Bleeding",
+                    "Hyperglycemia",
+                    "Pancreatitis",
+                    "Renal Failure"
+                ],
+                "dosing": false,
+                "equation_logic": "08426b3956c83386732869a2ff0b27e2",
+                "favorite_id": 72,
+                "full_title_en": "Maintenance Fluids Calculations",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "fhir_rules": null,
+                        "inct": null,
+                        "label_en": "Weight",
+                        "name": "weight",
+                        "optional": false,
+                        "tips_en": "",
+                        "type": "textbox",
+                        "unit": "wt_all"
+                    }
+                ],
+                "instructions_en": "<p>While originally derived in pediatric patients, this calculator is applicable to any age. Consider using <calculator id=\"68\">ideal body weight</calculator> in obese patients.&nbsp;If not calculating based on ideal body weight, use clinical judgment for dosing. A 1-liter&nbsp;bolus may be appropriate for most patients, such as overweight adolescents and adults.</p>\n<p></p>",
+                "isVisibleInListView": true,
+                "logic_language": "javascript",
+                "md5": "7462c7fcf1af190656ae9097ea5f433b",
+                "medium_description_en": "<p>Calculates maintenance fluid requirements by weight.</p>",
+                "publishedAt": "2022-04-21T20:29:45.810Z",
+                "purpose_en": [
+                    "Calculation",
+                    "Treatment"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "ivf",
+                    "pediatric",
+                    "dehydration",
+                    "peds",
+                    "421",
+                    "4-2-1"
+                ],
+                "seo": {
+                    "keywords_en": "maintenance fluids, maintanence peds fluids, maintenance fluids peds calc, maintenance peds fluid, maintanence fluid calc, fluid pediatric calc, fluid adjustment peds, 4-2-1 rule, 4-2-1 peds, 4-2-1 calc, 4-2-1 fluids, 4-2-1 fluids calc, pediatric fluid maintanence",
+                    "meta_description_en": "The Maintenance Fluids Calculator calculates maintenance fluid requirements by weight."
+                },
+                "short_description_en": "<p>Fluid maintenance.</p>",
+                "short_title_en": "Maintenance Fluids",
+                "slug": "maintenance-fluids-calculations",
+                "specialty_en": [
+                    "Cardiology",
+                    "Critical Care",
+                    "Emergency Medicine",
+                    "Endocrinology",
+                    "Hospitalist Medicine",
+                    "Internal Medicine",
+                    "Nephrology",
+                    "Pediatrics"
+                ],
+                "system_en": [
+                    "Endocrine and Metabolic",
+                    "Renal"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "a103ce76-19b4-4614-be69-56637bf3438e",
+                "search_id": "c-72",
+                "cme_status": ""
+            },
+            "headConfig": {
+                "title": "Maintenance Fluids Calculations",
+                "description": "The Maintenance Fluids Calculator calculates maintenance fluid requirements by weight.",
+                "canonicalUrl": "/calc/72/maintenance-fluids-calculations",
+                "keywords": "maintenance fluids, maintanence peds fluids, maintenance fluids peds calc, maintenance peds fluid, maintanence fluid calc, fluid pediatric calc, fluid adjustment peds, 4-2-1 rule, 4-2-1 peds, 4-2-1 calc, 4-2-1 fluids, 4-2-1 fluids calc, pediatric fluid maintanence",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [
+                {
+                    "name": "Weight for all",
+                    "unit": "wt_all",
+                    "error_min": "0",
+                    "error_max": "620",
+                    "warn_min": "0",
+                    "warn_max": "600",
+                    "conversion": "0.453592",
+                    "normal_max_si": "68",
+                    "normal_max_us": "150",
+                    "normal_min_si": "0",
+                    "normal_min_us": "0",
+                    "units_si": "kg",
+                    "units_us": "lbs",
+                    "error_max_us": "620",
+                    "error_min_us": "0",
+                    "error_max_si": 281.22704,
+                    "error_min_si": 0,
+                    "warn_max_us": "600",
+                    "warn_min_us": "0",
+                    "warn_max_si": 272.1552,
+                    "warn_min_si": 0
+                }
+            ],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Malcolm Holliday",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": true,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-malcolm-holliday.jpeg",
+                    "about_en": "<p>Malcolm Holliday, MD, (d. 2014) was a pediatric nephrologist and physiologist. Dr. Holliday\u2019s original work studying inherited tubular disorders and congenital renal defects eventually led him to become professor of pediatrics and chief of the Division of Pediatric Nephrology at University of California San Francisco, a position he held for over two and a half decades of his 60 year career.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Holliday+MA%5BAuthor%5D"
+                }
+            ],
+            "contributors": [],
+            "relCalcs": [
+                {
+                    "calcId": 68,
+                    "short_title_en": "Ideal Body Weight and Adjusted Body Weight",
+                    "slug": "ideal-body-weight-adjusted-body-weight"
+                },
+                {
+                    "calcId": 1741,
+                    "short_title_en": "ABG Analysis",
+                    "slug": "arterial-blood-gas-abg-analyzer"
+                },
+                {
+                    "calcId": 85,
+                    "short_title_en": "Pediatric Ins and Outs",
+                    "slug": "pediatric-ins-outs"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": false,
+            "validSections": [
+                "whenToUseViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "72",
+            "maintenance-fluids-calculations"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

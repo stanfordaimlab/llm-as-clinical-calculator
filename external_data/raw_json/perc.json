@@ -1,0 +1,619 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Chest Pain",
+                    "Cough",
+                    "Shortness of Breath"
+                ],
+                "cmeEndDate": "2025-07-25 00:00:00+00+115",
+                "cmeLastReviewed": "2022-07-25 00:00:00+00+115",
+                "cmeReleaseDate": "2020-06-07 00:00:00+00+00",
+                "cmeVersion": "347.1",
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "<p>The <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/15304025\" target=\"_blank\" rel=\"noopener\">original article from 2004</a> was a prospective study with a derivation section and a validation section.</p>\n<ul>\n<li>3148 patients from 10 sites were included in the derivation.</li>\n<li>21 potential variables were included for analysis, with the 8 final variables selected from these.</li>\n<li>1427 low-risk and 382 very low-risk patients from 2 sites were included in the validation section.</li>\n<li>In low-risk patients there was a sensitivity of 96% and specificity of 27%.</li>\n<li>In very low-risk patients there was a sensitivity of 100% and specificity of 15%.</li>\n<li>The false negative rate at 90 days in low-risk patients was 1.4% which is below the 1.8% testing threshold.</li>\n</ul>\n<p><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/18318689\" target=\"_blank\" rel=\"noopener\">A second multicenter validation</a> was done in 2008. This expanded upon the initial validation study and defined low pretest probability as &lt;15%</p>\n<ul>\n<li>8138 patients from 13 sites were included in the study. Some of these sites were included in the initial paper.</li>\n<li>Clinical gestalt for a pretest probability of &lt;15%, 15-40% or &gt;40% was collected from the providers.</li>\n<li>20% of the cohort was deemed low risk (&lt;15%)</li>\n<li>For patients who were PERC negative and pre-test probability was &lt;15% the false negative rate at 45 days was 1.0% with a sensitivity of 97.4% and specificity of 21.9%.</li>\n</ul>",
+                        "formula_en": "<p>If any of the following is/are present, PE cannot be ruled out:</p>\n<ul>\n<li>Age &ge;50.</li>\n<li>HR &ge;100.</li>\n<li>O\u2082 sat on room air&nbsp;&lt;95%.</li>\n<li>Unilateral leg swelling.</li>\n<li>Hemoptysis.</li>\n<li>Recent trauma or surgery.</li>\n<li>Prior PE or DVT.</li>\n<li>Hormone use (oral contraceptives, hormone replacement or estrogenic hormones use in males or female patients).</li>\n</ul>",
+                        "more_info_en": "<p>If any criteria are positive, the PERC rule is not satisfied and cannot be used to rule out PE in this patient.</p>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [],
+                            "Manufacturer Website": [],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/15304025",
+                                    "text": "Kline JA, et al. Clinical criteria to prevent unnecessary diagnostic testing in emergency department patients with suspected pulmonary embolism. J Thromb Haemost 2004; 2: 1247\u201355."
+                                }
+                            ],
+                            "Other References": [],
+                            "Outcomes": [],
+                            "Validation": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/18318689",
+                                    "text": "Kline JA, et al. Prospective multicenter evaluation of the pulmonary embolism rule-out criteria. J Thromb Haemost 2008; 6: 772\u201380. (PMID: 18318689)."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": [
+                            "Benjamin Slovis, MD"
+                        ]
+                    },
+                    "creator": [
+                        {
+                            "approved": null,
+                            "name": "Dr. Jeffrey Kline",
+                            "qa_en": "<p>Dr. Kline's comments about the PERC Rule for MDCalc:</p> <p>&ldquo;<em>I derived the PERC rule to give some objective backing to the situation where you have considered PE in the active differential diagnosis, but really do not think any diagnostic test is necessary. To capture that concept scientifically, I validated the PERC rule to exclude PE with a gestalt pretest probability of &lt;15% for PE and all eight criteria of the PERC rule are negative.</em>&rdquo;</p>"
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<p>The Pulmonary Embolism Rule-out Criteria is utilized by physicians to avoid further testing for Pulmonary Embolism in patients deemed low risk.</p>\n<ul>\n<li>The PERC Rule is a &ldquo;rule-out&rdquo; tool - all variables must receive a &ldquo;no&rdquo; to be negative.</li>\n<li>The test is <em><strong>unidirectional</strong>:</em> while PERC negative typically allows the clinician to avoid further testing, <strong>failing</strong> the rule <strong>doesn't force</strong> the clinician to order tests.</li>\n<li>As a rule-out criteria, PERC is not meant for risk-stratification.</li>\n<li>The physicians utilizing this rule must have a gestalt that the patient&rsquo;s risk of PE is low (study used &lt;15%).</li>\n<li>The study was designed with a 1.8% test threshold. This took into account the risk associated with PE workup and treatment (i.e. CT radiation, anaphylaxis from contrast, bleeding from anticoagulation). For patients with a pre-test probability below this threshold the risk associated with starting a workup is equivalent to the chance of missing the diagnosis.</li>\n</ul>",
+                        "use_case_en": "<p>The PERC rule can be applied to patients where the diagnosis of PE is being considered, but the patient is deemed low-risk. A patient deemed low-risk by physician&rsquo;s gestalt who is also &lt;50 years of age, with a pulse &lt;100 bpm, SaO<sub>2</sub> &ge;95%, no hemoptysis, no estrogen use, no history of surgery/trauma within 4 weeks, no prior PE/DVT and no present signs of DVT can be safely ruled out and does not require further workup.</p>",
+                        "why_use_en": "<ul>\n<li>Emergency physicians have a low threshold for testing for PE.</li>\n<li>This test rules out patients who are considered low-risk for PE based on clinical criteria alone.</li>\n<li>PERC negative patients do not require utilization of the d-dimer, which has a high sensitivity but low specificity.</li>\n<li>Low risk patients who are PERC negative avoid the risks associated with unnecessary testing and treatment for PE.</li>\n</ul>"
+                    },
+                    "next_steps": {
+                        "advice_en": "",
+                        "critical_actions_en": "<ul>\n<li>There is no need to apply the PERC rule to those patients who are not being evaluated for PE.</li>\n<li>If the patient is considered low-risk, PERC may help avoid further testing.</li>\n<li>If the patient is moderate or high risk then PERC can not be utilized. Consider d-dimer or imaging based on risk.</li>\n<li>Consider pericardial disease in patients with pleuritic complaints as well.</li>\n</ul>",
+                        "management_en": "<ul>\n<li>In the setting of a low-risk patient who is not PERC negative, the physician should consider a d-dimer for further evaluation.</li>\n<li>If the d-dimer is negative, and clinical gestalt determines a pre-test probability is &lt;15% then, the patient does not require further testing for PE.</li>\n<li>If the d-dimer is positive, further testing such as a CT-angiography or V/Q scan should be pursued.</li>\n</ul>"
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": [
+                            {
+                                "CalculatorId": 347,
+                                "clinical": 4,
+                                "createdAt": "2019-07-02T20:19:08.951Z",
+                                "evidence": 4,
+                                "id": 6,
+                                "popularity": 5,
+                                "updatedAt": "2019-07-02T20:19:08.951Z"
+                            }
+                        ],
+                        "partner_contact": [
+                            {
+                                "CalculatorId": 347,
+                                "createdAt": "2019-07-02T20:19:08.954Z",
+                                "description": "mHealth in Emergency Medicine",
+                                "id": 10,
+                                "link": "http://www.ebmedicine.net/content.php?action=showPage&pid=530",
+                                "order": 0,
+                                "society": "EB Medicine",
+                                "text": "Calculated Decisions: PERC Rule",
+                                "updatedAt": "2019-08-12T23:21:31.808Z"
+                            }
+                        ],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Deep Venous Thrombosis",
+                    "Pulmonary Embolism"
+                ],
+                "dosing": false,
+                "equation_logic": "315d92048012f178f46f38e3c67ab4db",
+                "favorite_id": 347,
+                "full_title_en": "PERC Rule for Pulmonary Embolism",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Age \u226550",
+                        "md_calc_info_concept": null,
+                        "name": "age",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "HR \u2265100",
+                        "md_calc_info_concept": null,
+                        "name": "hr",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "O\u2082 sat on room air <95%",
+                        "md_calc_info_concept": null,
+                        "name": "o2",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Unilateral leg swelling",
+                        "md_calc_info_concept": null,
+                        "name": "leg_swelling",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Hemoptysis",
+                        "md_calc_info_concept": null,
+                        "name": "hemoptysis",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Recent surgery or trauma",
+                        "md_calc_info_concept": null,
+                        "name": "trauma",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "Surgery or trauma \u22644 weeks ago requiring treatment with general anesthesia",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Prior PE or DVT",
+                        "md_calc_info_concept": null,
+                        "name": "dvt_pe_history",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Hormone use",
+                        "md_calc_info_concept": null,
+                        "name": "estrogen",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "Oral contraceptives, hormone replacement or estrogenic hormones use in males or female patients",
+                        "type": "toggle"
+                    }
+                ],
+                "instructions_en": "",
+                "isVisibleInListView": true,
+                "logic_language": "javascript",
+                "md5": "d19c6c095c0f4b4c72e479d476d64320",
+                "medium_description_en": "<p>Rules out PE if no criteria are present and pre-test probability is &le;15%.</p>",
+                "publishedAt": "2022-04-21T20:29:17.143Z",
+                "purpose_en": [
+                    "Diagnosis",
+                    "Rule Out"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "pe",
+                    "pulmonary embolism",
+                    "dvt"
+                ],
+                "seo": {
+                    "keywords_en": "rule out PE, rule out pulmonary embolism, VTE, PE risk, PE criteria, embolism rule out, PE calculator, perc rule, pe rule out, pulmonary embolism rule out, kline r/o, pe r/o, clinical signs pe, clinical signs r/o PE, kline dvt, perc dvt, PERC score, perc calc, perc r/o, perc rule out, pe rule out criteria, pulmonary embolism r/o, pulmonary embolism rule out criteria",
+                    "meta_description_en": "The PERC Rule for Pulmonary Embolism Rules out PE if no criteria are present and pre-test probability is \u226415%."
+                },
+                "short_description_en": "<p>Clinically rules out PE (&lt;2%).</p>",
+                "short_title_en": "PERC Rule",
+                "slug": "perc-rule-pulmonary-embolism",
+                "specialty_en": [
+                    "Cardiology",
+                    "Critical Care",
+                    "Emergency Medicine",
+                    "Family Practice",
+                    "Hematology and Oncology",
+                    "Hospitalist Medicine",
+                    "Internal Medicine",
+                    "Primary Care",
+                    "Pulmonology",
+                    "Surgery (General)"
+                ],
+                "system_en": [
+                    "Cardiac",
+                    "Hematologic",
+                    "Oncologic",
+                    "Respiratory"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "fb1ca367-6a89-4b32-bba4-05d118557c39",
+                "search_id": "c-347",
+                "cme_status": "enabled"
+            },
+            "headConfig": {
+                "title": "PERC Rule for Pulmonary Embolism",
+                "description": "The PERC Rule for Pulmonary Embolism Rules out PE if no criteria are present and pre-test probability is \u226415%.",
+                "canonicalUrl": "/calc/347/perc-rule-pulmonary-embolism",
+                "keywords": "rule out PE, rule out pulmonary embolism, VTE, PE risk, PE criteria, embolism rule out, PE calculator, perc rule, pe rule out, pulmonary embolism rule out, kline r/o, pe r/o, clinical signs pe, clinical signs r/o PE, kline dvt, perc dvt, PERC score, perc calc, perc r/o, perc rule out, pe rule out criteria, pulmonary embolism r/o, pulmonary embolism rule out criteria",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Jeffrey Kline",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-jeffrey-kline.jpeg",
+                    "about_en": "<p>Jeffrey Kline, MD, is a professor of emergency medicine and physiology and the vice chair of research at Indiana University. Among other research, he has conducted clinical studies using breath-based methods to diagnose and assess the severity of PE. He co-founded BreathQuant Medical Systems Inc to advance practical applications of 16 patents for medical devices. Dr. Kline has published over 50 manuscripts in the area of PE.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Kline+JA%5BAuthor%5D"
+                }
+            ],
+            "contributors": [
+                {
+                    "description": "<p>Benjamin H. Slovis, MD, MA, is an emergency medicine physician and informatician in the department of emergency medicine at Thomas Jefferson University in Philadelphia. A native of New Jersey, Dr. Slovis attended Cornell University for his undergraduate studies and received his MD from UMDNJ\u2013Robert Wood Johnson Medical School. He completed his residency at the Icahn School of Medicine at Mount Sinai and a National Library of Medicine Post-Doctoral Research Fellowship with a masters degree from the department of Biomedical Informatics at Columbia University. His research interests include clinical decision support systems, health-information exchange, and medical education.</p>",
+                    "img": "ben-slovis.jpeg",
+                    "name": "Benjamin Slovis, MD",
+                    "target": "benjamin-slovis",
+                    "firstName": "Benjamin",
+                    "lastName": "Slovis",
+                    "signedCOI": true,
+                    "contributors_page": true,
+                    "status": "Current",
+                    "hasDisclosure": []
+                }
+            ],
+            "relCalcs": [
+                {
+                    "calcId": 10343,
+                    "short_title_en": "Altitude-Adjusted PERC Rule",
+                    "slug": "altitude-adjusted-perc-rule"
+                },
+                {
+                    "calcId": 1750,
+                    "short_title_en": "Geneva Score (Revised)",
+                    "slug": "geneva-score-revised-pulmonary-embolism"
+                },
+                {
+                    "calcId": 1247,
+                    "short_title_en": "Simplified PESI",
+                    "slug": "simplified-pesi-pulmonary-embolism-severity-index"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": true,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "347",
+            "perc-rule-pulmonary-embolism"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

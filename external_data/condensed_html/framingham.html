@@ -1,0 +1,371 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Framingham Risk Score for Hard Coronary Heart Disease</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Age </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Sex </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Female </li><li> Male </li> </ul> </td> </tr> 
+<tr> <td> <p> Smoker </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> Total cholesterol </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> HDL cholesterol </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Systolic BP </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Blood pressure being treated with medicines </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p dir="ltr">Equations as follows (&beta; coefficients listed in table below):</p>
+<p></p>
+<p dir="ltr"><strong>Men:</strong></p>
+<p dir="ltr">L<sub>Men</sub> = &beta; x ln(Age) + &beta; x ln(Total cholesterol) + &beta; x ln(HDL cholesterol) + &beta; x ln(Systolic BP) + &beta; x Treated for blood pressure + &beta; x Smoker + &beta; x ln(Age) x ln(Total cholesterol) + &beta; x ln(Age) x Smoker + &beta; x ln(Age) x ln(Age) - 172.300168</p>
+<p></p>
+<p dir="ltr">P<sub>Men</sub> = 1 - 0.9402^exp(L<sub>Men</sub>)</p>
+<p></p>
+<p dir="ltr"><strong>Women:</strong></p>
+<p dir="ltr">L<sub>Women</sub> = &beta; x ln(Age) + &beta; x ln(Total cholesterol) + &beta; x ln(HDL cholesterol) + &beta; x ln(Systolic BP) + &beta; x Treated for blood pressure + &beta; x Smoker + &beta; x ln(Age) x ln(Total cholesterol) + &beta; x ln(Age) x Smoker - 146.5933061</p>
+<p></p>
+<p dir="ltr">P<sub>Women</sub> = 1 - 0.98767^exp(L<sub>Women</sub>)</p>
+<p></p>
+<div dir="ltr">
+<table><colgroup><col width="115"><col width="142"><col width="130"></colgroup>
+<tbody>
+<tr>
+<td rowspan="2">
+<p dir="ltr"><strong>Variable</strong></p>
+</td>
+<td colspan="2">
+<p dir="ltr"><strong>Coefficient (&beta;)</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>Men</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Women</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(Age)</p>
+</td>
+<td>
+<p dir="ltr">52.00961</p>
+</td>
+<td>
+<p dir="ltr">31.764001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(Total cholesterol)</p>
+</td>
+<td>
+<p dir="ltr">20.014077</p>
+</td>
+<td>
+<p dir="ltr">22.465206</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(HDL cholesterol)</p>
+</td>
+<td>
+<p dir="ltr">-0.905964</p>
+</td>
+<td>
+<p dir="ltr">-1.187731</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(Systolic BP)</p>
+</td>
+<td>
+<p dir="ltr">1.305784</p>
+</td>
+<td>
+<p dir="ltr">2.552905</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Treated for blood pressure*</p>
+</td>
+<td>
+<p dir="ltr">0.241549</p>
+</td>
+<td>
+<p dir="ltr">0.420251</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Smoker*</p>
+</td>
+<td>
+<p dir="ltr">12.096316</p>
+</td>
+<td>
+<p dir="ltr">13.07543</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(Age) x ln(Total cholesterol)</p>
+</td>
+<td>
+<p dir="ltr">-4.605038</p>
+</td>
+<td>
+<p dir="ltr">-5.060998</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(Age) x Smoker**</p>
+</td>
+<td>
+<p dir="ltr">-2.84367</p>
+</td>
+<td>
+<p dir="ltr">-2.996945</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">ln(Age) x ln(Age)</p>
+</td>
+<td>
+<p dir="ltr">-2.93323</p>
+</td>
+<td>
+<p dir="ltr">-</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">*Yes = 1, No = 0.</p>
+<p dir="ltr">**Men: if age &gt;70, use ln(70) x Smoker. Women: if age &gt;78, use ln(78) x Smoker.</p>
+<p><span style="font-size: 10pt; font-family: Arial; color: #0000ff; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p>
+<h2>FACTS & FIGURES</h2>
+<p dir="ltr">Interpretation:</p>
+<div dir="ltr">
+<table><colgroup><col width="*"><col width="*"><col width="*"><col width="*"><col width="*"></colgroup>
+<tbody>
+<tr>
+<td rowspan="2">
+<p dir="ltr"><strong>Age, years </strong></p>
+</td>
+<td colspan="2">
+<p dir="ltr"><strong>Average 10 year hard* CHD risk&nbsp;in this patient</strong></p>
+</td>
+<td colspan="2">
+<p dir="ltr"><strong>Low** 10 year CHD risk in the average patient</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><strong>Women</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Men</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Women</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Men</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">30-34</p>
+</td>
+<td>
+<p dir="ltr">&lt;1%</p>
+</td>
+<td>
+<p dir="ltr">1%</p>
+</td>
+<td>
+<p dir="ltr">&lt;1%</p>
+</td>
+<td>
+<p dir="ltr">2%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">35-39</p>
+</td>
+<td>
+<p dir="ltr">&lt;1%</p>
+</td>
+<td>
+<p dir="ltr">4%</p>
+</td>
+<td>
+<p dir="ltr">1%</p>
+</td>
+<td>
+<p dir="ltr">3%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">40-44</p>
+</td>
+<td>
+<p dir="ltr">1%</p>
+</td>
+<td>
+<p dir="ltr">4%</p>
+</td>
+<td>
+<p dir="ltr">2%</p>
+</td>
+<td>
+<p dir="ltr">4%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">45-49</p>
+</td>
+<td>
+<p dir="ltr">2%</p>
+</td>
+<td>
+<p dir="ltr">8%</p>
+</td>
+<td>
+<p dir="ltr">3%</p>
+</td>
+<td>
+<p dir="ltr">4%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">50-54</p>
+</td>
+<td>
+<p dir="ltr">3%</p>
+</td>
+<td>
+<p dir="ltr">10%</p>
+</td>
+<td>
+<p dir="ltr">5%</p>
+</td>
+<td>
+<p dir="ltr">6%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">55-59</p>
+</td>
+<td>
+<p dir="ltr">7%</p>
+</td>
+<td>
+<p dir="ltr">13%</p>
+</td>
+<td>
+<p dir="ltr">7%</p>
+</td>
+<td>
+<p dir="ltr">7%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">60-64</p>
+</td>
+<td>
+<p dir="ltr">8%</p>
+</td>
+<td>
+<p dir="ltr">20%</p>
+</td>
+<td>
+<p dir="ltr">8%</p>
+</td>
+<td>
+<p dir="ltr">9%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">65-69</p>
+</td>
+<td>
+<p dir="ltr">8%</p>
+</td>
+<td>
+<p dir="ltr">22%</p>
+</td>
+<td>
+<p dir="ltr">8%</p>
+</td>
+<td>
+<p dir="ltr">11%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">70-74</p>
+</td>
+<td>
+<p dir="ltr">11%</p>
+</td>
+<td>
+<p dir="ltr">25%</p>
+</td>
+<td>
+<p dir="ltr">8%</p>
+</td>
+<td>
+<p dir="ltr">14%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">74-79</p>
+</td>
+<td>
+<p dir="ltr">Data not available</p>
+</td>
+<td>
+<p dir="ltr">Data not available</p>
+</td>
+<td>
+<p dir="ltr">Data not available</p>
+</td>
+<td>
+<p dir="ltr">Data not available</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">*Excluding angina pectoris.</p>
+<p dir="ltr">**Low risk was calculated for a person the same age, optimal blood pressure, LDL-C 100-129 mg/dL or cholesterol 160-199 mg/dL, HDL-C 45 mg/dL for men or 55 mg/dL for women, non-smoker, no diabetes.</p>
+<p><span style="font-size: 10pt; font-family: Arial; color: #0000ff; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p>
+<h2>EVIDENCE APPRAISAL</h2>
+
+</html>
+</body>

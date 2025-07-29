@@ -1,0 +1,101 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>GRACE ACS Risk and Mortality Calculator</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Age </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Heart rate/pulse </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Systolic BP </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Creatinine </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Cardiac arrest at admission </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> ST segment deviation on EKG? </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> Abnormal cardiac enzymes </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> Killip class (signs/symptoms) </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No CHF </li><li> Rales and/or JVD </li><li> Pulmonary edema </li><li> Cardiogenic shock </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>Nomogram, as detailed under&nbsp;<a href="https://www.outcomes-umassmed.org/grace/files/GRACE_RiskModel_Coefficients.pdf" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://www.outcomes-umassmed.org/grace/files/GRACE_RiskModel_Coefficients.pdf&amp;source=gmail&amp;ust=1547656443563000&amp;usg=AFQjCNE5xfJqjLWc_ktIvAFOrlABYb7f3A">8. Fox Model for&nbsp;Death between Hospital Admission and 6 months later</a>.</p>
+<h2>FACTS & FIGURES</h2>
+<p><strong>Score interpretation:</strong></p>
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+<tbody>
+<tr>
+<th>Grace Score Range</th>
+<th>Mortality Risk</th>
+</tr>
+<tr>
+<td>0-87</td>
+<td>0-2%</td>
+</tr>
+<tr>
+<td>88-128</td>
+<td>3-10%</td>
+</tr>
+<tr>
+<td>129-149</td>
+<td>10-20%</td>
+</tr>
+<tr>
+<td>150-173</td>
+<td>20-30%</td>
+</tr>
+<tr>
+<td>174-182</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>183-190</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>191-199</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>200-207</td>
+<td>70%</td>
+</tr>
+<tr>
+<td>208-218</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>219-284</td>
+<td>90%</td>
+</tr>
+<tr>
+<td>&ge; 285</td>
+<td>99%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2>EVIDENCE APPRAISAL</h2>
+<p>The GRACE (Global Registry of Acute Coronary Events) is a massive, international database of ACS in 94 hospitals in 14 countries which gives it excellent external validity <em>a priori</em>.</p>
+<p>Patients were entered into the study if they had ACS:</p>
+<ul>
+<li>Signs or symptoms of acute cardiac ischemia<strong> plus</strong>:
+<ul>
+<li>EKG findings consistent with ACS or</li>
+<li>Cardiac biomarker serial increases consistent with ACS or</li>
+<li>Documented coronary artery disease.</li>
+</ul>
+</li>
+<li>This ACS could not be secondary to trauma, surgery, or other significant co-morbidity.</li>
+<li>In-hospital mortality status was available in 98.1% of the 11,389 ACS patients studied.</li>
+<li>22% of the in-hospital deaths occurred within 24 hours of admission, suggesting that this registry contains a very sick cohort of patients.</li>
+</ul>
+<p>Of note, the GRACE 2.0 evaluated variables for non-linear mortality associations (thus providing a more accurate estimate of outcome). GRACE 2.0 also includes mortality estimates up to 3 years after the ACS event via several other data sets with longer followup windows.</p>
+</html>
+</body>

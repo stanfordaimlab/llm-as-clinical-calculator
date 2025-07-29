@@ -1,0 +1,1 @@
+- template: "A {ariscat_age}-year-old patient is scheduled for {ariscat_surgical_incision}, with anticipated duration of {ariscat_duration_of_surgery}; {ariscat_emergency_procedure}. They have a preoperative SpO2 of {ariscat_spo2}. {ariscat_respiratory_infection}. {ariscat_anemia}. What is their ARISCAT score?"

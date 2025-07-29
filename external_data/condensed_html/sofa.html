@@ -1,0 +1,585 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Sequential Organ Failure Assessment (SOFA) Score</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> <p>PaO₂</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>FiO₂</p> </p> <p> <i> See <a href="#evidence">Evidence</a> for estimating FiO₂ from oxygen flow/delivery rates </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>On mechanical ventilation</p> </p> <p> <i> Including <abbr title='Continuous positive airway pressure'>CPAP</abbr> </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Platelets, &times;10&sup3;/&micro;L</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> ≥150 (0) </li><li> 100-149 (1) </li><li> 50-99 (2) </li><li> 20-49 (3) </li><li> <20 (4) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p><calculator id="64">Glasgow Coma Scale</calculator></p> </p> <p> <i> If on sedatives, estimate assumed GCS off sedatives </i> </p> </td> <td> <b> Options: </b> <ul> <li> 15 (0) </li><li> 13-14 (1) </li><li> 10-12 (2) </li><li> 6-9 (3) </li><li> <6 (4) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Bilirubin, mg/dL (&mu;mol/L)</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> <1.2 (<20) (0) </li><li> 1.2–1.9 (20-32) (1) </li><li> 2.0–5.9 (33-101) (2) </li><li> 6.0–11.9 (102-204) (3) </li><li> ≥12.0 (>204) (4) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Mean arterial pressure OR administration of vasoactive agents required</p> </p> <p> <i> Listed doses are in units of mcg/kg/min </i> </p> </td> <td> <b> Options: </b> <ul> <li> No hypotension (0) </li><li> MAP <70 mmHg (1) </li><li> DOPamine ≤5 or DOBUTamine (any dose) (2) </li><li> DOPamine >5, EPINEPHrine ≤0.1, or norEPINEPHrine ≤0.1 (3) </li><li> DOPamine >15, EPINEPHrine >0.1, or norEPINEPHrine >0.1 (4) </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Creatinine, mg/dL (&mu;mol/L) (or urine output)</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> <1.2 (<110) (0) </li><li> 1.2–1.9 (110-170) (1) </li><li>  2.0–3.4 (171-299) (2) </li><li> 3.5–4.9 (300-440) or UOP <500 mL/day (3) </li><li> ≥5.0 (>440) or UOP <200 mL/day (4) </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p dir="ltr">Addition of the selected points:</p>
+<div dir="ltr">
+<table><colgroup><col width="224"><col width="102"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>Variable</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Points</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong>PaO<sub>2</sub>/FiO<sub>2</sub>*, mmHg</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&ge;400</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">300-399</p>
+</td>
+<td>
+<p dir="ltr">+1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">200-299</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&le;199 and NOT mechanically ventilated</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">100-199 and mechanically ventilated</p>
+</td>
+<td>
+<p dir="ltr">+3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&lt;100 and mechanically ventilated</p>
+</td>
+<td>
+<p dir="ltr">+4</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong>Platelets, &times;10<sup>3</sup>/&micro;L</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&ge;150</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">100-149</p>
+</td>
+<td>
+<p dir="ltr">+1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">50-99</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">20-49</p>
+</td>
+<td>
+<p dir="ltr">+3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&lt;20</p>
+</td>
+<td>
+<p dir="ltr">+4</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong><calculator id="64">Glasgow Coma Scale</calculator></strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">15</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">13&ndash;14</p>
+</td>
+<td>
+<p dir="ltr">+1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">10&ndash;12</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">6&ndash;9</p>
+</td>
+<td>
+<p dir="ltr">+3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&lt;6</p>
+</td>
+<td>
+<p dir="ltr">+4</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong>Bilirubin, mg/dL (&mu;mol/L)</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&lt;1.2 (&lt;20)</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">1.2&ndash;1.9 (20-32)</p>
+</td>
+<td>
+<p dir="ltr">+1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2.0&ndash;5.9 (33-101)</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">6.0&ndash;11.9 (102-204)</p>
+</td>
+<td>
+<p dir="ltr">+3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&ge;12.0 (&gt;204)</p>
+</td>
+<td>
+<p dir="ltr">+4</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong>Mean arterial pressure OR administration of&nbsp;vasoactive agents&nbsp;required&nbsp;</strong><b>(listed doses are in units of mcg/kg/min)</b></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">No hypotension</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">MAP &lt;70 mmHg</p>
+</td>
+<td>
+<p dir="ltr">+1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">DOPamine &le;5 or DOBUTamine (any dose)</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">DOPamine &gt;5, EPINEPHrine &le;0.1, or norEPINEPHrine &le;0.1</p>
+</td>
+<td>
+<p dir="ltr">+3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">DOPamine &gt;15, EPINEPHrine &gt;0.1, or norEPINEPHrine &gt;0.1</p>
+</td>
+<td>
+<p dir="ltr">+4</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong>Creatinine, mg/dL (&mu;mol/L) (or urine output)</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&lt;1.2 (&lt;110)</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">1.2&ndash;1.9 (110-170)</p>
+</td>
+<td>
+<p dir="ltr">+1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2.0&ndash;3.4 (171-299)</p>
+</td>
+<td>
+<p dir="ltr">+2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">3.5&ndash;4.9 (300-440) or UOP &lt;500 mL/day)</p>
+</td>
+<td>
+<p dir="ltr">+3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&ge;5.0 (&gt;440) or UOP &lt;200 mL/day</p>
+</td>
+<td>
+<p dir="ltr">+4</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>*Estimating FiO₂ from oxygen flow/delivery rates:</p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>Type of O₂ delivery</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Flow rates, L/min</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>FiO₂</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Nasal cannula</p>
+</td>
+<td>
+<p dir="ltr">1-6</p>
+</td>
+<td>
+<p dir="ltr">~4% FiO₂ added above room air* per 1 L/min</p>
+<ul>
+<li>Room air = 21%&nbsp;</li>
+<li dir="ltr">
+<p dir="ltr" role="presentation">1 L/min = 25%</p>
+</li>
+<li dir="ltr">
+<p dir="ltr" role="presentation">2 L/min = 29%</p>
+</li>
+<li dir="ltr">
+<p dir="ltr" role="presentation">3 L/min = 33%</p>
+</li>
+<li dir="ltr">
+<p dir="ltr" role="presentation">4 L/min = 37%</p>
+</li>
+<li dir="ltr">
+<p dir="ltr" role="presentation">5 L/min = 41%</p>
+</li>
+<li dir="ltr">
+<p dir="ltr" role="presentation">6 L/min = 45%</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Simple face mask</p>
+</td>
+<td>
+<p dir="ltr">~6-12</p>
+</td>
+<td>
+<p dir="ltr">35-60%*</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Non-rebreather mask</p>
+</td>
+<td>
+<p dir="ltr">10-15</p>
+</td>
+<td>
+<p dir="ltr">~70-90%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">High-flow nasal cannula</p>
+</td>
+<td>
+<p dir="ltr">Up to 60</p>
+</td>
+<td>
+<p dir="ltr">30-100%</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr">*Varies based on respiratory rate and minute ventilation.</p>
+</div>
+<h2>FACTS & FIGURES</h2>
+<p>Interpretation:</p>
+<div>
+<div dir="ltr">
+<table><colgroup><col width="96"><col width="126"><col width="145"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>SOFA Score</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Mortality if initial score</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Mortality if highest score</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">0-1</p>
+</td>
+<td>
+<p dir="ltr">0.0%</p>
+</td>
+<td>
+<p dir="ltr">0.0%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2-3</p>
+</td>
+<td>
+<p dir="ltr">6.4%</p>
+</td>
+<td>
+<p dir="ltr">1.5%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">4-5</p>
+</td>
+<td>
+<p dir="ltr">20.2%</p>
+</td>
+<td>
+<p dir="ltr">6.7%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">6-7</p>
+</td>
+<td>
+<p dir="ltr">21.5%</p>
+</td>
+<td>
+<p dir="ltr">18.2%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">8-9</p>
+</td>
+<td>
+<p dir="ltr">33.3%</p>
+</td>
+<td>
+<p dir="ltr">26.3%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">10-11</p>
+</td>
+<td>
+<p dir="ltr">50.0%</p>
+</td>
+<td>
+<p dir="ltr">45.8%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">12-14</p>
+</td>
+<td>
+<p dir="ltr">95.2%</p>
+</td>
+<td>
+<p dir="ltr">80.0%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&gt;14</p>
+</td>
+<td>
+<p dir="ltr">95.2%</p>
+</td>
+<td>
+<p dir="ltr">89.7%</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<div dir="ltr">
+<table><colgroup><col width="140"><col width="83"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>Mean SOFA Score</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Mortality </strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">0-1.0</p>
+</td>
+<td>
+<p dir="ltr">1.2%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">1.1-2.0</p>
+</td>
+<td>
+<p dir="ltr">5.4%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2.1-3.0</p>
+</td>
+<td>
+<p dir="ltr">20.0%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">3.1-4.0</p>
+</td>
+<td>
+<p dir="ltr">36.1%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">4.1-5.0</p>
+</td>
+<td>
+<p dir="ltr">73.1%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&gt;5.1</p>
+</td>
+<td>
+<p dir="ltr">84.4%</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>From <a href="https://www.ncbi.nlm.nih.gov/pubmed/11594901" target="_blank" rel="noopener">Ferreira 2001</a>.</p>
+</div>
+<h2>EVIDENCE APPRAISAL</h2>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/8844239" target="_blank" rel="noopener">This paper</a> describes how the European Society of Intensive Care Medicine selected the SOFA score variables.</li>
+<li>In <a href="https://www.ncbi.nlm.nih.gov/pubmed/9824069" target="_blank" rel="noopener">this validation study</a>, 1,449 patients were enrolled over a period of one month in forty intensive care units (ICUs) in 16 countries. The SOFA score was found to have a good correlation of organ dysfunction/failure in critically ill patients.</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/11594901" target="_blank" rel="noopener">This prospective, observational cohort study</a> was performed at a university hospital in Belgium and recruited 352 patients. The SOFA score was again found to be a good indicator of prognosis.</li>
+</ul>
+</html>
+</body>

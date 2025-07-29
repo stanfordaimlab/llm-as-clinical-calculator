@@ -1,0 +1,107 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>MELD Na (UNOS/OPTN)</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Dialysis at least twice in the past week </p> <p> <i> Or <abbr title='Continuous veno-venous hemodialysis'>CVVHD</abbr> for ≥24 hours in the past week </i> </p> </td> <td> <b> Options: </b> <ul> <li> No </li><li> Yes </li> </ul> </td> </tr> 
+<tr> <td> <p> Creatinine </p> <p> <i> Cr >4.0 mg/dL is automatically assigned a value of 4.0 </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Bilirubin </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> INR </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> Sodium </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>Per <a href="https://optn.transplant.hrsa.gov/media/1575/policynotice_20151101.pdf" target="_blank" rel="noopener">OPTN policy, January 2016 (pages 4&ndash;5)</a>:</p>
+<p>Candidates who are at least 12 years old receive an initial MELD(i) score equal to:</p>
+<p><strong>MELD(i) = 0.957 </strong><strong>&times;</strong><strong> ln(Cr) + 0.378 </strong><strong>&times;</strong><strong> ln(bilirubin) + 1.120 </strong><strong>&times;</strong><strong> ln(INR) + 0.643</strong></p>
+<p><span>Then, round to the tenth decimal place and multiply by 10.&nbsp;</span></p>
+<p>If MELD(i) &gt; 11, perform additional MELD calculation as follows:</p>
+<p><strong>MELD = MELD(i) + 1.32 </strong><strong>&times; </strong><strong>(137 &ndash; Na) &ndash; &nbsp;[ 0.033 </strong><strong>&times; </strong><strong>MELD(i) </strong><strong>&times; </strong><strong>(137 &ndash; Na) ]</strong></p>
+<p>Additional rules:</p>
+<ul>
+<li>All values in US units (Cr and bilirubin in mg/dL, Na in mEq/L, and INR unitless).</li>
+<li>If bilirubin, Cr, or INR is &lt;1.0, use 1.0.</li>
+<li>If any of the following is true, use Cr 4.0:
+<ul>
+<li>Cr &gt;4.0.</li>
+<li>&ge;2 dialysis treatments within the prior 7 days.</li>
+<li>24 hours of continuous veno-venous hemodialysis (CVVHD) within the prior 7 days.</li>
+</ul>
+</li>
+<li>If Na &lt;125 mmol/L, use 125. If Na &gt;137 mmol/L, use 137.</li>
+<li>Maximum MELD = 40.</li>
+</ul>
+<h2>FACTS & FIGURES</h2>
+<p><strong>Interpretation:</strong></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>MELD Score</strong></p>
+</td>
+<td>
+<p><strong>Mortality</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span>&le;9</span></p>
+</td>
+<td>
+<p><span>1.9%</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span>10&ndash;19</span></p>
+</td>
+<td>
+<p><span>6.0%</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span>20&ndash;29</span></p>
+</td>
+<td>
+<p><span>19.6%</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span>30&ndash;39</span></p>
+</td>
+<td>
+<p><span>52.6%</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span>&ge;40</span></p>
+</td>
+<td>
+<p><span>71.3%</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>More Info: <a href="https://optn.transplant.hrsa.gov/media/1575/policynotice_20151101.pdf" target="_blank" rel="noopener">OPTN/UNOS Documentation on MELD and PELD</a>&nbsp;</span></p>
+<h2>EVIDENCE APPRAISAL</h2>
+<p>MELD was <a href="https://www.ncbi.nlm.nih.gov/pubmed/11172350" target="_blank" rel="noopener">originally developed in 2001</a> by researchers at the Mayo Clinic to estimate survival of 231 patients undergoing elective transjugular intrahepatic portosystemic shunt (TIPS) placement and thus coined the &ldquo;Mayo End Stage Liver Disease (MELD)&rdquo; score.</p>
+<p>In addition to serum bilirubin, creatinine levels and INR, etiology of liver disease was included, but subsequently removed due to difficulty estimating risk in patients with multiple causes of liver disease. The name was also later changed to Model for End-stage Liver Disease.</p>
+<p>In 2002, the United Network for Organ Sharing (UNOS) began using a modified version of the MELD score to prioritize patients on their orthotopic liver transplantation waiting list. MELD was prospectively validated in 2003 by <a href="https://www.ncbi.nlm.nih.gov/pubmed/12512033" target="_blank" rel="noopener">Wiesner et al</a> in 3,437 patients awaiting transplant.</p>
+<p>Further studies demonstrated that MELD can be used to predict short term mortality risk in cirrhosis patients with complications such as variceal bleeding, spontaneous bacterial peritonitis, acute hepatic failure and alcoholic hepatitis. It can also be used in preoperative assessment of cirrhotics undergoing non-transplant surgery and in HCC patients who are not candidates for transplant.</p>
+<p>In 2006, the MELD Exception Study Group and Conference (MESSAGE) created the <a href="https://www.ncbi.nlm.nih.gov/pubmed/17123284" target="_blank" rel="noopener">MELD Exception Guidelines</a> for transplant list patients whose mortality was not accurately predicted by the standard MELD formula.</p>
+<p>In March 2007, <a href="https://www.ncbi.nlm.nih.gov/pubmed/17326206" target="_blank" rel="noopener">Kamath et al</a> reported that, though MELD has the ability to rank cirrhotic patients according to short term mortality, it is not a perfectly universal score, as survival is not accurately predicted in 15-20% of patients, and users must be aware of limitations of its application.</p>
+</html>
+</body>

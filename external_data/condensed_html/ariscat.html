@@ -1,0 +1,264 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>ARISCAT Score for Postoperative Pulmonary Complications</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Age, years </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> ≤50 (0) </li><li> 51-80 (3) </li><li> >80 (16) </li> </ul> </td> </tr> 
+<tr> <td> <p> Preoperative SpO₂ </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> ≥96% (0) </li><li> 91-95% (8) </li><li> ≤90% (24) </li> </ul> </td> </tr> 
+<tr> <td> <p> Respiratory infection in the last month </p> <p> <i> Either upper or lower (i.e., URI, bronchitis, pneumonia), with fever and antibiotic treatment </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (17) </li> </ul> </td> </tr> 
+<tr> <td> <p> Preoperative anemia (Hgb ≤10 g/dL) </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (11) </li> </ul> </td> </tr> 
+<tr> <td> <p> Surgical incision </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Peripheral (0) </li><li> Upper abdominal (15) </li><li> Intrathoracic (24) </li> </ul> </td> </tr> 
+<tr> <td> <p> Duration of surgery </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> <2 hrs (0) </li><li>  2-3 hrs (16) </li><li> >3 hrs (23) </li> </ul> </td> </tr> 
+<tr> <td> <p> Emergency procedure </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> No (0) </li><li> Yes (8) </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p dir="ltr">Addition of the selected points:</p>
+<div dir="ltr">
+<table><colgroup><col width="151"><col width="97"><col width="71"></colgroup>
+<tbody>
+<tr>
+<td colspan="2">
+<p dir="ltr"><strong>Variable</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Points</strong></p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p dir="ltr">Age, years</p>
+</td>
+<td>
+<p dir="ltr">&le;50</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">51-80</p>
+</td>
+<td>
+<p dir="ltr">3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&gt;80</p>
+</td>
+<td>
+<p dir="ltr">16</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p dir="ltr">Preoperative SpO<sub>2</sub></p>
+</td>
+<td>
+<p dir="ltr">&ge;96%</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">91-95%</p>
+</td>
+<td>
+<p dir="ltr">8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&le;90%</p>
+</td>
+<td>
+<p dir="ltr">24</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p dir="ltr">Respiratory infection in the last month*</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Yes</p>
+</td>
+<td>
+<p dir="ltr">17</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p dir="ltr">Preoperative anemia (Hgb &le;10 g/dL)</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Yes</p>
+</td>
+<td>
+<p dir="ltr">11</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p dir="ltr">Surgical incision</p>
+</td>
+<td>
+<p dir="ltr">Peripheral</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Upper abdominal</p>
+</td>
+<td>
+<p dir="ltr">15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Intrathoracic</p>
+</td>
+<td>
+<p dir="ltr">24</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p dir="ltr">Duration of surgery</p>
+</td>
+<td>
+<p dir="ltr">&lt;2 hrs</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">2-3 hrs</p>
+</td>
+<td>
+<p dir="ltr">16</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&gt;3 hrs</p>
+</td>
+<td>
+<p dir="ltr">23</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p dir="ltr">Emergency procedure</p>
+</td>
+<td>
+<p dir="ltr">No</p>
+</td>
+<td>
+<p dir="ltr">0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">Yes</p>
+</td>
+<td>
+<p dir="ltr">8</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>*Either upper or lower (i.e., URI, bronchitis, pneumonia), with fever and antibiotic treatment</p>
+</div>
+<h2>FACTS & FIGURES</h2>
+<p dir="ltr">Interpretation:</p>
+<div dir="ltr">
+<table><colgroup><col width="92"><col width="110"><col width="222"></colgroup>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><strong>ARISCAT Score</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Risk group</strong></p>
+</td>
+<td>
+<p dir="ltr"><strong>Risk of in-hospital postoperative pulmonary complications*</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&lt;26</p>
+</td>
+<td>
+<p dir="ltr">Low</p>
+</td>
+<td>
+<p dir="ltr">1.6%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">26&ndash;44</p>
+</td>
+<td>
+<p dir="ltr">Intermediate</p>
+</td>
+<td>
+<p dir="ltr">13.3%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr">&ge;45</p>
+</td>
+<td>
+<p dir="ltr">High</p>
+</td>
+<td>
+<p dir="ltr">42.1%</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr"><span id="docs-internal-guid-96a0fce1-fee4-78c2-3c06-2172cb9b14a3"></span></p>
+<p dir="ltr">*Complications were defined as a composite including respiratory failure, respiratory infection, pleural effusion, atelectasis on chest x-ray, pneumothorax, bronchospasm treated with bronchodilators, and aspiration pneumonitis.</p>
+<h2>EVIDENCE APPRAISAL</h2>
+
+</html>
+</body>

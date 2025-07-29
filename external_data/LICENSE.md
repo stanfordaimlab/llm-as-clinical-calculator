@@ -1,0 +1,1 @@
+Data contained with this directory is copyrighted by MDCalc Ltd. Used with permission. All rights reserved. 

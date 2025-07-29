@@ -1,0 +1,319 @@
+
+<html>
+<head>
+<style type="text/css">
+body, table, p {
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+</style>
+</head>
+
+<body>
+<h1>Gupta Perioperative Risk for Myocardial Infarction or Cardiac Arrest (MICA)</h1>
+<h2>INPUTS</h2>
+<table><tr> <td> <p> Age </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul>  </ul> </td> </tr> 
+<tr> <td> <p> <p>Functional status</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Independent </li><li> Partially dependent </li><li> Totally dependent </li> </ul> </td> </tr> 
+<tr> <td> <p> <p><calculator id="10024">ASA class</calculator></p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> 1: normal healthy patient </li><li> 2: mild systemic disease </li><li> 3: severe systemic disease </li><li> 4: severe systemic disease that is a constant threat to life (i.e., patient could die acutely without intervention) </li><li> 5: moribund, not expected to survive without surgery </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Creatinine</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Normal (≤1.5 mg/dL, 133 µmol/L) </li><li> Elevated (>1.5 mg/dL, 133 µmol/L) </li><li> Unknown </li> </ul> </td> </tr> 
+<tr> <td> <p> <p>Type of procedure</p> </p> <p> <i>  </i> </p> </td> <td> <b> Options: </b> <ul> <li> Anorectal </li><li> Aortic </li><li> Bariatric </li><li> Brain </li><li> Breast </li><li> Cardiac </li><li> ENT (except thyroid/parathyroid) </li><li> Foregut (esophagus, stomach) or hepatopancreatobiliary </li><li> Gallbladder, appendix, adrenals, or spleen </li><li> Hernia (ventral, inguinal, femoral) </li><li> Intestinal </li><li> Neck (thyroid/parathyroid) </li><li> Obstetric/gynecologic </li><li> Orthopedic and non-vascular extremity </li><li> Other abdominal </li><li> Peripheral vascular </li><li> Skin </li><li> Spine </li><li> Non-esophageal thoracic (lung, mediastinum, etc) </li><li> Vein </li><li> Urology </li> </ul> </td> </tr> 
+</table>
+<h2>FORMULA</h2>
+<p>Cardiac risk, % = e<sup><em>x</em></sup> / (1 + e<sup><em>x</em></sup>)</p>
+<p>Where x = &minus;5.25 + sum of the values of the selected variables.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Variable</strong></td>
+<td><strong>Options</strong></td>
+<td>
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Age per year of increase</p>
+</td>
+<td>
+<p>Age x 0.02</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p>Functional status</p>
+</td>
+<td>
+<p>Independent</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partially dependent</p>
+</td>
+<td>
+<p>0.65</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Totally dependent</p>
+</td>
+<td>
+<p>1.03</p>
+</td>
+</tr>
+<tr>
+<td rowspan="5">
+<p><calculator id="10024">ASA class</calculator></p>
+</td>
+<td>
+<p>1: normal healthy patient</p>
+</td>
+<td>
+<p>&minus;5.17</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2: mild systemic disease</p>
+</td>
+<td>
+<p>&minus;3.29</p>
+</td>
+</tr>
+<tr>
+<td>3: severe systemic disease</td>
+<td>
+<p>&minus;1.92</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4: severe systemic disease that is a constant threat to life*</p>
+</td>
+<td>
+<p>&minus;0.95</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5: moribund, not expected to survive without surgery</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p>Creatinine</p>
+</td>
+<td>
+<p>Normal (&le;1.5 mg/dL, 133 &micro;mol/L)</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Elevated (&gt;1.5 mg/dL, 133 &micro;mol/L)</p>
+</td>
+<td>
+<p>0.61</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Unknown</p>
+</td>
+<td>
+<p>&minus;0.10</p>
+</td>
+</tr>
+<tr>
+<td rowspan="21">
+<p>Type of&nbsp;procedure</p>
+</td>
+<td>
+<p>Anorectal</p>
+</td>
+<td>
+<p>&minus;0.16</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Aortic</p>
+</td>
+<td>
+<p>1.60</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bariatric</p>
+</td>
+<td>
+<p>&minus;0.25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Brain</p>
+</td>
+<td>
+<p>1.40</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Breast</p>
+</td>
+<td>
+<p>&minus;1.61</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cardiac</p>
+</td>
+<td>
+<p>1.01</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ENT (except thyroid/parathyroid)</p>
+</td>
+<td>
+<p>0.71</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Foregut or hepatopancreatobiliary</p>
+</td>
+<td>
+<p>1.39</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Gallbladder, appendix, adrenals, or spleen</p>
+</td>
+<td>
+<p>0.59</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hernia (ventral, inguinal, femoral)</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Intestinal</p>
+</td>
+<td>
+<p>1.14</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Neck (thyroid/parathyroid)</p>
+</td>
+<td>
+<p>0.18</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Obstetric/gynecologic</p>
+</td>
+<td>
+<p>0.76</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Orthopedic and non-vascular extremity</p>
+</td>
+<td>
+<p>0.80</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Other abdominal</p>
+</td>
+<td>
+<p>1.13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Peripheral vascular**</p>
+</td>
+<td>
+<p>0.86</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Skin</p>
+</td>
+<td>
+<p>0.54</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Spine</p>
+</td>
+<td>
+<p>0.21</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Non-esophageal thoracic</p>
+</td>
+<td>
+<p>0.40</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Vein</p>
+</td>
+<td>
+<p>&minus;1.09</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Urology</p>
+</td>
+<td>
+<p>&minus;0.26</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>*i.e., patient could die acutely without intervention.</p>
+<p>**Non-aortic, non-vein vascular surgeries.</p>
+<h2>FACTS & FIGURES</h2>
+
+<h2>EVIDENCE APPRAISAL</h2>
+<p dir="ltr"><a href="https://circ.ahajournals.org/content/124/4/381#xref-fn-9-1" target="_blank" rel="noopener">Gupta et al (2011)</a> used the NSQIP database to identify risk factors associated with intra- or postoperative MI or cardiac arrest in over 200,000 patients. Compared with other risk calculators, the Gupta Perioperative Risk Score (also sometimes called the MICA or Myocardial Infarction/Cardiac Arrest Score) factors in higher usage of minimally invasive surgery and differentiates between organ system and type of surgery. However, this score was only validated retrospectively, and therefore likely underestimates myocardial ischemia. Further, stress test results and beta-blocker therapy status were not a part of the NSQIP database data used to derive this score.</p>
+<p><span id="docs-internal-guid-38287305-7fff-d3a6-fced-73408fff9761">Like the Gupta Score, the ACS NSQIP Surgical Risk Calculator predicts either myocardial infarction or cardiac arrest within 30 days of surgery, and has been shown to perform well in patients undergoing low-risk procedures or those with a shorter duration length of stay. The Gupta Score selects fewer patients as elevated risk compared to the ACS NSQIP Surgical Risk Calculator or the RCRI. RCRI tends to overestimate risk in lower risk patients; therefore, it is suggested to use ACS NSQIP or Gupta Score calculators for that group of patients (<a href="https://www.ncbi.nlm.nih.gov/pubmed/29126584" target="_blank" rel="noopener">Cohn 2018</a>).</span></p>
+</html>
+</body>

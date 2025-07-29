@@ -1,0 +1,590 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Cough",
+                    "Fever",
+                    "Sore Throat"
+                ],
+                "cmeEndDate": null,
+                "cmeLastReviewed": null,
+                "cmeReleaseDate": null,
+                "cmeVersion": null,
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "<p>The original study by Centor et al was done in 1981 to develop criteria to diagnose GAS infection in adult patients presenting to the emergency department with sore throat (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/6763125\" target=\"_blank\" rel=\"noopener\">Centor 1981</a>). The original model designated four criteria: tonsillar exudates, swollen tender anterior cervical nodes, absence of a cough, and history of fever. Patients exhibiting all four variables had a 56% probability of a Group A beta strep positive culture; three variables, 32%; two variables, 15%; one variable, 6.5%; and zero variables, 2.5%.</p>\n<p>The Centor Score was later modified to include age (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/9475915\" target=\"_blank\" rel=\"noopener\">McIsaac 1998</a>) and validated (<a href=\"https://jama.jamanetwork.com/article.aspx?articleid=198485\" target=\"_blank\" rel=\"noopener\">McIsaac 2004</a>) for use in both children and adults presenting with sore throat. McIsaac et al (1998) determined that using the Centor Score would reduce the number of unnecessary initial antibiotic prescriptions by 48%, without an increase in throat culture use.</p>\n<p>The Centor Score and its modifications were derived in relatively small samples (n=286 and n=521, respectively). In order to more precisely classify the risk of GAS infection, <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3627733/\" target=\"_blank\" rel=\"noopener\">Fine et al (2012)</a> performed a national-scale validation of the score on a geographically diverse population of over 140,000 patients presenting in a clinical setting. The study was carried out over the course of more than a year, mitigating any impact of seasonality of GAS incidence on the results. This analysis provided more precise interpretations of risk for each category of the Centor Score; these still fell within the 95% confidence interval of Centor's original study with a much smaller sample size.</p>\n<p>In their comparison of the Centor Score with other identification and treatment strategies, McIsaac et al (2004) found that use of the score resulted in fewer overall tests (cultures and rapid tests) per person but more throat cultures (96.1% of adults) than other strategies. As a result, the Centor Score represented a compromise, requiring the least diagnostic testing, providing 100% sensitivity and greater than 90% specificity in both children and adults, and producing significant reductions in unnecessary use of antibiotics, compared to other strategies.</p>\n<p><a href=\"https://annals.org/article.aspx?articleid=2481815\" target=\"_blank\" rel=\"noopener\">Harris et al (2016)</a> encourage the use of the Centor Score primarily to identify patients with a low probability of Group A streptococcal pharyngitis who do not warrant further testing, citing the criteria's low positive predictive value.</p>",
+                        "formula_en": "<p>Addition of the selected points:</p>\n<table>\n<tbody>\n<tr>\n<td colspan=\"2\">\n<p><strong>Criteria</strong></p>\n</td>\n<td>\n<p><strong>Points</strong></p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"3\">\n<p>Age</p>\n</td>\n<td>\n<p>3-14 years</p>\n</td>\n<td>\n<p>+1</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>15-44 years</p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>&ge;45 years</p>\n</td>\n<td>\n<p>-1</p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"2\">\n<p>Exudate or swelling on tonsils</p>\n</td>\n<td>\n<p>No</p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Yes</p>\n</td>\n<td>\n<p>+1</p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"2\">\n<p>Tender/swollen anterior cervical lymph nodes</p>\n</td>\n<td>\n<p>No</p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Yes</p>\n</td>\n<td>\n<p>+1</p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"2\">\n<p>Temp &gt;38&deg;C (100.4&deg;F)</p>\n</td>\n<td>\n<p>No</p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Yes</p>\n</td>\n<td>\n<p>+1</p>\n</td>\n</tr>\n<tr>\n<td rowspan=\"2\">\n<p>Cough</p>\n</td>\n<td>\n<p>Cough present</p>\n</td>\n<td>\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Cough absent</p>\n</td>\n<td>\n<p>+1</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+                        "more_info_en": "<p>Interpretation:</p>\n<table>\n<tbody>\n<tr>\n<td>\n<p><strong>Centor Score</strong></p>\n</td>\n<td>\n<p><strong>Probability of strep pharyngitis</strong></p>\n</td>\n<td>\n<p><strong>Recommendation</strong></p>\n</td>\n</tr>\n<tr>\n<td>\n<p>0</p>\n</td>\n<td>\n<p>1-2.5%</p>\n</td>\n<td rowspan=\"2\">\n<p>No further testing or antibiotics.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1</p>\n</td>\n<td>\n<p>5-10%</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2</p>\n</td>\n<td>\n<p>11-17%</p>\n</td>\n<td>\n<p>Optional rapid strep testing and/or culture.</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>3</p>\n</td>\n<td>\n<p>28-35%</p>\n</td>\n<td>\n<p>Consider rapid strep testing and/or culture.&nbsp;</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>&ge;4</p>\n</td>\n<td>\n<p>51-53%</p>\n</td>\n<td>\n<p>Consider rapid strep testing and/or culture. Empiric antibiotics may be appropriate depending on the specific scenario.</p>\n</td>\n</tr>\n</tbody>\n</table>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [],
+                            "Manufacturer Website": [],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/6763125",
+                                    "text": "Centor RM, Witherspoon JM, Dalton HP, Brody CE, Link K. The diagnosis of strep throat in adults in the emergency room. Med Decis Making. 1981;1(3):239-46."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/9475915",
+                                    "text": "McIsaac WJ, White D, Tannenbaum D, Low DE. A clinical score to reduce unnecessary antibiotic use in patients with sore throat. CMAJ. 1998 Jan 13;158(1):75-83. PubMed PMID: 9475915; PubMed Central PMCID: PMC1228750."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/21646249",
+                                    "text": "Mitchell MS, Sorrentino A, Centor RM. Adolescent pharyngitis: a review of bacterial causes. Clin Pediatr (Phila). 2011;50(12):1091-5."
+                                },
+                                {
+                                    "href": "https://academic.oup.com/cid/article/55/10/e86/321183",
+                                    "text": " Shulman ST, et. al. Clinical Practice Guideline for the Diagnosis and Management of Group A Streptococcal Pharyngitis: 2012 Update by the Infectious Diseases Society of America. Clin Infect Dis. 2012 Nov 15;55(10):1279-82."
+                                },
+                                {
+                                    "href": "https://annals.org/article.aspx?articleid=2481815",
+                                    "text": "Harris AM, Hicks LA, Qaseem A, for the High Value Care Task Force of the American College of Physicians and for the Centers for Disease Control and Prevention. Appropriate Antibiotic Use for Acute Respiratory Tract Infection in Adults: Advice for High-Value Care From the American College of Physicians and the Centers for Disease Control and Prevention. Ann Intern Med. 2016 Jan 19. doi: 10.7326/M15-1840."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/27386721?dopt=Abstract",
+                                    "text": "Kalra MG, Higgins KE, Perez ED. Common Questions About Streptococcal Pharyngitis. Am Fam Physician. 2016;94(1):24-31."
+                                }
+                            ],
+                            "Outcomes": [],
+                            "Validation": [
+                                {
+                                    "href": "https://jama.jamanetwork.com/article.aspx?articleid=198485",
+                                    "text": "McIsaac WJ, Kellner JD, Aufricht P, Vanjaka A, Low DE. Empirical Validation of Guidelines for the Management of Pharyngitis in Children and Adults. JAMA.2004;291(13):1587-1595. doi:10.1001/jama.291.13.1587."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3627733/",
+                                    "text": "Fine AM, Nizet V, Mandl KD. Large-Scale Validation of the Centor and McIsaac Scores to Predict Group A Streptococcal Pharyngitis. Archives of internal medicine 2012;172(11):847-852. doi:10.1001/archinternmed.2012.950."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": []
+                    },
+                    "creator": [
+                        {
+                            "approved": false,
+                            "name": "Dr. Robert M. Centor",
+                            "qa_en": "<p><strong>Why did you develop the Centor Score? Was there a clinical experience that inspired you to create this tool for clinicians?</strong><br /> In 1979, while working in the \"non-acute\" adult emergency room, a resident asked me how to evaluate a sore throat patient. Having just finished my residency, I started to give a definitive answer, but had a moment of humility and told him that I did not know. We made a treatment decision at the time, and I went to the library to learn more. A wonderful microbiologist agreed to do some throat cultures for us, and I developed a questionnaire. Our goal was to see if clinical findings could stratify the probability that an adult (16 and older in our ER) patient had group A Strep.</p>\n<p><strong>What pearls, pitfalls and/or tips do you have for users of the Centor Score? Are there cases when it has been applied, interpreted, or used inappropriately?</strong><br /> We studied adults, and thus have always been wary of applying it to children. More recently, we have published a review that shows that pre-adolescent pharyngitis has many differences from adolescent/young adult pharyngitis. McIsaac has developed an adjustment for age which might be appropriate for pre-adolescents.</p>\n<p>Please do not use this score if the patient does not have a recent onset acute pharyngitis (3 days or less). Some have erred in using this for any throat discomfort.</p>\n<p><strong>What recommendations do you have for health care providers once they have the Centor Score result? Are there any adjustments or updates you would make to the score given recent changes in medicine?</strong><br /> Our recent research suggests that our Score stratifies not just group A strep, but also groups C&amp;G strep and Fusobacterium necrophorum. Because we believe that we should treat all of these bacteria, we favor narrow antibiotics (preferably penicillin, amoxicillin or a narrow spectrum cephalosporin) for scores of 3 or 4. Depending on clinical assessment, we sometimes will also treat the 2s. Zeros and 1s need no testing or antibiotics. All patients should be told that pharyngitis is generally self limited and should improve over the next 2-5 days. If symptoms worsen, then the differential diagnosis broadens and the score is not longer relevant. Major red flags include rigors and inability to swallow secondary to pain. These patients need further evaluation, and likely hospitalization.<br /><br /><strong>Any further research you're working on related to resource utilization and sore throat?</strong><br /> We continue to study the importance of <em>Fusobacterium necrophorum,</em>&nbsp;an obligate anaerobe that causes endemic pharyngitis in adolescents and young adults. This bacteria is very important because it is the most common cause of peritonsillar abscess in the 15-30 age group, and the primary cause of Lemierre Syndrome.</p>"
+                        },
+                        {
+                            "approved": false,
+                            "name": "Dr. Warren McIsaac",
+                            "qa_en": ""
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<ul>\n<li>The Centor Score correlates directly with risk of positive throat culture for GAS (Group A Streptococcus).</li>\n<li>New <a href=\"https://academic.oup.com/cid/article/55/10/e86/321183\" target=\"_blank\" rel=\"noopener\">2012 guidelines from the IDSA</a> (Infectious Disease Society of America) no longer recommend empiric treatment for patients alone; they recommend testing patients that are at higher risk for strep pharyngitis, but not giving antibiotics until a rapid test is positive or a throat culture is positive.</li>\n<li>The modified criteria by McIsaac et al include an age component, along with tonsillar swelling, as part of the rule. GAS is incredibly rare in patients under 3 and less common in older adults, so this can help clinicians risk stratify patients.</li>\n<li>Most cases of pharyngitis are viral in origin, and with the rare incidence of rheumatic fever, along with the questionable benefits of early antibiotics to prevent sequelae like peritonsillar abscess, antibiotics are prescribed much less often. Steroids (like dexamethasone) and NSAIDS often provide similar pain relief and resolution of symptoms to antibiotics.</li>\n</ul>",
+                        "use_case_en": "<p>Children with pharyngitis, primarily; the risk of GAS decreases significantly with age into adulthood.</p>",
+                        "why_use_en": "<ul>\n<li>Most pharyngitis is viral and does not respond to antibiotic treatment. The Centor Score attempts to predict which patients will have culture-confirmed streptococcal infections of their pharynx to help determine which patients to test in the first place.</li>\n<li>The newer FeverPAIN Score is similar, but the Centor Score distinguishes between adolescents/young adults and pre-adolescents&mdash;important because strep carrier rates are higher in preadolescents than adolescents/young adults, and older patients are more likely to have severe symptoms and develop suppurative complications (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21646249\" target=\"_blank\" rel=\"noopener\">Mitchell 2011</a>).</li>\n</ul>"
+                    },
+                    "next_steps": {
+                        "advice_en": "<p>Steroids and NSAIDS improve symptoms; antibiotics are often indicated in streptococcal pharyngitis, but do not prevent its suppurative complications, like peritonsillar abscess.</p>",
+                        "critical_actions_en": "<ul>\n<li>Carefully consider patients with symptom duration longer than 3 days, even though the Centor Score does not apply.</li>\n<li>While symptoms are not compatible with a diagnosis of acute pharyngitis, these patients require evaluation for suppurative complications (peritonsillar abscess or Lemierre syndrome), or viral infections in adult patients (infectious mononucleosis or acute HIV) (Centor 2017).</li>\n</ul>",
+                        "management_en": ""
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": [
+                            {
+                                "CalculatorId": 104,
+                                "clinical": 4,
+                                "createdAt": "2019-07-02T20:18:44.622Z",
+                                "evidence": 4,
+                                "id": 1,
+                                "popularity": 5,
+                                "updatedAt": "2019-07-02T20:18:44.622Z"
+                            }
+                        ],
+                        "partner_contact": [
+                            {
+                                "CalculatorId": 104,
+                                "createdAt": "2019-07-02T20:18:44.631Z",
+                                "description": "Emergency Medicine Practice",
+                                "id": 2,
+                                "link": "http://www.ebmedicine.net/topics.php?paction=showTopicSeg&topic_id=563&seg_id=9382",
+                                "order": 0,
+                                "society": "EB Medicine",
+                                "text": "Calculated Decisions: Centor Score",
+                                "updatedAt": "2020-03-20T19:50:51.724Z"
+                            }
+                        ],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Acute Pain",
+                    "Coronavirus",
+                    "COVID-19",
+                    "Pharyngitis",
+                    "Strep Pharyngitis"
+                ],
+                "dosing": false,
+                "equation_logic": "9749b669b73e73064091385627e8c2f0",
+                "favorite_id": 104,
+                "full_title_en": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "<p>Age</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "age_range",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "3-14 years",
+                                "value": 1
+                            },
+                            {
+                                "label": "15-44 years",
+                                "value": 0
+                            },
+                            {
+                                "label": "\u226545 years",
+                                "value": -1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "Group A streptococcus (GAS) rare under 3",
+                        "type": "radio"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "<p>Exudate or swelling on tonsils</p>",
+                        "md_calc_info_concept": null,
+                        "name": "exudate_swelling",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "<p>Tender/swollen anterior cervical lymph nodes</p>",
+                        "md_calc_info_concept": null,
+                        "name": "lymph_nodes",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "<p>Temp &gt;38&deg;C (100.4&deg;F)</p>",
+                        "md_calc_info_concept": null,
+                        "name": "fever",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": null,
+                        "label_en": "<p>Cough</p>",
+                        "mdcalc_info_concept": null,
+                        "name": "cough",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "Cough present",
+                                "value": 0
+                            },
+                            {
+                                "label": "Cough absent",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "radio"
+                    }
+                ],
+                "instructions_en": "<p>Use only in patients with recent onset (&le;3 days) acute pharyngitis.</p>",
+                "isVisibleInListView": true,
+                "is_manual": false,
+                "logic_language": "javascript",
+                "md5": "9eab7b88c08c1e807299d5fefe5074d3",
+                "medium_description_en": "<p>Estimates probability that pharyngitis is streptococcal, and suggests management course.</p>",
+                "publishedAt": "2022-04-21T20:28:52.519Z",
+                "purpose_en": [
+                    "Diagnosis",
+                    "Rule Out",
+                    "Treatment"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "strep",
+                    "sore throat",
+                    "centaur",
+                    "centor",
+                    "covid",
+                    "covid19",
+                    "covid-19",
+                    "covid 19",
+                    "coronavirus"
+                ],
+                "seo": {
+                    "keywords_en": "Centor Score (Modified) for Strep Pharyngitis, dx strep, dx strep, pharyngitis calc, pharyngitis calculator, pharyngitis score, strep throat calc, strep throat score, streptococcal score, streptococcal calc, r/o strep, rule out strep, centor score, centor strep, centor calc, centor score strep",
+                    "meta_description_en": "The Centor Score (Modified) for Strep Pharyngitis Estimates probability that pharyngitis is streptococcal, and suggests management course."
+                },
+                "short_description_en": "<p>Strep throat diagnosis and treatment.</p>",
+                "short_title_en": "Centor Score (Modified/McIsaac)",
+                "slug": "centor-score-modified-mcisaac-strep-pharyngitis",
+                "specialty_en": [
+                    "Emergency Medicine",
+                    "Family Practice",
+                    "Hospitalist Medicine",
+                    "Infectious Disease",
+                    "Internal Medicine",
+                    "Oral and Maxillofacial Surgery",
+                    "Otolaryngology",
+                    "Pediatrics"
+                ],
+                "system_en": [
+                    "HEENT"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "dc294c1b-f8f9-4e17-8fa8-f88ccc9aa993",
+                "search_id": "c-104",
+                "cme_status": ""
+            },
+            "headConfig": {
+                "title": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+                "description": "The Centor Score (Modified) for Strep Pharyngitis Estimates probability that pharyngitis is streptococcal, and suggests management course.",
+                "canonicalUrl": "/calc/104/centor-score-modified-mcisaac-strep-pharyngitis",
+                "keywords": "Centor Score (Modified) for Strep Pharyngitis, dx strep, dx strep, pharyngitis calc, pharyngitis calculator, pharyngitis score, strep throat calc, strep throat score, streptococcal score, streptococcal calc, r/o strep, rule out strep, centor score, centor strep, centor calc, centor score strep",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Robert M. Centor",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-robert-m-centor.jpeg",
+                    "about_en": "<p>Robert M. Centor, MD, is the retired regional dean for the Huntsville Regional Medical and professor of medicine in the Division of General Internal Medicine at the University of Alabama at Birmingham. He researches medical decision-making and has published widely in the diagnosis and management of adult sore throats. Dr. Centor is also Chair Emeritus of the Board of Regents for the American College of Physicians.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Centor+RM%5BAuthor%5D"
+                },
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Warren McIsaac",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-warren-mcisaac.jpg",
+                    "about_en": "<p>Warren McIsaac, MD, MSc, is a family physician and an associate professor in the department of family and community medicine at the University of Toronto. He is also the research director of the Granovsky Gluskin Family Medicine Centre. Dr. McIsaac\u2019s research interests include antibiotic resistance, antimicrobial stewardship, and prescribing decisions in primary care.</p>",
+                    "pubmedLink": "https://www.ncbi.nlm.nih.gov/pubmed/?term=McIsaac%20WJ%5BAuthor%5D"
+                }
+            ],
+            "contributors": [],
+            "relCalcs": [
+                {
+                    "calcId": 4050,
+                    "short_title_en": "DRIP Score",
+                    "slug": "drug-resistance-pneumonia-drip-score"
+                },
+                {
+                    "calcId": 2654,
+                    "short_title_en": "qSOFA",
+                    "slug": "qsofa-quick-sofa-score-sepsis"
+                },
+                {
+                    "calcId": 797,
+                    "short_title_en": "Light's Criteria",
+                    "slug": "lights-criteria-exudative-effusions"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": false,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "104",
+            "centor-score-modified-mcisaac-strep-pharyngitis"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

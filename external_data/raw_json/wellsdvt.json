@@ -1,0 +1,673 @@
+{
+    "props": {
+        "pageProps": {
+            "envs": {
+                "CANONICAL_URL_ROOT": "https://www.mdcalc.com",
+                "STRIPE_PUB_KEY": "pk_live_yYm2UzDzaudhFgqWcKbv9vH7",
+                "RECAPTCHA_PUBLIC_KEY": "6Lcu1mMkAAAAAAwmSDO3I7JNaUo9YtZ3jnrzTP6a",
+                "CONTENT_SERVER_TAG": "WEB_PROD"
+            },
+            "calc": {
+                "before_use": "",
+                "calc_type": "calculator",
+                "chief_complaint_en": [
+                    "Extremity Edema",
+                    "Extremity Pain"
+                ],
+                "cmeEndDate": "2025-07-25 00:00:00+00+167",
+                "cmeLastReviewed": "2022-07-25 00:00:00+00+167",
+                "cmeReleaseDate": "2020-10-08 00:00:00+00+00",
+                "cmeVersion": "362.1",
+                "content": {
+                    "about": {
+                        "evidence_based_medicine_en": "<ul>\n<li>Wells' Criteria were derived from a number of studies by Wells et al (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/7752753\" target=\"_blank\" rel=\"noopener\">Wells 1995</a>, <a href=\"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(97)08140-3/fulltext\" target=\"_blank\" rel=\"noopener\">Wells 1997</a>, <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/14507948\" target=\"_blank\" rel=\"noopener\">Wells 2003</a>) in an attempt to stratify risk of DVT in symptomatic outpatients, since at the time, the clinical diagnosis of DVT was thought to be inaccurate, leading to widespread overuse of confirmatory imaging.</li>\n<li style=\"text-align: left;\"><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/14507948\" target=\"_blank\" rel=\"noopener\">Wells 2003</a>&nbsp;took 1,096 outpatients with concern for DVT and randomized them into two groups after applying Wells&rsquo; Criteria for DVT. 520 were the control and had an ultrasound, 562 were tested with a d-dimer. If the dimer was positive these patients also received an US. If negative no US was performed. 16% of the control group and 15.5 percent of the test group had DVT or PE resulting in overall incidence of 15.7%.</li>\n<li>Of the 520 control patients, 279 were considered DVT unlikely, and 241 were DVT likely. 16 (5.7%) of the unlikely patients had DVT or PE. In the control group overall, 6 (1.4%) patients who had been initially ruled out had a diagnosis of DVT on 3 month follow-up.</li>\n<li>Of the 562 patients in the d-dimer group, 315 were considered unlikely and 247 considered likely to have DVT. 71 (28.7%) of the likely group had DVT. 38.8 percent of the unlikely group had a negative d-dimer and did not undergo further testing. 2 of these patients (0.4%) had confirmed DVT on 4 and 14 d follow-up. The negative predictive value of d-dimer was 96.1%.</li>\n<li>This algorithm was then supported by Scarvelis and Wells in 2006 (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/17060659\" target=\"_blank\" rel=\"noopener\">Scarvelis 2006</a>).</li>\n<li>A systematic review (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/16403932\" target=\"_blank\" rel=\"noopener\">Wells 2006</a>) was performed in 2006 which evaluated 14 studies with 8239 patients that used the Wells score to predict risk of DVT and evaluated for incidence of DVT in association with moderate or high sensitivity d-dimer. This has been utilized by the American College of Chest physicians to provide guidelines for the evaluation of DVT.</li>\n</ul>",
+                        "formula_en": "<p>Addition of the&nbsp;selected points:</p>\n<table cellspacing=\"0\" cellpadding=\"0\" width=\"223\" height=\"933\">\n<tbody>\n<tr>\n<td valign=\"top\" colspan=\"2\"><strong>Variable</strong></td>\n<td valign=\"top\"><strong>Points</strong></td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Active cancer (treatment or palliation within 6 months)</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Bedridden recently &gt;3 days or major surgery within&nbsp;12&nbsp;weeks</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Calf swelling &gt;3 cm compared to the other leg (measured 10 cm below tibial tuberosity)</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Collateral (nonvaricose) superficial veins present</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Entire leg swollen</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Localized tenderness along the deep venous system</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Pitting edema, confined to symptomatic leg</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Paralysis, paresis, or recent plaster immobilization of the lower extremity</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Previously documented DVT</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>1</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\" rowspan=\"2\">\n<p>Alternative diagnosis to DVT as likely or more likely</p>\n</td>\n<td valign=\"top\">\n<p>No</p>\n</td>\n<td valign=\"top\">\n<p>0</p>\n</td>\n</tr>\n<tr>\n<td valign=\"top\">\n<p>Yes</p>\n</td>\n<td valign=\"top\">\n<p>-2</p>\n</td>\n</tr>\n</tbody>\n</table>\n<p>Note: there are a few versions of the criteria with minor differences based on the study; this set is the most widely validated, based on <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/14507948\" target=\"_blank\" rel=\"noopener\">Wells 2003</a>.</p>\n<p></p>",
+                        "more_info_en": "<p>Interpretation:</p>\n<table width=\"376\" height=\"100\">\n<tbody>\n<tr>\n<td><strong>Wells' Score</strong></td>\n<td><strong>Risk group</strong></td>\n<td><strong>Prevalence of DVT</strong></td>\n</tr>\n<tr>\n<td>&le;0</td>\n<td>\n<p>Low/unlikely</p>\n</td>\n<td>5%</td>\n</tr>\n<tr>\n<td>\n<p>1-2</p>\n</td>\n<td>Moderate</td>\n<td>\n<p>17%</p>\n</td>\n</tr>\n<tr>\n<td>&ge;3</td>\n<td>High/likely</td>\n<td>\n<p>17-53%</p>\n</td>\n</tr>\n</tbody>\n</table>",
+                        "references_list": {
+                            "Clinical Practice Guidelines": [],
+                            "Manufacturer Website": [],
+                            "Original/Primary Reference": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/7752753",
+                                    "text": "Wells PS, Hirsh J, Anderson DR, et al. Accuracy of clinical assessment of deep-vein thrombosis. Lancet. 1995;345(8961):1326-30."
+                                },
+                                {
+                                    "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(97)08140-3/fulltext",
+                                    "text": "Wells PS, Anderson DR, Bormanis J, et al. Value of assessment of pretest probability of deep-vein thrombosis in clinical management. Lancet. 1997;350(9094):1795-8."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/14507948",
+                                    "text": "Wells PS, Anderson DR, Rodger M, Forgie M, Kearon C, Dreyer J, Kovacs G, Mitchell M, Lewandowski B, Kovacs MJ. Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis. N Engl J Med. 2003 Sep 25;349(13):1227-35."
+                                }
+                            ],
+                            "Other References": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/16403932",
+                                    "text": "Wells PS, Owen C, Doucette S, Fergusson D, Tran H. Does this patient have deep vein thrombosis? JAMA. 2006 Jan 11;295(2):199-207. Review."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/22315267",
+                                    "text": "Bates SM, Jaeschke R, Stevens SM, Goodacre S, Wells PS, Stevenson M.D., Kearon C, Schunemann HJ, Crowther M, Pauker SG, Makdissi R, Guyatt GH. Diagnosis of DVT: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines."
+                                },
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/25985219",
+                                    "text": "Silveira PC, Ip IK, Goldhaber SZ, Piazza G, Benson CB, Khorasani R. Performance of Wells Score for Deep Vein Thrombosis in the Inpatient Setting. JAMA Intern Med. 2015 Jul;175(7):1112-7. doi: 10.1001/jamainternmed.2015.1687."
+                                }
+                            ],
+                            "Outcomes": [],
+                            "Validation": [
+                                {
+                                    "href": "https://www.ncbi.nlm.nih.gov/pubmed/17060659",
+                                    "text": "Scarvelis D, Wells PS. Diagnosis and treatment of deep-vein thrombosis. CMAJ. 2006 Oct 24;175(9):1087-92. Review. Erratum in: CMAJ. 2007 Nov 20;177(11):1392."
+                                }
+                            ],
+                            "Validations": []
+                        }
+                    },
+                    "contributor": {
+                        "expert_name": [
+                            "Benjamin Slovis, MD"
+                        ]
+                    },
+                    "creator": [
+                        {
+                            "approved": true,
+                            "name": "Dr. Phil Wells",
+                            "qa_en": "<p><strong>Dr. Wells on use of his scores for MDCalc:</strong></p><p>The model should be applied only after a history and physical suggests that venous thromboembolism is a diagnostic possibility. it should not be applied to all patients with chest pain or dyspnea or to all patients with leg pain or swelling. This is the most common mistake made. Also, never never do the D-dimer first [before history and physical exam]. The monster in the box is that the D-dimer is done first and is positive (as it is for many patients with non-VTE conditions) and then the physician assumes that VTE is now possible and then the model is done. Do the history and physical exam first and decide if VTE is a diagnostic possibility!</p><p><strong>Dr. Wells on testing in medicine for MDCalc:</strong></p><p>The importance of Clinical pretest probability is underutilized in medicine. Recognizing the power of a simple concept, derived essentially from Bayes theorem, that discordance between the clinical PTP and the test result should raise suspicion of a false negative test (if high PTP) or false positive test (if low PTP), we sought to derive prediction rules for suspected DVT and for suspected PE. Used appropriately these rules will improve patient care.</p>"
+                        }
+                    ],
+                    "how_to_use": {
+                        "pearls_pitfalls_en": "<p>The Wells&rsquo; Deep Vein Thrombosis (DVT) Criteria risk stratify patients for DVT.</p>\n<ul>\n<li>There is an overall low prevalence of DVT in cases with low (&lt;25%) clinical suspicion patients.</li>\n<li>The Wells score inherently incorporates clinical gestalt with a minus 2 score for alternative diagnosis more likely.</li>\n<li>Sequelae from DVT include pulmonary embolism (PE) and pulmonary hypertension, which have an associated mortality of 1-8%.</li>\n<li>Anticoagulation is the mainstay treatment for DVT with its own associated risks of bleeding.</li>\n</ul>",
+                        "use_case_en": "<p>The Wells&rsquo; DVT Criteria can be used in the outpatient and emergency department setting. By risk stratifying to low risk (Wells&rsquo; Score &lt;2) and a negative d-dimer the clinician can exclude the need for ultrasound (US) to rule out DVT.</p>",
+                        "why_use_en": "<p>Traditional testing for DVT involved multiple lower extremity US which are associated with time and cost. Utilization of the Wells&rsquo; DVT criteria can determine those patients who are overall unlikely to have a DVT. Further testing with d-dimer can safely rule out DVT without the need for US.</p>"
+                    },
+                    "next_steps": {
+                        "advice_en": "<ul>\n<li>As with all clinical decision aids, the Wells&rsquo; DVT criteria is meant to aid clinical decision making and not force management.</li>\n<li>The Wells&rsquo; DVT criteria should only be applied after a detailed history and physical is performed.</li>\n<li>The Wells&rsquo; DVT criteria should only be applied to those patients who have been deemed at risk for DVT. If there is no concern for DVT, then there is no need for risk stratification.</li>\n</ul>",
+                        "critical_actions_en": "<p>No decision rule should trump clinical gestalt. High suspicion for DVT should warrant imaging regardless of Wells score.</p>\n<p>The Wells&rsquo; Criteria for DVT is utilized for the workup of DVT. The presence of DVT is critical to the evaluation of possible PE, and if PE is on the differential, alternative decision aids such as the <calculator id=\"115\">Wells PE</calculator> or <calculator id=\"347\">PERC rule</calculator> should be entertained.</p>",
+                        "management_en": "<p>Patients can be divided into &ldquo;DVT unlikely&rdquo; and &ldquo;DVT likely&rdquo; groups based on Wells score. An additional moderate risk group can be added based on the sensitivity of the d-dimer being used.</p>\n<ul>\n<li>A score of 0 or lower is associated with DVT unlikely with a prevalence of DVT of 5%.\n<ul>\n<li>These patients should proceed to d-dimer testing:\n<ul>\n<li>A negative high or moderate sensitivity d-dimer results in a probability &lt;1 % and no further imaging is required.</li>\n<li>A positive d-dimer should proceed&nbsp;to US testing.\n<ul>\n<li>A negative US is sufficient for DVT rule out.</li>\n<li>A positive US is concerning for DVT; strongly consider treatment with anticoagulation.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li>A score of 1-2 is considered risk with a pretest probability of 17%.*\n<ul>\n<li>These patients should proceed to <b>high-sensitivity</b> d-dimer testing (moderate sensitivity d-dimer is not sufficient).\n<ul>\n<li>A negative <b>high-sensitivity</b> d-dimer is sufficient for rule out of DVT in a moderate risk patient with a probability of &lt;1%.</li>\n<li>A positive <b>high sensitivity</b> d-dimer should proceed to US testing.\n<ul>\n<li>A negative US is sufficient for ruling out DVT.</li>\n<li>A positive US is concerning for DVT, strongly consider treatment with anticoagulation.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li>A score of 3 or higher suggests DVT is likely. Pretest probability 17-53%.\n<ul>\n<li>All DVT likely patients should receive US.</li>\n<li>D-dimer testing should be utilized to help risk-stratify these DVT-likely patients.\n<ul>\n<li>In DVT likely patients with negative d-dimer:\n<ul>\n<li>A negative US is sufficient for ruling out DVT, consider discharge.</li>\n<li>A positive US should be concerning for DVT, strongly consider treatment with anticoagulation.</li>\n</ul>\n</li>\n<li>In DVT likely patients with a positive d-dimer:\n<ul>\n<li>A positive US should be concerning for DVT, strongly consider treatment with anticoagulation.</li>\n<li>A negative US is still concerning for DVT. A repeat US should be performed within 1 week for re-evaluation.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<p><strong>* group should only undergo d-dimer testing for rule out without ultrasonography if a high-sensitivity d-dimer is being used.</strong></p>"
+                    },
+                    "related_resources": {
+                        "guidelines": [],
+                        "interests": [],
+                        "mdcalc_rating": [],
+                        "partner_contact": [
+                            {
+                                "CalculatorId": 362,
+                                "createdAt": "2020-11-24T18:21:18.905Z",
+                                "description": "Emergency Medicine Practice",
+                                "id": 217,
+                                "link": "https://www.ebmedicine.net/topics/cardiovascular/deep-vein-thrombosis/calculators",
+                                "order": 0,
+                                "society": "EB Medicine",
+                                "text": "Calculated Decisions: Wells' Score for DVT",
+                                "updatedAt": "2020-11-24T18:21:18.905Z"
+                            }
+                        ],
+                        "sdm_tool": [],
+                        "teaching": [],
+                        "videos": []
+                    },
+                    "reviewer": []
+                },
+                "disabled": false,
+                "disabled_reason": null,
+                "disease_en": [
+                    "Deep Venous Thrombosis"
+                ],
+                "dosing": false,
+                "equation_logic": "111616e4436cf30d4996a7009449e4cb",
+                "favorite_id": 362,
+                "full_title_en": "Wells' Criteria for DVT",
+                "input_schema": [
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Active cancer",
+                        "md_calc_info_concept": null,
+                        "name": "cancer",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "Treatment or palliation within 6 months",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Bedridden recently >3 days or major surgery within 12 weeks",
+                        "md_calc_info_concept": null,
+                        "name": "bedridden",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Calf swelling >3 cm compared to the other leg",
+                        "md_calc_info_concept": null,
+                        "name": "calf_swelling",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "Measured 10 cm below tibial tuberosity",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Collateral (nonvaricose) superficial veins present",
+                        "md_calc_info_concept": null,
+                        "name": "superficial_veins",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Entire leg swollen",
+                        "md_calc_info_concept": null,
+                        "name": "leg_swollen",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Localized tenderness along the deep venous system",
+                        "md_calc_info_concept": null,
+                        "name": "localized_tenderness",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Pitting edema, confined to symptomatic leg",
+                        "md_calc_info_concept": null,
+                        "name": "pitting_edema",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Paralysis, paresis, or recent plaster immobilization of the lower extremity",
+                        "md_calc_info_concept": null,
+                        "name": "paralysis",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Previously documented DVT",
+                        "md_calc_info_concept": null,
+                        "name": "dvt",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": 1
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    },
+                    {
+                        "conditionality": "",
+                        "default": 0,
+                        "label_en": "Alternative diagnosis to DVT as likely or more likely",
+                        "md_calc_info_concept": null,
+                        "name": "alt_diagnosis_dvt",
+                        "option_fhir_rules": null,
+                        "optional": false,
+                        "options": [
+                            {
+                                "label": "No",
+                                "value": 0
+                            },
+                            {
+                                "label": "Yes",
+                                "value": -2
+                            }
+                        ],
+                        "show_points": true,
+                        "tips_en": "",
+                        "type": "toggle"
+                    }
+                ],
+                "instructions_en": "<ul>\n<li><strong>Note</strong>: The Wells' Score is less useful in hospitalized patients (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25985219\" target=\"_blank\" rel=\"noopener\">Silveira PC, 2015</a>).</li>\n<li>There are a few versions of this criteria with minor differences based on the study; this set is the most widely validated, based on&nbsp;<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/14507948\" target=\"_blank\" rel=\"noopener\">Wells 2003</a>.</li>\n</ul>",
+                "isVisibleInListView": true,
+                "logic_language": "javascript",
+                "md5": "14d6d47c337f17d0cb9e313ba5b26f41",
+                "medium_description_en": "<p>Calculates risk of DVT based on clinical criteria.</p>",
+                "publishedAt": "2022-04-21T20:29:17.346Z",
+                "purpose_en": [
+                    "Diagnosis"
+                ],
+                "replacement_calc_id": null,
+                "search_abbreviation_en": [
+                    "well\u2019s",
+                    "dvt",
+                    "wells",
+                    "deep vein thrombosis score",
+                    "wells score",
+                    "wells dvt",
+                    "wells vte"
+                ],
+                "seo": {
+                    "keywords_en": "deep vein thrombosis, DVT, Rule out DVT, PE, VTE, d-dimer positive, wells dvt, wells criteria, wells deep, wells deep vein, wells deep vein thrombosis wells embolism, wells thrombosis, wells vte, wells calc, wells dvt calc, wells r/o, wells rule out, wells clinical signs, wells criteria for deep vein thrombosis, wells rule out dvt, wells rule out deep vein, wells rule out thrombosis, wells r/o dvt, wells r/o vte",
+                    "meta_description_en": "The Wells\u2019 Criteria for DVT Objectifies risk of deep vein thrombosis (DVT) based on clinical findings."
+                },
+                "short_description_en": "<p>Risk of DVT based on clinical criteria.</p>",
+                "short_title_en": "Wells' Score for DVT",
+                "slug": "wells-criteria-dvt",
+                "specialty_en": [
+                    "Cardiology",
+                    "Emergency Medicine",
+                    "Family Practice",
+                    "Geriatrics",
+                    "Hematology and Oncology",
+                    "Hospitalist Medicine",
+                    "Internal Medicine",
+                    "Orthopedics",
+                    "Primary Care",
+                    "Surgery (General)"
+                ],
+                "system_en": [
+                    "Cardiac",
+                    "Hematologic"
+                ],
+                "tags": [],
+                "versionNumber": 1,
+                "versions": [],
+                "vuid": "e1d0c26d-2aad-4ecb-b611-b13618380c6b",
+                "search_id": "c-362",
+                "cme_status": "enabled"
+            },
+            "headConfig": {
+                "title": "Wells' Criteria for DVT",
+                "description": "The Wells\u2019 Criteria for DVT Objectifies risk of deep vein thrombosis (DVT) based on clinical findings.",
+                "canonicalUrl": "/calc/362/wells-criteria-dvt",
+                "keywords": "deep vein thrombosis, DVT, Rule out DVT, PE, VTE, d-dimer positive, wells dvt, wells criteria, wells deep, wells deep vein, wells deep vein thrombosis wells embolism, wells thrombosis, wells vte, wells calc, wells dvt calc, wells r/o, wells rule out, wells clinical signs, wells criteria for deep vein thrombosis, wells rule out dvt, wells rule out deep vein, wells rule out thrombosis, wells r/o dvt, wells r/o vte",
+                "ogImage": {
+                    "url": "https://cdn-web-img.mdcalc.com/1200x630_mdcalc_facebook.jpg",
+                    "width": 1200,
+                    "height": 630
+                }
+            },
+            "measurements": [],
+            "creators": [
+                {
+                    "firstName": "",
+                    "lastName": "",
+                    "name": "Dr. Phil Wells",
+                    "description": "",
+                    "img": "",
+                    "signedCOI": false,
+                    "deceased": false,
+                    "photo_en": "https://cdn-web-img.mdcalc.com/people/dr-phil-wells.jpeg",
+                    "about_en": "<p>Phil Wells, MD, MSc, is a professor and chief of the Department of Medicine at The University of Ottawa. He is also on the faculty of medicine and a senior scientist at the Ottawa Hospital Research Institute. Dr. Wells researches thromboembolism, thrombophilia and long term bleeding risk in patients on anticoagulants.</p>",
+                    "pubmedLink": "http://www.ncbi.nlm.nih.gov/pubmed/?term=Wells+PS%5BAuthor%5D"
+                }
+            ],
+            "contributors": [
+                {
+                    "description": "<p>Benjamin H. Slovis, MD, MA, is an emergency medicine physician and informatician in the department of emergency medicine at Thomas Jefferson University in Philadelphia. A native of New Jersey, Dr. Slovis attended Cornell University for his undergraduate studies and received his MD from UMDNJ\u2013Robert Wood Johnson Medical School. He completed his residency at the Icahn School of Medicine at Mount Sinai and a National Library of Medicine Post-Doctoral Research Fellowship with a masters degree from the department of Biomedical Informatics at Columbia University. His research interests include clinical decision support systems, health-information exchange, and medical education.</p>",
+                    "img": "ben-slovis.jpeg",
+                    "name": "Benjamin Slovis, MD",
+                    "target": "benjamin-slovis",
+                    "firstName": "Benjamin",
+                    "lastName": "Slovis",
+                    "signedCOI": true,
+                    "contributors_page": true,
+                    "status": "Current",
+                    "hasDisclosure": []
+                }
+            ],
+            "relCalcs": [
+                {
+                    "calcId": 1750,
+                    "short_title_en": "Geneva Score (Revised)",
+                    "slug": "geneva-score-revised-pulmonary-embolism"
+                },
+                {
+                    "calcId": 10125,
+                    "short_title_en": "Villalta Score",
+                    "slug": "villalta-score-post-thrombotic-syndrome-pts"
+                },
+                {
+                    "calcId": 115,
+                    "short_title_en": "Wells' Score for PE",
+                    "slug": "wells-criteria-pulmonary-embolism"
+                }
+            ],
+            "societies": {
+                "American Association for the Study of Liver Diseases": {
+                    "abbreviation": "AASLD",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.aasld.org/"
+                },
+                "American College Of Emergency Physicians": {
+                    "abbreviation": "ACEP",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/american-college-of-emergency-physicians-squarelogo.png",
+                    "web_link": "https://www.acep.org/"
+                },
+                "American College of Gastroenterology": {
+                    "abbreviation": "ACG",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/acg_logo.png",
+                    "web_link": "https://gi.org/"
+                },
+                "American College of Rheumatology": {
+                    "abbreviation": "ACR",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.rheumatology.org/"
+                },
+                "American Gastroenterological Association": {
+                    "abbreviation": "AGA",
+                    "description": "plain-text",
+                    "img": "https://apps.mdcalc.com/images/societies/aga.jpeg",
+                    "web_link": "https://gastro.org"
+                },
+                "American Heart Association": {
+                    "abbreviation": "AHA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/apps.mdcalc.com/images/societies/+AHA+(American+Heart+Association).png",
+                    "target": "aha",
+                    "web_link": "http://www.heart.org/HEARTORG/"
+                },
+                "American Urological Association": {
+                    "abbreviation": "AUA",
+                    "description": "plain-text",
+                    "img": "https://s3-us-west-2.amazonaws.com/cdn-web-img.mdcalc.com/logo/other_society.png",
+                    "web_link": "https://www.auanet.org/"
+                },
+                "EB Medicine": {
+                    "abbreviation": "EB Medicine",
+                    "description": "EB Medicine is the premier provider of evidence-based clinical content and CME resources for emergency medicine practitioners.",
+                    "img": "https://cdn-web-img.mdcalc.com/other/eb_medicine-icon-only.jpg",
+                    "target": "eb-medicine",
+                    "web_link": "http://www.ebmedicine.net/"
+                },
+                "MDCalc CME": {
+                    "abbreviation": "MDCalc CME",
+                    "img": "https://cdn-web-img.mdcalc.com/Stroke-CME-content.jpg",
+                    "web_link": "https://www.mdcalc.com/stroke-cme?utm_source=NIHSS_calc&utm_medium=NIHSS_calc&utm_campaign=NIHSS_calc"
+                },
+                "OTHER": {
+                    "abbreviation": "OTHER"
+                },
+                "Postgraduate Institute for Medicine": {
+                    "abbreviation": "PIM",
+                    "description": "plain-text",
+                    "img": "https://cdn-web-img.mdcalc.com/PIM-circle-COLOR.jpeg",
+                    "target": "pim",
+                    "web_link": "https://www.pimed.com/"
+                },
+                "VACO Podcast": {
+                    "description": "Listen to the VACO co-creators break down how to use VACO\\, what it does\\, and what it doesn\u2019t.",
+                    "img": "https://cdn-web-img.mdcalc.com/content/podcast 2.png",
+                    "web_link": "https://www.stimuluspodcast.com/post/32-the-covid-mortality-score-vaco"
+                }
+            },
+            "isCMECalc": true,
+            "validSections": [
+                "whenToUseViewed",
+                "pearlsPitfallsViewed",
+                "whyUseViewed",
+                "nextStepsViewed",
+                "evidenceViewed"
+            ],
+            "faqs": [
+                {
+                    "cme_faq": {
+                        "question": "What is MDCalc CME?",
+                        "answer": "<p>MDCalc&rsquo;s Continuing Medical Education (CME) service allows users to easily earn AMA PRA Category 1 Credits<sup>TM</sup> through regular use of MDCalc. Simply put, on top of getting the best medical calculators in the world, your usage will help you achieve your annual CME requirements, including specialty CME, without any extra effort.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Is MDCalc CME accredited?",
+                        "answer": "<p>Yes, in support of improving patient care, this activity has been planned and implemented by the Postgraduate Institute for Medicine and MDCalc Ltd. Inc. Postgraduate Institute for Medicine is jointly accredited by the Accreditation Council for Continuing Medical Education (ACCME), the Accreditation Council for Pharmacy Education (ACPE), and the American Nurses Credentialing Center (ANCC), to provide continuing education for the healthcare team.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Who can enroll and how?",
+                        "answer": "<p>Only United States attending physicians, nurse practitioners, nurses, and physician assistants are eligible for our CME service.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What activities can I do to earn CME credits?",
+                        "answer": "<p>We have over 275 CME-eligible calculators across various specialties. You can read the clinical content supporting any CME calculators to start earning. Once you have viewed all the supporting content for a calculator, you will have officially earned the credit amount (0.5 credits) and will be able to redeem a certificate. For now, only calc content in CME-eligible calcs is eligible for CME credits, however, we&rsquo;ll be expanding our CME service to include more of our content in the future.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I find calcs with which I can earn credits?",
+                        "answer": "<p>Simply use our search bar or visit our homepage to easily find CME-eligible calcs. You must be enrolled in our CME service to see which calcs are CME-eligible.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see which credits I\u2019ve earned?",
+                        "answer": "<p>Once you&rsquo;ve enrolled in our CME service, you will have a personal CME Dashboard where you can view all of your earned credits. You can navigate to the dashboard by clicking the CME button in the header at the top of any page.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I redeem CME credits?",
+                        "answer": "<p>Go to your CME Dashboard and select the credits you&rsquo;d like to redeem, fill out a few dropdown answers about how you used the calc, and then proceed to checkout.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Are CME credits free?",
+                        "answer": "<p>No. Earning credits as you use calcs is free, but either you (or your employer) will need to purchase an annual subscription to redeem your CME certificates.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Where can I see my CME certificates?",
+                        "answer": "<p>Just like with earned credits, you can view your CME certificates on your CME Dashboard in the &ldquo;CME Certificates&rdquo; tab. Certificates include a list of all of the calcs for which CME was earned along with a tally of the specialty CME.</p>",
+                        "type": "Using"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How long do credits in an annual subscription last?",
+                        "answer": "<p>One year from the date of purchase.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What specialty CME credits are included in the plan?",
+                        "answer": "<p>General; Addiction and Controlled Substances; Cardiac Care; Domestic and Intimate Partner Violence; Geriatrics; HIV and Infectious Disease; Hospice, End-of-Life, Terminal Illness, and Palliative Care; Mental and Behavioral Health; Pain Management; Pediatrics; Stroke; and Trauma.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "I ordered a CME package with a gift card. How does it work?",
+                        "answer": "<p>Your gift card will be sent via email within 1-2 business days of making your purchase. You will be able to select from the following options - Visa, Amazon.com, Apple. Be sure to claim your gift card offer within 90 days of receiving the email.</p>\n<p>Your CME purchase may have implications for tax reporting purposes. The cost of your CME product may or may not be tax-deductible when used for professional purposes. Any reimbursed amount for incentives must be declared as personal income for tax purposes. Please consult your tax advisor. MDCalc does not provide tax advice.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "What will show on my receipt for CME when it includes a gift card?",
+                        "answer": "<p>Per the new guidelines from ACCME, the receipt will separate the cost you paid into the cost of the gift card and the cost of the CME learning activity.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get a refund if I'm not satisfied?",
+                        "answer": "<p>You can get a refund (minus any promotional gift amount) within 30-days if the ease of earning and redeeming does not meet your expectations and if you have redeemed no more than 4 credits. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request a refund.&nbsp;<strong>Note&nbsp;<span>that a previous refund claim excludes you from this policy.</span></strong></p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I later upgrade to a different plan if I need more credits?",
+                        "answer": "<p>You can upgrade your subscription throughout your billing cycle and pay the difference for a higher plan. You may request to downgrade your plan to a lower level to coincide with your next renewal. Please email <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> to request changes.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Do CME plans auto-renew?",
+                        "answer": "<p>Gift card plans are available for 1 year and do not auto-renew. Standard, non gift-card subscriptions are auto-renewed annually. You can disable the automatic renewal of your subscription at any time by emailing <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a>.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "How do I get information on a discounted bulk subscription program for my institution, team, or practice?",
+                        "answer": "<p>If you&rsquo;re part of a team or practice that wants to sign up five or more physicians, please email us at <a href=\"mailto:team@mdcalc.com\" target=\"_blank\" rel=\"noopener\">team@mdcalc.com</a> for more information.</p>",
+                        "type": "Purchasing"
+                    }
+                },
+                {
+                    "cme_faq": {
+                        "question": "Did the ACCME decide to regulate gift cards?",
+                        "answer": "<p>On July 28, 2022, ACCME updated the guidelines regarding the use of high-value incentives. These guidelines allow for the use of gift card rewards in a regulated manner. Visit the ACCME website to read their guidelines.</p>",
+                        "type": "Purchasing"
+                    }
+                }
+            ],
+            "sharedLinkUuid": null,
+            "sharedLinkExternalSource": null
+        },
+        "__N_SSP": true
+    },
+    "page": "/calc/[...slug]",
+    "query": {
+        "slug": [
+            "362",
+            "wells-criteria-dvt"
+        ]
+    },
+    "buildId": "3hTSy6VILSeqWIDoW2KHv",
+    "isFallback": false,
+    "gssp": true,
+    "scriptLoader": []
+}

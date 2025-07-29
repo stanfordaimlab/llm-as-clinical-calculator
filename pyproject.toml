@@ -1,0 +1,95 @@
+[project]
+authors = [
+    {name = "Alex Goodell", email = "alexgoodell@gmail.com"},
+]
+requires-python = "<3.13,>=3.10"
+dependencies = [
+    "jupyter<2.0.0,>=1.0.0",
+    "e2b-code-interpreter",
+    "langchain<1.0.0,>=0.3.3",
+    "langchainhub<1.0.0,>=0.1.20",
+    "langchain-openai<1.0.0,>=0.2.2",
+    "pandas<3.0.0,>=2.2.2",
+    "load-dotenv<1.0.0,>=0.1.0",
+    "pandantic<1.0.0,>=0.3.0",
+    "duckdb<2.0.0,>=1.0.0",
+    "ibis-framework[duckdb]<10.0.0,>=9.1.0",
+    "tabulate<1.0.0,>=0.9.0",
+    "rich<14.0.0,>=13.7.1",
+    "lxml<6.0.0,>=5.2.2",
+    "sqlalchemy<3.0.0,>=2.0.31",
+    "pymysql<2.0.0,>=1.1.1",
+    "openpyxl<4.0.0,>=3.1.5",
+    "jupysql<1.0.0,>=0.10.12",
+    "matplotlib<4.0.0,>=3.9.1",
+    "duckdb-engine<1.0.0,>=0.13.0",
+    "toml<1.0.0,>=0.10.2",
+    "langchain-huggingface<1.0.0,>=0.1.0",
+    "text-generation<1.0.0,>=0.7.0",
+    "transformers<5.0.0,>=4.42.4",
+    "google-search-results<3.0.0,>=2.4.2",
+    "numexpr<3.0.0,>=2.10.1",
+    "sentencepiece<1.0.0,>=0.2.0",
+    "jinja2<4.0.0,>=3.1.4",
+    "langchain-groq<1.0.0,>=0.2.0",
+    "langchain-community<1.0.0,>=0.3.2",
+    "beautifulsoup4<5.0.0,>=4.12.3",
+    "pypandoc-binary<2.0,>=1.13",
+    "langchain-chroma<1.0.0,>=0.1.2",
+    "unstructured<1.0.0,>=0.15.0",
+    "python-magic<1.0.0,>=0.4.27",
+    "langgraph<1.0.0,>=0.2.35",
+    "pytest<9.0.0,>=8.3.1",
+    "inquirerpy<1.0.0,>=0.3.4",
+    "ipython<9.0.0,>=8.26.0",
+    "typer<1.0.0,>=0.12.3",
+    "wonderwords<3.0.0,>=2.2.0",
+    "langsmith<1.0.0,>=0.1.98",
+    "markdown<4.0,>=3.6",
+    "invoke<3.0.0,>=2.2.0",
+    "black<25.0.0,>=24.8.0",
+    "dirtyjson<2.0.0,>=1.0.8",
+    "ofunctions<3.0.0,>=2.7.0",
+    "langchain-anthropic<1.0.0,>=0.2.3",
+    "langchain-together<1.0.0,>=0.2.0",
+    "langchain-experimental<1.0.0,>=0.3.2",
+    "llamaapi<1.0.0,>=0.1.36",
+    "fastapi[standard]<1.0.0,>=0.114.0",
+    "llm<1.0,>=0.16",
+    "llm-claude-3<1.0.0,>=0.4.1",
+    "outlines<1.0.0,>=0.0.46",
+    "langchain-core<1.0.0,>=0.3.10",
+    "langchain-fireworks<1.0.0,>=0.2.1",
+    "faker<31.0.0,>=30.8.1",
+    "plotly<6.0.0,>=5.24.1",
+    "matplotlib-inline<1.0.0,>=0.1.7",
+    "kaleido==0.2.1",
+    "xarray<2025.0.0,>=2024.10.0",
+    "seaborn<1.0.0,>=0.13.2",
+    "statsmodels<1.0.0,>=0.14.4",
+    "bioinfokit<3.0.0,>=2.1.4",
+    "chart-studio<2.0.0,>=1.1.0",
+    "onnxruntime==1.18.1",
+    "torch==2.0.1",
+    "gspread<7.0.0,>=6.1.4",
+    "gspread-dataframe<5.0.0,>=4.0.0",
+    "jedi<1.0.0,>=0.19.2",
+]
+name = "llm-calc"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+license = {text = "MIT; see LICENSE file for details"}
+
+
+[project.scripts]
+llmcalc = "llm_calc.app:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llm_calc*"]
+exclude = ["*.tests*", "tests*", "__pycache__*", "*.pyc"]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "uv"]
+build-backend = "setuptools.build_meta"
