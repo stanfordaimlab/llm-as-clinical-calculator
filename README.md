@@ -159,6 +159,7 @@ Evaluation of the model (RAG arm) included usage of published written material o
 To re-run the original experiments, you are required to move the data from the `external_data` directory, which can be accomplished by running the following from the root directory:
 
 ```bash
+mkdir llm_calc/data/build_database/reference_material
 cp -r external_data/* llm_calc/data/build_database/reference_material
 ```
 
